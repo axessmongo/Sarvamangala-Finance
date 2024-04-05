@@ -1,0 +1,98 @@
+.hero {
+    height: 90vh;
+    width: 100vw;
+    background-image: url(../img/hero-banner/happy-business.jpg);
+    background-position: center;
+    background-size: cover;
+    animation-name: zoomIn;
+    animation-duration: 6s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        background-size: 100%; /* Start with the original size */
+    }
+    to {
+        background-size: 107%; /* Zoom in to 110% */
+    }
+}
+.hero2{
+    height: 90vh;
+    width: 100vw;
+    background-image: url(../img/hero-banner/business-loan.jpg);
+    background-position: center;
+    background-size: cover;
+    animation-name: zoomIn;
+    animation-duration: 6s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    /* background-attachment: fixed; */
+}
+.hero3{
+    height: 90vh;
+    width: 100vw;
+    background-image: url(../img/hero-banner/loan.jpg);
+    background-position: center;
+    background-size: cover;
+    animation-name: zoomIn;
+    animation-duration: 6s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    /* background-attachment: fixed; */
+}
+.hero-opacity{
+    background-color: rgba(0, 0, 0, 0.374);
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nav-bg{
+    background-color: white;
+    /* background-image: url(../img/hero-banner/happy-business.jpg); */
+    
+    /* background: rgb(0,93,166); */
+/* background: linear-gradient(30deg, rgba(0,93,166,1) 0%, rgba(235,87,31,1) 100%); */
+    
+}
+
+.nav-link{
+    
+    color:rgb(0, 0, 0)!important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+.nav-link:hover{
+    color: #eb571f !important;
+    border-top: 2px solid #005da6;
+
+}
+.logo{
+    width: 200px;
+    border-radius: 10px;
+}
+hr{
+    font-size: 100px !important;
+    color: white;
+}
+.hero-h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.blue-card{
+    background-color: #508fc0;
+    height: 180px;
+}
+.red-card{
+    background-color: #cd5b59;
+    height: 180px;
+
+}
+.orange-card{
+    background-color: #e3744c;
+    height: 180px;
+
+}
