@@ -1,15 +1,21 @@
 import logo from './logo.svg';
-import './App.css';
-import '../src/Assets/Css/Ournature.css'
-import '../src/Assets/Css/Whychoose.css'
-
+import './Assets/Css/Nav.css'
+import Contact from './Components/Contact';
+import Nav from './Components/Nav'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-  
-    </div>
-  );
-}
+    <div className="App"> 
 
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Nav />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+
+    </div>
+  )
+}
 export default App;
