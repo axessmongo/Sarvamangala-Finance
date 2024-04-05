@@ -49,6 +49,12 @@ function Nav() {
                   Why Choose Us
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link active px-3" href="#budget">
+                 features
+                </a>
+              </li>
+             
               {/* <li className="nav-item">
           <a className="nav-link active px-3" href="#types">
             Types
@@ -136,9 +142,7 @@ function Nav() {
           </div>
         </div>
       </section>
-      <section>
-        hi
-      </section>
+      
     </>
   );
 }
