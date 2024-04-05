@@ -1,0 +1,39 @@
+.capital {
+    background-color: #005DA6;
+    color: #fff;
+    padding: 8px;
+}
+
+.container {
+    padding: 70px;
+    margin-bottom: 5px;
+}
+
+.feature {
+    font-size: 22px;
+    
+}
+
+.capital-heading {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.icon-background {
+    background-color: #fff;
+    /* padding: 6px; */
+    display: inline-block;
+    border-radius: 6px;
+    line-height: 1;
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icon-blue {
+    color: #005DA6;
+    font-size: 24px;
+}

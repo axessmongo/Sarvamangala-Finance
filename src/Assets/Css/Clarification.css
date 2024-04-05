@@ -1,0 +1,23 @@
+.clarif {
+    background: linear-gradient(90deg, #eb571f 0%, #bb1917 100%);
+    color: #fff;
+    padding: 8px;
+  }
+  
+ button {
+  border-radius: 10px;
+  padding: 10px 20px; 
+  border: none;
+  background-color: #4CAF50; 
+  color: #fff; 
+  cursor: pointer; 
+  display: block; 
+  margin: 0 auto; 
+  transition: background-color 0.3s;
+}
+
+
+  button:hover {
+    background-color:#fff; 
+    color: #eb571f;
+  }
