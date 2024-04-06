@@ -1,7 +1,7 @@
 .hero {
     height: 90vh;
     width: 100vw;
-    background-image: url(../img/hero-banner/happy-business.jpg);
+    background-image: url(../img/lord.jpg);
     background-position: center;
     background-size: cover;
     animation-name: zoomIn;

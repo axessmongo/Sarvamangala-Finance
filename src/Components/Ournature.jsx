@@ -1,6 +1,6 @@
 import React from 'react'
-import ournature1 from '../Assets/img/ournature1.jpg'
-import ournature2 from '../Assets/img/ournature2.jpg'
+import ournature1 from '../Assets/img/nature1.jpg'
+import ournature2 from '../Assets/img/nature2.jpg'
 
 
 function Ournature() {
@@ -12,9 +12,9 @@ function Ournature() {
                         <div className='col-md-5 d-flex justify-content-center align-items-center'>
                             <div className='pt-2'>
                                 <div className=''>
-                                    <h4 className='nature-primary1'>Our Nature</h4>
-                                    <h1 className='pt-2 fw-bold display-5 text-light'>“Your successful digital transformation is our first aspiration”</h1>
-                                    <h4 className='pt-4 nature-primary1 fw-medium'>We focus on solving your problem</h4>
+                                    <h4 className='nature-primary1 heading4'>Our Nature</h4>
+                                    <h1 className='pt-2 display-5 text-light heading3'>“Your successful digital transformation is our first aspiration”</h1>
+                                    <h4 className='pt-4 nature-primary1 heading1 fs-4'>We focus on solving your problem</h4>
                                 </div>
                             </div>
                         </div>

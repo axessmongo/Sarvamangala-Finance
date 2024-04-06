@@ -1,37 +1,18 @@
 import React from 'react'
+import logo from '../Assets/img/logo.png'
 
 function Footer() {
     return (
-        <footer className="footer-section">
+        <footer className="footer-section mt-4">
             <div className="container">
-                <div className="footer-cta pb-5">
+                <div className="footer-cta pb-5 pt-5 ">
                     <div className="row">
+                        <div className="col-xl-4 col-md-4 mb-30"></div>
                         <div className="col-xl-4 col-md-4 mb-30">
                             <div className="single-cta">
-                                <i className="fas fa-map-marker-alt"></i>
-                                <div className="cta-text">
-                                    <h4>Find us</h4>
-                                    <span>1010 Avenue, sw 54321, chandigarh</span>
-                                </div>
                             </div>
                         </div>
                         <div className="col-xl-4 col-md-4 mb-30">
-                            <div className="single-cta">
-                                <i className="fas fa-phone"></i>
-                                <div className="cta-text">
-                                    <h4>Call us</h4>
-                                    <span>9876543210 0</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-4 col-md-4 mb-30">
-                            <div className="single-cta">
-                                <i className="far fa-envelope-open"></i>
-                                <div className="cta-text">
-                                    <h4>Mail us</h4>
-                                    <span>mail@info.com</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,14 +21,14 @@ function Footer() {
                         <div className="col-xl-4 col-lg-4 ">
                             <div className="footer-widget">
                                 <div className="footer-logo">
-                                    <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" className="img-fluid" alt="logo" /></a>
+                                    <a href="index.html"><img src={logo} className="img-fluid" alt="logo" /></a>
                                 </div>
                                 <div className="footer-text">
-                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                    <p className='heading3'>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
                                         elit,Lorem ipsum dolor sit amet.</p>
                                 </div>
                                 <div className="footer-social-icon">
-                                    <span>Follow us</span>
+                                    <span className='heading5'>Follow us</span>
                                     <a href="#"><i className="fab fa-facebook-f facebook-bg"></i></a>
                                     <a href="#"><i className="fab fa-twitter twitter-bg"></i></a>
                                     <a href="#"><i className="fab fa-google-plus-g google-bg"></i></a>
@@ -57,9 +38,9 @@ function Footer() {
                         <div className="col-xl-4 col-lg-4 col-md-6 ">
                             <div className="footer-widget">
                                 <div className="footer-widget-heading">
-                                    <h3>Useful Links</h3>
+                                    <h3 className='heading3'>Useful Links</h3>
                                 </div>
-                                <ul>
+                                <ul className='heading3'>
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">about</a></li>
                                     <li><a href="#">services</a></li>
@@ -76,14 +57,14 @@ function Footer() {
                         <div className="col-xl-4 col-lg-4 col-md-6">
                             <div className="footer-widget">
                                 <div className="footer-widget-heading">
-                                    <h3>Subscribe</h3>
+                                    <h3 className='heading5'>Subscribe</h3>
                                 </div>
                                 <div className="footer-text">
-                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    <p className='heading3'>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                                 </div>
                                 <div className="subscribe-form">
                                     <form action="#">
-                                        <input type="text" placeholder="Email Address" />
+                                        <input type="text" placeholder="Email Address" className='heading3' />
                                         <button><i className="fab fa-telegram-plane"></i></button>
                                     </form>
                                 </div>
