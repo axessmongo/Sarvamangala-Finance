@@ -9,6 +9,7 @@ import Ournature from './Ournature'
 import Clarification from "./Clarification";
 import Whychooseus from './Whychoose'
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function Nav() {
   return (
@@ -138,7 +139,8 @@ function Nav() {
       <Capital />
       <Whychooseus />
       <Clarification />
-
+      <Footer/>
+      
 
     </>
   );

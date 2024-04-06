@@ -5,8 +5,8 @@ import ournature2 from '../Assets/img/ournature2.jpg'
 
 function Ournature() {
     return (
-        <section className='mt-5'>
-            <div class="area" >
+        <section className=''>
+            <div class="area position-relative" >
                 <div className='container'>
                     <div className='row py-5 paperrocket3'>
                         <div className='col-md-5 d-flex justify-content-center align-items-center'>
