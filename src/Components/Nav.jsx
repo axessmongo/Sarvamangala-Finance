@@ -1,5 +1,5 @@
 import React from "react";
-// import perumal from "../Assets/img/hero-banner/perumal.jpg"
+import perumal from "../Assets/img/hero-banner/perumal.jpg"
 // import perumal2 from "../Assets/img/hero-banner/tirupathi full 1.jpg"
 // import perumal3 from "../Assets/img/hero-banner/tirupati.webp"
 import logo from "../Assets/img/hero-banner/sarvamangala-logo.png";
@@ -74,56 +74,16 @@ function Nav() {
           </div>
         </nav>
       </section>
-      <section className="">
+      <section className=" overflow-x-hidden">
         {/* Hero */}
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner ">
-            <div class="carousel-item active hero">
-              {/* <img src={perumal} class="d-block  img-fluid" alt="..."/> */}
-              <div className="hero-opacity">
-                <div className="row justify-content-center">
-                  <div className="col-md-3">
-                    {/* <img src={png} className="img-fluid" alt="" /> */}
-                  </div>
-                  <div className="col-md-6">
-                    <h1 className="text-white display-2 hero-h1 fw-bold">
-                      Make Your Business Ideas True
-                    </h1>
-                  </div>
-                  <div className="col-md-3">
-                    <hr />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item hero2">
-              {/* <img src={perumal2}class="d-block  img-fluid" alt="..."/> */}
-              <div className="hero-opacity">
-                <div className="col-md-6">
-                  <h1 className="text-white display-2 hero-h1 fw-bold">
-                    Make Your Business Ideas True
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item hero3">
-              {/* <img src={perumal3} class="d-block  img-fluid" alt="..."/> */}
-              <div className="hero-opacity">
-                <div className="col-md-6">
-                  <h1 className="text-white display-2 hero-h1 fw-bold">
-                    Make Your Business Ideas True
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
+       <div className="hero">
+        <div className="hero-opacity text-white">
+        <h1> Dreams Come True</h1>
+
         </div>
+       </div>
       </section>
-      <section class="container-fluid mt-3">
+      {/* <section class="container-fluid mt-3">
   <div>
     <div class="row justify-content-center">
       <div class="col-md-4 mt-3">
@@ -146,7 +106,7 @@ function Nav() {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
       
       <Ournature />
