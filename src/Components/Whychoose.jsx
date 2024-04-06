@@ -5,7 +5,7 @@ function Whychoose() {
     return (
         <section>
       {/* Why choose us section */}
-            <div className="bg"></div>
+            <div className="bg-form"></div>
             <div className="star-field">
                 <div className="layer"></div>
                 <div className="layer"></div>
@@ -17,7 +17,7 @@ function Whychoose() {
                     <div className="row">
                         <div className="section-head col-sm-12">
                             <h4><span className='text-light'>Why Choose</span> Us?</h4>
-                            <p className='text-light'>When you choose us, you'll feel the benefit of 10 years' experience of Web Development. Because we know the digital world and we know how to handle it. With working knowledge of online, SEO, and social media.</p>
+                            <p className=''>When you choose us, you'll feel the benefit of 10 years' experience of Web Development. Because we know the digital world and we know how to handle it. With working knowledge of online, SEO, and social media.</p>
                         </div>
                         <div className="col-lg-4 col-sm-6">
                             <div className="item"> <span className="icon feature_box_col_one"><FaGlobe /></span>

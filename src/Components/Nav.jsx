@@ -4,11 +4,16 @@ import React from "react";
 // import perumal3 from "../Assets/img/hero-banner/tirupati.webp"
 import logo from "../Assets/img/hero-banner/sarvamangala-logo.png";
 import png from "../Assets/img/hero-banner/10578814.png";
+import Capital from "./Captial";
+import Ournature from './Ournature'
+import Clarification from "./Clarification";
+import Whychooseus from './Whychoose'
+import Contact from "./Contact";
 
 function Nav() {
   return (
     <>
-      <section className="nav-banner   nav-bg ">
+      <section className="nav-banner nav-bg ">
         <nav
           className="navbar navbar-expand-lg m-auto align-items-center d-flex justify-content-center  "
           id="home"
@@ -51,10 +56,10 @@ function Nav() {
               </li>
               <li className="nav-item">
                 <a className="nav-link active px-3" href="#budget">
-                 features
+                  features
                 </a>
               </li>
-             
+
               {/* <li className="nav-item">
           <a className="nav-link active px-3" href="#types">
             Types
@@ -98,51 +103,58 @@ function Nav() {
             <div class="carousel-item hero2">
               {/* <img src={perumal2}class="d-block  img-fluid" alt="..."/> */}
               <div className="hero-opacity">
-              <div className="col-md-6">
-                    <h1 className="text-white display-2 hero-h1 fw-bold">
-                      Make Your Business Ideas True
-                    </h1>
-                  </div>
+                <div className="col-md-6">
+                  <h1 className="text-white display-2 hero-h1 fw-bold">
+                    Make Your Business Ideas True
+                  </h1>
+                </div>
               </div>
             </div>
             <div class="carousel-item hero3">
               {/* <img src={perumal3} class="d-block  img-fluid" alt="..."/> */}
               <div className="hero-opacity">
-              <div className="col-md-6">
-                    <h1 className="text-white display-2 hero-h1 fw-bold">
-                      Make Your Business Ideas True
-                    </h1>
-                  </div>
+                <div className="col-md-6">
+                  <h1 className="text-white display-2 hero-h1 fw-bold">
+                    Make Your Business Ideas True
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="container-fluid mt-3">
-        <div>
-          <div className="row justify-content-center">
-            <div className="col-md-4 mt-3 ">
-              <div className="blue-card text-end">
-                <p className=" px-3 pt-4 fs-3 fw-semibold text-white">Private Finance & Business</p>
-                <p  className="px-5 fs-1 text-white">Service</p>
-              </div>
-            </div>
-            <div className="col-md-4 mt-3 ">
-              <div className="red-card  text-end">
-              <p className=" px-3 pt-4 fs-3 fw-semibold text-white">Private Investment Data</p>
-                <p  className="px-5 fs-1 text-white">Analysis</p>
-              </div>
-            </div>
-            <div className="col-md-4 mt-3 ">
-              <div className="orange-card  text-end">
-              <p className=" px-3 pt-4 fs-3 fw-semibold text-white">Customer Strategy & </p>
-                <p  className="px-5 fs-1 text-white">Marketing</p>
-              </div>
-            </div>
-          </div>
+      <section class="container-fluid mt-3">
+  <div>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mt-3">
+        <div class="blue-card text-center animated-card">
+          <p class="px-3 pt-4 fs-3 fw-semibold text-white">Private Finance & Business</p>
+          <p class="px-5 fs-1 text-white">Service</p>
         </div>
-      </section>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="red-card text-center animated-card">
+          <p class="px-3 pt-4 fs-3 fw-semibold text-white">Private Investment Data</p>
+          <p class="px-5 fs-1 text-white">Analysis</p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="orange-card text-center animated-card">
+          <p class="px-3 pt-4 fs-3 fw-semibold text-white">Customer Strategy &</p>
+          <p class="px-5 fs-1 text-white">Marketing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       
+      <Ournature />
+      <Capital />
+      <Whychooseus/>
+      <Clarification/>
+      
+
     </>
   );
 }

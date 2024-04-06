@@ -104,8 +104,8 @@ export default function Contact() {
                                                     <div class="app-form-group message">
                                                         <input class="app-form-control" placeholder="MESSAGE" />
                                                     </div>
-                                                    <a href='#' class='primary-btn'>
-                                                        <span>Button</span>
+                                                    <a href='#' class='primary-btn text-center'>
+                                                        <span className='text-center'>Submit</span>
                                                         <div class='liquid'></div>
                                                     </a>
                                                 </div>

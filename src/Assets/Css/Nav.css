@@ -85,14 +85,17 @@ hr{
 .blue-card{
     background-color: #508fc0;
     height: 180px;
+    border-radius: 20px;
 }
 .red-card{
     background-color: #cd5b59;
     height: 180px;
+    border-radius: 20px;
 
 }
 .orange-card{
     background-color: #e3744c;
     height: 180px;
+    border-radius: 20px;
 
 }
