@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Capital() {
   return (
-    <section className='capital mt-5'>
+    <section className='capital'>
       <div className='container'>
         <div className='row align-items-center g-5'>
           <div className='col-md-3 capital-heading'>Why Open Capital?</div>
