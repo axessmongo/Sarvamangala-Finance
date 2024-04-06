@@ -4,30 +4,14 @@ import React from 'react'
 
 export default function Capital() {
   return (
-    <section className='capital'>
-      <div className='container'>
-        <div className='row align-items-center g-5'>
-          <div className='col-md-3 capital-heading'>Why Open Capital?</div>
-          <div className='col-md-9'>
-            <div className='row mb-5'>
-              <div className='col-md-4 feature mt-3 d-flex'>
-                <div className="icon-background">
-                  <i className="bi bi-clock-fill icon-blue "></i>
-                </div>
-                <p>Apply in few minutes</p>
-              </div>
-              <div className='col-md-4 feature mt-3 d-flex'>
-                <div className="icon-background">
-                  <i className="bi bi-lightning-fill icon-blue "></i>
-                </div>
-               <p> Fast Approval</p>
-              </div>
-              <div className='col-md-4 feature mt-3 d-flex'>
-                <div className="icon-background">
-                  <i className="bi bi-clock-history icon-blue "></i>
-                </div>
-                    <p>Tenure up to 60 months</p>
-              </div>
+    <div>
+      <div className="bg-green-1 text-white p-1">
+        <div className="container">
+          <div className="row align-items-center g-5 py-5">
+            <div className="col-md-4">
+
+              <h1 className='secondary-header' data-aos='fade-up'>Why choose capital</h1>
+              <img src="" alt="" />
             </div>
             <div className="col-md-8 text-white">
               <div className="row gy-3">
@@ -96,9 +80,7 @@ export default function Capital() {
           </div>
         </div>
       </div>
-   
-    </section>
-
+    </div>
 
   )
 }
