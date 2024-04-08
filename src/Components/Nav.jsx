@@ -9,8 +9,9 @@ import Ournature from './Ournature'
 import Clarification from "./Clarification";
 import Whychooseus from './Whychoose'
 import Contact from "./Contact";
+import Financial from './Financial'
 import Footer from "./Footer";
-import Faq from './Faq'
+
 
 function Nav() {
   return (
@@ -116,8 +117,10 @@ function Nav() {
       <Capital />
       <Whychooseus />
       <Clarification />
-      <Faq/>
+      <Financial/>
+    
       <Footer/>
+     
       
 
     </>
