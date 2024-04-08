@@ -1,3 +1,5 @@
+
+
 .heros {
     /* background-color: #5454e0; */
     position: relative;
@@ -5,6 +7,8 @@
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
 }
+
+
 .cube {
     position: absolute;
     top: 80vh;
@@ -63,10 +67,9 @@
     }
 }
 
-.fin-section1 {
+.fin-section1{
     z-index: 999;
 }
-
-.fin-section2 {
+.fin-section2{
     z-index: 999;
 }

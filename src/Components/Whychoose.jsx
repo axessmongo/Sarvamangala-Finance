@@ -3,7 +3,7 @@ import { FaGlobe, FaAnchor, FaHourglassHalf, FaDatabase, FaUpload, FaCamera } fr
 
 function Whychoose() {
     return (
-        <section>
+        <section className=''>
             {/* Why choose us section */}
             <div className="bg-form"></div>
             <div className="star-field">
@@ -11,6 +11,7 @@ function Whychoose() {
                 <div className="layer"></div>
                 <div className="layer"></div>
             </div>
+
 
             <div className="feat bg-gray pt-5 pb-5">
                 <div className="container">
