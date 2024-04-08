@@ -104,7 +104,7 @@
 
 
 
-a,
+/* a,
 a:hover,
 a:focus,
 a:active {
@@ -138,7 +138,7 @@ ul {
 img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 span,
 a,
@@ -337,6 +337,7 @@ p.awesome_line {
     font-size: 13px;
     color: #666;
 }
+
 
 .skills {
     padding-top: 0px;
