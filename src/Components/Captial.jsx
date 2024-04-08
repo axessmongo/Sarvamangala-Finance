@@ -8,8 +8,8 @@ export default function Capital() {
     <div>
       <div className="bg-green-1 text-white p-1">
         <div className="container">
-          <div className="row align-items-center g-5 py-5">
-            <h1 className='secondary-header text-center' data-aos='fade-up'>Why choose capital</h1>
+          <div className="row align-items-center g-3 py-3 section-head">
+          <h4><span className='text-light heading4'>Why Choose</span> Capital?</h4>
 
             <div className="col-md-4">
               <img src={capital} alt="" className='img-fluid'/>

@@ -13,7 +13,7 @@ function Ournature() {
                             <div className='pt-2'>
                                 <div className=''>
                                     <h4 className='nature-primary1 heading4'>Our Nature</h4>
-                                    <h1 className='pt-2 display-5 text-light heading3'>“Your successful digital transformation is our first aspiration”</h1>
+                                    <h1 className='pt-2 fs-4 text-light heading3'>“Your successful digital transformation is our first aspiration”</h1>
                                     <h4 className='pt-4 nature-primary1 heading1 fs-4'>We focus on solving your problem</h4>
                                 </div>
                             </div>
