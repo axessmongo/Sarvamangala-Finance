@@ -2,8 +2,8 @@ import React from 'react';
 
 const Testimonials = () => {
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container">     
+      <div className="row d-flex justify-content-center">
         <div className="col-lg-4">
           <div className="card-test">
             <div className="face front-face">

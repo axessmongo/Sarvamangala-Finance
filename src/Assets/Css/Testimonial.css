@@ -20,7 +20,7 @@
 .container {
     margin-top: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .col-lg-4 {
