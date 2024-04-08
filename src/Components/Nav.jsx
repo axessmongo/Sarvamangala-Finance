@@ -11,6 +11,8 @@ import Whychooseus from './Whychoose'
 import Contact from "./Contact";
 import Financial from './Financial'
 import Footer from "./Footer";
+import Testimonial from "./Testimonial";
+import Accordion from "./Accordion";
 
 
 function Nav() {
@@ -91,13 +93,11 @@ function Nav() {
 </section> */}
 
 
-
       <Ournature />
       <Capital />
       <Whychooseus />
       <Clarification />
       <Financial />
-
       <Footer />
 
 
