@@ -10,6 +10,8 @@ import Clarification from "./Clarification";
 import Whychooseus from './Whychoose'
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Testimonial from "./Testimonial";
+import Accordion from "./Accordion";
 
 function Nav() {
   return (
@@ -138,10 +140,10 @@ function Nav() {
       <Ournature />
       <Capital />
       <Whychooseus />
-      <Clarification />
+      <Clarification /> 
+     <Testimonial/>
+     <Accordion/>
       <Footer/>
-      
-
     </>
   );
 }
