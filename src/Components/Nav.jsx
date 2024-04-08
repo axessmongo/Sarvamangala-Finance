@@ -4,7 +4,7 @@ import perumal from "../Assets/img/hero-banner/perumal.jpg"
 // import perumal3 from "../Assets/img/hero-banner/tirupati.webp"
 import logo from "../Assets/img/hero-banner/sarvamangala-logo.png";
 import png from "../Assets/img/hero-banner/10578814.png";
-import Capital from "./Captial";
+import Capital from './Captial'
 import Ournature from './Ournature'
 import Clarification from "./Clarification";
 import Whychooseus from './Whychoose'
@@ -77,12 +77,12 @@ function Nav() {
       </section>
       <section className=" overflow-x-hidden">
         {/* Hero */}
-       <div className="hero">
-        <div className="hero-opacity text-white">
-        <h1> Dreams Come True</h1>
+        <div className="hero">
+          <div className="hero-opacity text-white">
+            <h1> Dreams Come True</h1>
 
+          </div>
         </div>
-       </div>
       </section>
       {/* <section class="container-fluid mt-3">
   <div>
@@ -108,12 +108,37 @@ function Nav() {
     </div>
   </div>
 </section> */}
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-4">
+            <div class="card p-0 border-0 hero-under-card m-0">
+              <h2 class="">SERVICES</h2>
+              <div class="text">Private Finance & bussiness</div>
 
-      
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div class="card p-0 border-0">
+              <div class="hover-icon"><i class="fab fa-gratipay"></i></div>
+              <h2 class="hover-tittle">ANALYSIS</h2>
+              <div class="hover-text">private investment & data.</div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div class="card p-0 border-0">
+              <div class="hover-icon"><i class="far fa-id-card"></i></div>
+              <div class="hover-tittle">MARKETING</div>
+              <div class="hover-text">Customer Strategy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <Ournature />
       <Capital />
-      <Whychooseus/>
-      <Clarification/>
+      <Whychooseus />
+      <Clarification />
       <Footer/>
      
       

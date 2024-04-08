@@ -21,29 +21,29 @@ export default function Contact() {
                 <div class="container ">
                     <div class="section_title centred m-4">
                         {/* <h2>Contact Information</h2> */}
-                        <p className='m-4 p-3'>
+                        <p className='m-4 p-3 heading3'>
                             Our uniquely collaborative and passionate people work alongside our clients every step of the way—caring more, telling it like it is—to anticipate and overcome all the barriers to change.</p>
                     </div>
                     <div class="row hovering-eff">
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="contact_block_one mb_30 aos-init aos-animate " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                                 <div class="contact_block_icon"><i class="bi bi-geo-alt"></i></div>
-                                <div class="contact_block_title"><h4>Our Location</h4></div>
-                                <div class="contact_block_text"><p>1901 Thornridge Cir. Shiloh, <br />Hawaii 81063</p></div>
+                                <div class="contact_block_title heading5"><h4>Our Location</h4></div>
+                                <div class="contact_block_text heading3"><p>1901 Thornridge Cir. Shiloh, <br />Hawaii 81063</p></div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="contact_block_one mb_30 aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="550">
                                 <div class="contact_block_icon"><i class="bi bi-envelope"></i></div>
-                                <div class="contact_block_title"><h4>Email Address</h4></div>
-                                <div class="contact_block_text"><p><a href="#" className='contact1'>contact@example.com</a> <br /><a href="#" className='contact1'>support@example.com</a></p></div>
+                                <div class="contact_block_title heading5"><h4>Email Address</h4></div>
+                                <div class="contact_block_text heading3"><p><a href="#" className='contact1'>contact@example.com</a> <br /><a href="#" className='contact1'>support@example.com</a></p></div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="contact_block_one mb_30 aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
                                 <div class="contact_block_icon"><i class="bi bi-telephone"></i></div>
-                                <div class="contact_block_title"><h4>Phone Number</h4></div>
-                                <div class="contact_block_text"><p>Emergency Cases <br /><a href="#" className='contact1'>+(208) 555-0112 (24/7)</a></p></div>
+                                <div class="contact_block_title heading5"><h4>Phone Number</h4></div>
+                                <div class="contact_block_text heading3"><p>Emergency Cases <br /><a href="#" className='contact1'>+(208) 555-0112 (24/7)</a></p></div>
                             </div>
                         </div>
                     </div>
@@ -88,24 +88,24 @@ export default function Contact() {
 
                                                     <img src={img3} alt="" className='img-fluid' />
                                                 </div>
-                                                <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+                                                <div class="app-contact heading3">CONTACT INFO : +62 81 314 928 595</div>
                                             </div>
                                             <div class="screen-body-item">
                                                 <div class="app-form">
                                                     <div class="app-form-group">
-                                                        <input class="app-form-control" placeholder="NAME" />
+                                                        <input class="app-form-control heading5" placeholder="NAME" />
                                                     </div>
                                                     <div class="app-form-group">
-                                                        <input class="app-form-control" placeholder="EMAIL" />
+                                                        <input class="app-form-control heading5" placeholder="EMAIL" />
                                                     </div>
                                                     <div class="app-form-group">
-                                                        <input class="app-form-control" placeholder="CONTACT NO" />
+                                                        <input class="app-form-control heading5" placeholder="CONTACT NO" />
                                                     </div>
                                                     <div class="app-form-group message">
-                                                        <input class="app-form-control" placeholder="MESSAGE" />
+                                                        <input class="app-form-control heading5" placeholder="MESSAGE" />
                                                     </div>
                                                     <a href='#' class='primary-btn text-center'>
-                                                        <span className='text-center'>Submit</span>
+                                                        <span className='text-center heading3'>Submit</span>
                                                         <div class='liquid'></div>
                                                     </a>
                                                 </div>
