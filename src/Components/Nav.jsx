@@ -10,6 +10,7 @@ import Clarification from "./Clarification";
 import Whychooseus from './Whychoose'
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Faq from './Faq'
 
 function Nav() {
   return (
@@ -108,37 +109,14 @@ function Nav() {
     </div>
   </div>
 </section> */}
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-4">
-            <div class="card p-0 border-0 hero-under-card m-0">
-              <h2 class="">SERVICES</h2>
-              <div class="text">Private Finance & bussiness</div>
-
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div class="card p-0 border-0">
-              <div class="hover-icon"><i class="fab fa-gratipay"></i></div>
-              <h2 class="hover-tittle">ANALYSIS</h2>
-              <div class="hover-text">private investment & data.</div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div class="card p-0 border-0">
-              <div class="hover-icon"><i class="far fa-id-card"></i></div>
-              <div class="hover-tittle">MARKETING</div>
-              <div class="hover-text">Customer Strategy</div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
 
       <Ournature />
       <Capital />
       <Whychooseus />
       <Clarification />
+      <Faq/>
       <Footer/>
       
 
