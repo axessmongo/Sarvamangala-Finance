@@ -10,7 +10,7 @@
 .nature-part {
     position: relative;
     right: -30%;
-    top: 30%;
+    top: 18%;
     animation: upAndDown 5s linear 0s infinite;
     z-index: 99;
 }
