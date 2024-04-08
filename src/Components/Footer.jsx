@@ -3,7 +3,7 @@ import logo from '../Assets/img/logo.png'
 
 function Footer() {
     return (
-        <footer className="footer-section mt-4">
+        <footer className="footer-section">
             <div className="container">
                 <div className="footer-cta pb-5 pt-5 ">
                     <div className="row">
@@ -29,9 +29,32 @@ function Footer() {
                                 </div>
                                 <div className="footer-social-icon">
                                     <span className='heading5'>Follow us</span>
-                                    <a href="#"><i className="fab fa-facebook-f facebook-bg"></i></a>
-                                    <a href="#"><i className="fab fa-twitter twitter-bg"></i></a>
-                                    <a href="#"><i className="fab fa-google-plus-g google-bg"></i></a>
+                                    <div class="social-icons">
+
+                                        <div class="social-buttons">
+                                            <a href="https://web.whatsapp.com/" target="blank" class="social-margin">
+                                                <div class="social-icon whatsapp">
+                                                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <a href="http://www.facebook.com" target="blank" class="social-margin">
+                                                <div class="social-icon facebook">
+                                                    <i class="bi bi-facebook"></i>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.youtube.com/" target="blank" class="social-margin">
+                                                <div class="social-icon youtube">
+                                                <i class="bi bi-youtube"></i>
+                                                </div>
+                                            </a>
+
+                                            <a href="http://twitter.com/" target="blank" class="social-margin">
+                                                <div class="social-icon twitter">
+                                                    <i class="bi bi-twitter"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -68,6 +91,7 @@ function Footer() {
                                         <button><i className="fab fa-telegram-plane"></i></button>
                                     </form>
                                 </div>
+
                             </div>
                         </div>
                     </div>
