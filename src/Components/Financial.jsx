@@ -6,7 +6,7 @@ function Financial() {
     return (
         <section>
 
-            <div className="heros">
+            <div className="heros ">
                 <div className='container'>
                     <div className='row pt-3'>
                         <div className='col-md-6 pt-3 fin-section1'>

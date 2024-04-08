@@ -269,7 +269,7 @@ a:active {
 .youtube {
     font-size: 22px;
     padding-top: 6px;
-    padding-left: 0px;
+    padding-left:2px;
     background-color: #bb0000;
     color: #ffffff;
     border-color: #bb0000;
@@ -277,6 +277,6 @@ a:active {
 }
 
 .youtube :hover {
-    background-color: #ffffff;
-    color: #bb0000;
+    background-color: #bb0000;
+    /* color: #bb0000; */
 }
