@@ -63,11 +63,11 @@ function Nav() {
       </section>
 
       <div className="bg-form"></div>
-            <div className="star-field">
-                <div className="layer"></div>
-                <div className="layer"></div>
-                <div className="layer"></div>
-            </div>
+      <div className="star-field">
+        <div className="layer"></div>
+        <div className="layer"></div>
+        <div className="layer"></div>
+      </div>
       <section className=" overflow-x-hidden">
         {/* Hero */}
         <div className="hero">
@@ -102,14 +102,15 @@ function Nav() {
   </div>
 </section> */}
 
-      <MainCard/>
+      <MainCard />
       <Ournature />
       <Capital />
+
       <Financial />
       {/* <Whychooseus /> */}
       <Clarification />
       <Testimonal />
-      <Accordion/>
+      <Accordion />
       <Footer />
     </>
   );

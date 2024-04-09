@@ -1,8 +1,8 @@
 .clarif {
-background-image:linear-gradient(#ff8b00,#f27f3b,#f4c48a);
+background:#b08006;
   color:#fff;
 }
-button {
+.btn1 button {
   border-radius: 10px;
   padding: 10px 20px;
   border: none;
@@ -15,7 +15,7 @@ button {
 }
 
 
-button:hover {
+.btn1 button:hover {
   background-color: #fff;
   color: #eb571f;
 }

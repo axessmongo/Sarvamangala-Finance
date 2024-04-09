@@ -30,12 +30,12 @@ p.bg-no {
     left: 10px;
     transform: translate(0, -50%);
     z-index: 1;
-    color: #b8b8b84d;
+    color: #b8b8b829;
     transition: .3s;
 }
 
 .main-card > div:nth-child(1) .normal-card{
-    background: url('https://brainbizz.wgl-demo.net/wp-content/uploads/2018/11/services2_bg-1.jpg') center;
+    background: url('../img//main.png') center;
     background-size: cover;
 }
 
