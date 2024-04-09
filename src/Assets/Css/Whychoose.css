@@ -153,11 +153,24 @@ a:hover {
 .section-head {
     margin-bottom: 60px;
 }
+.section-head span {
+    position: relative;
+    padding: 0;
+    color: #900c3f;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 30px;
+}
+
 
 .section-head h4 {
     position: relative;
     padding: 0;
-    color: #f91942;
+    color: #900c3f;
     line-height: 1;
     letter-spacing: 0.3px;
     font-size: 34px;
@@ -171,7 +184,7 @@ a:hover {
     content: '';
     width: 60px;
     height: 3px;
-    background: #f91942;
+    background: #900c3f;
     position: absolute;
     left: 0px;
     bottom: -10px;
@@ -194,7 +207,7 @@ p.service_text {
 
 .section-head p,
 p.awesome_line {
-    color: #818181;
+    color: black;
     font-size: 16px;
     line-height: 28px;
     text-align: center;

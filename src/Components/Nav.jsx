@@ -12,6 +12,7 @@ import Contact from "./Contact";
 import Financial from './Financial'
 import Footer from "./Footer";
 import Testimonal from './Testimonal'
+import MainCard from "./MainCard";
 
 function Nav() {
   return (
@@ -100,7 +101,7 @@ function Nav() {
   </div>
 </section> */}
 
-
+      <MainCard/>
       <Ournature />
       <Capital />
       <Financial />

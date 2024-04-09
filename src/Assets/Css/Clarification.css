@@ -1,5 +1,5 @@
 .clarif {
-  background: linear-gradient(0deg, rgba(144,238,144,1) 0%, rgba(0,31,63,1) 100%);
+  background-image: linear-gradient(to right top, #ffbf1c, #ffc319, #ffc716, #ffcc13, #ffd00f, #fbce0d, #f8cb0b, #f4c909, #ebbf09, #e3b609, #daac09, #d1a309);
   color:#fff;
 }
 button {
