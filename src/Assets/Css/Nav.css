@@ -217,3 +217,11 @@ hr {
     position: fixed;
     width: 100%;
 }
+.business1-bg{
+    background-image: url(../img/Business-loan-bg.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 100vh;
+}
