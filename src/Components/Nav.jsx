@@ -2,7 +2,7 @@ import React from "react";
 import perumal from "../Assets/img/hero-banner/perumal.jpg"
 // import perumal2 from "../Assets/img/hero-banner/tirupathi full 1.jpg"
 // import perumal3 from "../Assets/img/hero-banner/tirupati.webp"
-import logo from "../Assets/img/S3@3x.png";
+import logo from "../Assets/img/logo1.png";
 import png from "../Assets/img/hero-banner/10578814.png";
 import Capital from './Captial'
 import Ournature from './Ournature'

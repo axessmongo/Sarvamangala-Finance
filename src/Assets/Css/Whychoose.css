@@ -150,7 +150,7 @@ a:hover {
     color: inherit;
 }
 
-.section-head {
+/* .section-head {
     margin-bottom: 60px;
 }
 .section-head span {
@@ -166,6 +166,7 @@ a:hover {
     margin-bottom: 30px;
 }
 
+} */
 
 .section-head h4 {
     position: relative;

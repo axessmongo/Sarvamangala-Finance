@@ -10,8 +10,10 @@ import  img7 from '../Assets/img/image7.png'
 
 export default function Accordion() {
   return (
-    <div  >
-        <div class="container overflow-hidden acc-bg " id="placement-accordion">
+    <div>
+    <h4 className='nature-primary1 heading4 text-white text-center mt-4'><span  style={{color:"#900c3f"}}>FAQ</span> </h4>
+
+        <div class="container overflow-hidden acc-bg  mt-4" id="placement-accordion">
       <div class="accordion" id="accordionExample">
         <div class="row justify-content-center ">
           <div class="col-md-6" data-aos="fade-left" data-aos-duration="600">
@@ -33,7 +35,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div>Skill Assessment and Salary Discussion</div>
+                  <div className='heading3'style={{color:"#900c3f"}}>Skill Assessment and Salary Discussion</div>
                 </button>
               </h2>
               <div
@@ -42,7 +44,7 @@ export default function Accordion() {
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p>
+                  <p className='heading3' >
                     We begin by assessing your skills and discussing your salary
                     expectations. We will explain the Pay After Placement
                     program how it suits your specific aspirations as an
@@ -69,7 +71,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div>Affordable Training Investment</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>Affordable Training Investment</div>
                 </button>
               </h2>
               <div
@@ -78,7 +80,7 @@ export default function Accordion() {
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p>
+                  <p className='heading3'>
                     To kickstart your journey, we require Minimal Initial
                     Charges (5% to 10%) for Job-Oriented Training and
                     Application Processing. Remaining 90% after Placement. If,
@@ -106,7 +108,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div>Comprehensive Training</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>Comprehensive Training</div>
                 </button>
               </h2>
               <div
@@ -115,7 +117,7 @@ export default function Accordion() {
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p>
+                  <p className='heading3'>
                     Our program includes a 3-month training period, consisting
                     of 45 days of online training and 45 days of hands-on live
                     project experience in an offline setting. We ensure you're
@@ -145,7 +147,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div>Income Sharing Agreement</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>Income Sharing Agreement</div>
                 </button>
               </h2>
               <div
@@ -154,7 +156,7 @@ export default function Accordion() {
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p>
+                  <p  className='heading3'>
                     After the successful completion of the comprehensive
                     training for 3 months, you'll sign an Income Sharing
                     Agreement. This agreement outlines that you'll pay us 35% of
@@ -184,7 +186,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div>Elevate Your Profile</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>Elevate Your Profile</div>
                 </button>
               </h2>
               <div
@@ -193,7 +195,7 @@ export default function Accordion() {
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p>
+                  <p className='heading3'>
                     We'll help you create an impressive resume, provide
                     interview practice, and offer communication training. We'll
                     also assist in scheduling interviews, ensuring you're
@@ -220,7 +222,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div  className='head'>Securing Your Job</div>
+                  <div  className='head heading3'style={{color:"#900c3f"}}>Securing Your Job</div>
                 </button>
               </h2>
               <div
@@ -229,7 +231,7 @@ export default function Accordion() {
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body ">
-                  <p>
+                  <p  className='heading3'>
                     Once you receive a job offer, we'll assist you in either
                     proceeding with the loan process or making the agreed-upon
                     payment as per the Income Sharing Agreement.
@@ -261,7 +263,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div>Optional Job Support - Up to 3 months</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>Optional Job Support - Up to 3 months</div>
                 </button>
               </h2>
               <div
@@ -270,7 +272,7 @@ export default function Accordion() {
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p>
+                  <p className='heading3'>
                     After landing your job, you can choose to receive job
                     support from ATIT. This is an optional offline-only service
                     for an additional charge.

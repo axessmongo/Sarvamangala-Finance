@@ -1,9 +1,9 @@
 import React from 'react'
-import logo from '../Assets/img/logo.png'
+import logo from '../Assets/img/logo1.png'
 
 function Footer() {
     return (
-        <footer className="footer-section">
+        <footer className="footer-section mt-4">
             <div className="container">
                 <div className="footer-cta pb-5 pt-5 ">
                     <div className="row">
