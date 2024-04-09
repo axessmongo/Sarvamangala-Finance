@@ -173,3 +173,9 @@
     }
 
 }
+
+@media (max-width: 767px){
+    .nature-1{
+        text-align: center;
+    }
+}

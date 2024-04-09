@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="footer-section mt-4">
             <div className="container">
-                <div className="footer-cta pb-5 pt-5 ">
+                <div className="footer-cta pt-5 ">
                     <div className="row">
                         <div className="col-xl-4 col-md-4 mb-30"></div>
                         <div className="col-xl-4 col-md-4 mb-30">
@@ -20,14 +20,14 @@ function Footer() {
                     <div className="row">
                         <div className="col-xl-4 col-lg-4 ">
                             <div className="footer-widget">
-                                <div className="footer-logo">
-                                    <a href="index.html"><img src={logo} className="img-fluid" alt="logo" /></a>
+                                <div className="footer-logo nature-1">
+                                    <img src={logo} className="img-fluid" alt="logo" />
                                 </div>
-                                <div className="footer-text">
+                                {/* <div className="footer-text">
                                     <p className='heading3'>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
                                         elit,Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div className="footer-social-icon">
+                                </div> */}
+                                <div className="footer-social-icon nature-1">
                                     <span className='heading5'>Follow us</span>
                                     <div class="social-icons">
 
