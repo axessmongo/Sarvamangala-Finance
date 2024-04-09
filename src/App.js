@@ -14,6 +14,7 @@ import './Assets/Css/Testimonal.css'
 
 import Contact from './Components/Contact';
 import Nav from './Components/Nav'
+import Business from "./Components/Businessloan"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Nav />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/business' element={<Business />} />
         </Routes>
       </BrowserRouter>
 

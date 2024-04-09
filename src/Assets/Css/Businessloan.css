@@ -1,0 +1,19 @@
+.business-bg{
+    /* background-image: url(../img/Business-loan-bg.avif); */
+    background: linear-gradient(187.03deg, #2B5582 0%, #9D3D55 99.83%);
+    /* background: #ffd60a; */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 100vh;
+}
+
+.business{
+    /* color: #c00937; */
+    /* background-color:#d1a309; */
+}
+
+.bus_texts{
+    color: #c00937
+}
