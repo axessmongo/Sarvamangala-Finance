@@ -5,12 +5,6 @@ function Whychoose() {
     return (
         <section className=''>
             {/* Why choose us section */}
-            <div className="bg-form"></div>
-            <div className="star-field">
-                <div className="layer"></div>
-                <div className="layer"></div>
-                <div className="layer"></div>
-            </div>
 
 
             <div className="feat bg-gray pt-5 pb-5">

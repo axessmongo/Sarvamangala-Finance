@@ -11,7 +11,7 @@ import Whychooseus from './Whychoose'
 import Contact from "./Contact";
 import Financial from './Financial'
 import Footer from "./Footer";
-
+import Testimonal from './Testimonal'
 
 function Nav() {
   return (
@@ -23,65 +23,54 @@ function Nav() {
         >
           <div className="text-center px-5">
             <img src={logo} className="logo px-3" alt="Logo" />
-
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
           </div>
 
           <div
-            className="collapse navbar-collapse px-5"
+            className="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active px-3" href="#home">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active px-3" href="#service">
-                  Service
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active px-3" href="#budget">
-                  Why Choose Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active px-3" href="#budget">
-                  features
-                </a>
-              </li>
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
 
-              {/* <li className="nav-item">
-          <a className="nav-link active px-3" href="#types">
-            Types
-          </a>
-        </li> */}
-              <li className="nav-item">
-                <a className="nav-link active px-3" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav heading3">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" id='name-nav' href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id='name-nav'>Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id='name-nav'>Why choose us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id='name-nav'>Our Sucess</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id='name-nav'>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
           </div>
         </nav>
       </section>
+
+      <div className="bg-form"></div>
+            <div className="star-field">
+                <div className="layer"></div>
+                <div className="layer"></div>
+                <div className="layer"></div>
+            </div>
       <section className=" overflow-x-hidden">
         {/* Hero */}
         <div className="hero">
           <div className="hero-opacity text-white">
-            <h1> Dreams Come True</h1>
+
 
           </div>
         </div>
@@ -110,19 +99,15 @@ function Nav() {
     </div>
   </div>
 </section> */}
-     
 
 
       <Ournature />
       <Capital />
-      <Whychooseus />
+      <Financial />
+      {/* <Whychooseus /> */}
       <Clarification />
-      <Financial/>
-    
-      <Footer/>
-     
-      
-
+      <Testimonal />
+      <Footer />
     </>
   );
 }

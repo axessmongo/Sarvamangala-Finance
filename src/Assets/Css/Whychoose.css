@@ -1,7 +1,9 @@
 /* why choose us css */
 .bg-form {
     /* background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat; */
-    background-color: #021424dc;
+    background-color: #D1A309;
+    /* background-color: #ffbf1c; */
+    /* background-image: linear-gradient(to right top, #ffbf1c, #fb8231, #e04948, #b11757, #73005b, #75005b, #78005c, #7a005c, #bc1c56, #ec5443, #ff9325, #ffd60a); */
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -148,9 +150,9 @@ a:hover {
     color: inherit;
 }
 
-.section-head {
+/* .section-head {
     margin-bottom: 60px;
-}
+} */
 
 .section-head h4 {
     position: relative;

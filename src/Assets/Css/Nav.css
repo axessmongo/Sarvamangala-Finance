@@ -60,18 +60,11 @@
     display: flex;
 }
 
-.nav-bg {
-    background-color: white;
-    /* background-image: url(../img/hero-banner/happy-business.jpg); */
 
-    /* background: rgb(0,93,166); */
-    /* background: linear-gradient(30deg, rgba(0,93,166,1) 0%, rgba(235,87,31,1) 100%); */
-
-}
 
 .nav-link {
 
-    color: rgb(0, 0, 0) !important;
+    color: white;
     font-size: 20px !important;
     font-weight: 400 !important;
 }
@@ -192,4 +185,35 @@ hr {
 
 .card1:hover {
     transform: translateY(-10px);
+}
+
+.nav-banner {
+    cursor: pointer;
+}
+
+#name-nav {
+    color: linear-gradient(300deg, #07D187 33%, #12C6D0 77%);
+    color: white;
+    font-size: 21px;
+}
+
+.navbar .navbar-brand {
+    width: 50px;
+}
+
+#home {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 98765;
+    color: white;
+    background: rgb(26 25 25);
+
+}
+
+.nav-banner {
+    /* position: fixed; */
+    width: 100%;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Clarification() {
   return (
-   <section className='clarif'>
+   <section className='clarif mt-5 py-5'>
      <div className='container'>
          <div className='row'>
             <div className='col-md-8 mt-5'>
