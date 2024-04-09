@@ -11,9 +11,7 @@ import Whychooseus from './Whychoose'
 import Contact from "./Contact";
 import Financial from './Financial'
 import Footer from "./Footer";
-import Testimonial from "./Testimonial";
-import Accordion from "./Accordion";
-
+import Testimonal from './Testimonal'
 
 function Nav() {
   return (
@@ -38,18 +36,21 @@ function Nav() {
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav heading3">
                     <li class="nav-item">
-                      <a class="nav-link active text-white" aria-current="page"id='name-nav' href="#">Home</a>
+                      <a class="nav-link active text-white" aria-current="page" id='name-nav' href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"id='name-nav'>Features</a>
+                      <a class="nav-link" href="#" id='name-nav'>Features</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"id='name-nav'>Pricing</a>
+                      <a class="nav-link" href="#" id='name-nav'>Why choose us</a>
                     </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"id='name-nav'>Pricing</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id='name-nav'>Our Sucess</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id='name-nav'>Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -58,11 +59,18 @@ function Nav() {
           </div>
         </nav>
       </section>
+
+      <div className="bg-form"></div>
+            <div className="star-field">
+                <div className="layer"></div>
+                <div className="layer"></div>
+                <div className="layer"></div>
+            </div>
       <section className=" overflow-x-hidden">
         {/* Hero */}
         <div className="hero">
           <div className="hero-opacity text-white">
-            <h1> Dreams Come True</h1>
+
 
           </div>
         </div>
@@ -95,13 +103,11 @@ function Nav() {
 
       <Ournature />
       <Capital />
-      <Whychooseus />
-      <Clarification />
       <Financial />
+      {/* <Whychooseus /> */}
+      <Clarification />
+      <Testimonal />
       <Footer />
-
-
-
     </>
   );
 }
