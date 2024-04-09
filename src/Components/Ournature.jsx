@@ -10,11 +10,11 @@ function Ournature() {
                 <div className='container'>
                     <div className='row py-5 paperrocket3'>
                         <div className='col-md-5 d-flex justify-content-center align-items-center'>
-                            <div className='pt-2'>
+                            <div className=''>
                                 <div className=''>
-                                    <h4 className='nature-primary1 heading4 text-white ' >Our <span  style={{color:"#900c3f"}}>Nature</span> </h4>
-                                    <h1 className='pt-2 fs-4 text-light heading3'>“Your successful digital transformation is our first aspiration”</h1>
-                                    <h4 className='pt-4 nature-primary1 heading1 fs-4' style={{color:"#900c3f"}}>We focus on solving your problem</h4>
+                                <h4 className='heading4 text-white text-center'>Our <span className='heading4' style={{ color: "#900c3f" }}> Nature</span></h4>
+                                    <h1 className='pt-2 fs-4 text-light nature-1 heading3 mt-3'>“Your successful digital transformation is our first aspiration”</h1>
+                                    <h4 className='pt-4 nature-primary1 nature-1 heading1 fs-4 text-dark'>We focus on solving your problem</h4>
                                 </div>
                             </div>
                         </div>

@@ -30,12 +30,12 @@ p.bg-no {
     left: 10px;
     transform: translate(0, -50%);
     z-index: 1;
-    color: #b8b8b829;
+    color: #b8b8b84d;
     transition: .3s;
 }
 
 .main-card > div:nth-child(1) .normal-card{
-    background: url('../img//main.png') center;
+    background: url('../img/main1.png') center;
     background-size: cover;
 }
 

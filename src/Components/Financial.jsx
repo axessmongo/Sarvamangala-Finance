@@ -66,8 +66,8 @@ function Financial() {
                         <div className='col-md-6 fin-section2'>
                             <div>
                                 <div className=''>
-                                <h4 className='heading4 text-white'>Plan for Tommorrow, <span className='heading4'style={{color:"#900c3f"}}> Today</span></h4>
-                                    <p className='text-light heading3 text-white py-2'>Building a secure financial future requires a well-rounded approach. At Sarvamangala Financial
+                                <h4 className='heading4 text-white mt-4'>Plan for Tommorrow, <span className='heading4'style={{color:"#900c3f"}}> Today</span></h4>
+                                    <p className='heading3 text-white mt-3 fs-6'>Building a secure financial future requires a well-rounded approach. At Sarvamangala Financial
                                         Services, we offer comprehensive financial planning services that encompass:</p>
                                     {/* <p className='text-light'>At Sarvamangala Financial Services, we believe that a secure financial future is a foundation upon which you can build your dreams.</p> */}
                                 </div>

@@ -150,28 +150,14 @@ a:hover {
     color: inherit;
 }
 
-/* .section-head {
+.section-head {
     margin-bottom: 60px;
 }
-.section-head span {
-    position: relative;
-    padding: 0;
-    color: #900c3f;
-    line-height: 1;
-    letter-spacing: 0.3px;
-    font-size: 34px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: none;
-    margin-bottom: 30px;
-}
-
-} */
 
 .section-head h4 {
     position: relative;
     padding: 0;
-    color: #900c3f;
+    color: #f91942;
     line-height: 1;
     letter-spacing: 0.3px;
     font-size: 34px;
@@ -185,7 +171,7 @@ a:hover {
     content: '';
     width: 60px;
     height: 3px;
-    background: #900c3f;
+    background: #f91942;
     position: absolute;
     left: 0px;
     bottom: -10px;
@@ -208,7 +194,7 @@ p.service_text {
 
 .section-head p,
 p.awesome_line {
-    color: black;
+    color: #818181;
     font-size: 16px;
     line-height: 28px;
     text-align: center;
@@ -461,11 +447,11 @@ ul {
 }
 
 .footer-logo {
-    margin-bottom: 30px;
+    margin-bottom:5px;
 }
 
 .footer-logo img {
-    max-width: 200px;
+    max-width: 50px;
 }
 
 .footer-text p {

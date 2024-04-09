@@ -35,7 +35,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div className='heading3'style={{color:"#900c3f"}}>Skill Assessment and Salary Discussion</div>
+                  <div className='heading3'style={{color:"#900c3f"}}> What kind of loans does Sarvamangala offer?</div>
                 </button>
               </h2>
               <div
@@ -45,10 +45,7 @@ export default function Accordion() {
               >
                 <div class="accordion-body">
                   <p className='heading3' >
-                    We begin by assessing your skills and discussing your salary
-                    expectations. We will explain the Pay After Placement
-                    program how it suits your specific aspirations as an
-                    Automation Testing, Full Stack, or DevOps enthusiast.
+                  Sarvamangala specializes in providing business loans to large enterprises. Our minimum loan amount is ₹5 crore.
                   </p>
                 </div>
               </div>
@@ -71,7 +68,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>Affordable Training Investment</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>What factors do you consider when evaluating a loan application?</div>
                 </button>
               </h2>
               <div
@@ -81,11 +78,7 @@ export default function Accordion() {
               >
                 <div class="accordion-body">
                   <p className='heading3'>
-                    To kickstart your journey, we require Minimal Initial
-                    Charges (5% to 10%) for Job-Oriented Training and
-                    Application Processing. Remaining 90% after Placement. If,
-                    within 6 months after completing the training, we don't
-                    secure a job for you, we'll refund this fee.
+                  We assess a variety of factors, including your company's financial health, credit history, business plan, and the purpose of the loan.
                   </p>
                 </div>
               </div>
@@ -108,7 +101,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>Comprehensive Training</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>What types of collateral are acceptable for your loans?</div>
                 </button>
               </h2>
               <div
@@ -118,11 +111,7 @@ export default function Accordion() {
               >
                 <div class="accordion-body">
                   <p className='heading3'>
-                    Our program includes a 3-month training period, consisting
-                    of 45 days of online training and 45 days of hands-on live
-                    project experience in an offline setting. We ensure you're
-                    well-prepared for your future career in automation Testing,
-                    Full Stack Development, or DevOps.
+                  Depending on the loan details, we may accept various forms of collateral, which could include real estate, equipment, or inventory.
                   </p>
                 </div>
               </div>
@@ -147,7 +136,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>Income Sharing Agreement</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>What are the interest rates for your loans?</div>
                 </button>
               </h2>
               <div
@@ -157,13 +146,7 @@ export default function Accordion() {
               >
                 <div class="accordion-body">
                   <p  className='heading3'>
-                    After the successful completion of the comprehensive
-                    training for 3 months, you'll sign an Income Sharing
-                    Agreement. This agreement outlines that you'll pay us 35% of
-                    your annual CTC immediately after receiving the job offer
-                    letter. If you choose to finance your training through our
-                    loan partners, the payment increases to 45% of your annual
-                    CTC.
+                  Interest rates are determined based on your creditworthiness, loan amount, and loan term. We offer competitive rates in the market.
                   </p>
                 </div>
               </div>
@@ -186,7 +169,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>Elevate Your Profile</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>What is the typical loan approval timeframe?</div>
                 </button>
               </h2>
               <div
@@ -196,10 +179,7 @@ export default function Accordion() {
               >
                 <div class="accordion-body">
                   <p className='heading3'>
-                    We'll help you create an impressive resume, provide
-                    interview practice, and offer communication training. We'll
-                    also assist in scheduling interviews, ensuring you're
-                    well-prepared to crack the interview and get an offer.
+                  The approval process can vary depending on the complexity of your loan request. We strive to provide a decision as quickly as possible.
                   </p>
                 </div>
               </div>
@@ -222,7 +202,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div  className='head heading3'style={{color:"#900c3f"}}>Securing Your Job</div>
+                  <div  className='head heading3'style={{color:"#900c3f"}}>What documents do I need to submit with my loan application?</div>
                 </button>
               </h2>
               <div
@@ -232,9 +212,7 @@ export default function Accordion() {
               >
                 <div class="accordion-body ">
                   <p  className='heading3'>
-                    Once you receive a job offer, we'll assist you in either
-                    proceeding with the loan process or making the agreed-upon
-                    payment as per the Income Sharing Agreement.
+                  The required documents will vary depending on your specific situation. Generally, you can expect to provide financial statements, business plans, tax returns, and ownership information.
                   </p>
                 </div>
               </div>
@@ -263,7 +241,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>Optional Job Support - Up to 3 months</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>Can I apply for a loan online?</div>
                 </button>
               </h2>
               <div
@@ -273,9 +251,7 @@ export default function Accordion() {
               >
                 <div class="accordion-body">
                   <p className='heading3'>
-                    After landing your job, you can choose to receive job
-                    support from ATIT. This is an optional offline-only service
-                    for an additional charge.
+                  Currently, we do not offer online loan applications. However, you can contact us to discuss your needs and initiate the application process.
                   </p>
                 </div>
               </div>

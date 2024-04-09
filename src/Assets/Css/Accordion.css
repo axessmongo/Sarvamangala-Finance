@@ -1,4 +1,7 @@
 .accordion-body {
     background-color:  rgb(241, 241, 218);
 }
-
+.accordion-button{
+    background-color:#b0800698!important;
+    border: none;
+}

@@ -25,6 +25,9 @@
     background-repeat: no-repeat;
     background-size: 200px;
 }
+.test-head{
+    color: #c0093f;
+}
 
 
 @keyframes slideanimation {
@@ -172,4 +175,10 @@
         border-radius: 50%;
     }
 
+}
+
+@media (max-width: 767px){
+    .nature-1{
+        text-align: center;
+    }
 }
