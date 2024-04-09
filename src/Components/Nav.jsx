@@ -2,7 +2,7 @@ import React from "react";
 import perumal from "../Assets/img/hero-banner/perumal.jpg";
 // import perumal2 from "../Assets/img/hero-banner/tirupathi full 1.jpg"
 // import perumal3 from "../Assets/img/hero-banner/tirupati.webp"
-import logo from "../Assets/img/hero-banner/sarvamangala-logo.png";
+import logo from "../Assets/img/logo1.png";
 import png from "../Assets/img/hero-banner/10578814.png";
 import list from "../Assets/img/list.png";
 import account from "../Assets/img/account.png";
@@ -16,7 +16,9 @@ import Whychooseus from "./Whychoose";
 import Contact from "./Contact";
 import Financial from "./Financial";
 import Footer from "./Footer";
-import Testimonal from "./Testimonal";
+import Testimonal from './Testimonal'
+import MainCard from "./MainCard";
+import Accordion from "./Accordion";
 
 function Nav() {
   return (
@@ -123,98 +125,15 @@ function Nav() {
     </div>
   </div>
 </section> */}
-      <section className="business1-bg">
-        <div className="container">
-          <div className="row justify-content-around">
-            <div className="col-md-5 ">
-              <div className="text-black-75 mt-5 pt-5">
-                <h1>Take your business to great heights</h1>
-                <p className="pt-4">
-                  Presenting Business Loans by IDFC FIRST Bank
-                </p>
-                <div className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pt-4">
-                  <button className="primary-btn mb-3 mb-md-0">
-                    Contact Us
-                  </button>
-                  <button className="primary-btn">Details Us</button>
-                </div>
-              </div>
-            </div>
 
-            <div className="col-md-4 ">
-              <div className="text-black-50   mt-5 p-3">
-                <div className="mt-3 mt-md-5">
-                  <div className="d-flex align-items-center bg-white bg-opacity-25 rounded-4">
-                    <div className="px-3">
-                      <img
-                        src={list}
-                        className=""
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
-                    </div>
-                    <p className="fw-semibold ml-3">
-                      Collateral-free funding up to ₹1 Cr for self-employed
-                      individuals and businesses
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-3 mt-md-5">
-                  <div className="d-flex align-items-center bg-white bg-opacity-25 rounded-4">
-                    <div className="px-3">
-                      <img
-                        src={list}
-                        className=""
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
-                    </div>
-                    <p className="fw-semibold ml-3">
-                      Quick funding up to ₹50 lacs based on your current account
-                      statement
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-3 mt-md-5">
-                  <div className="d-flex align-items-center bg-white bg-opacity-25 rounded-4">
-                    <div className="px-3">
-                      <img
-                        src={list}
-                        className=""
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
-                    </div>
-                    <p className="fw-semibold ml-3">
-                      Loan up to ₹50 lacs based on your GST returns
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-3 mt-md-5">
-                  <div className="d-flex align-items-center bg-white bg-opacity-25 rounded-4">
-                    <div className="px-3">
-                      <img
-                        src={list}
-                        className=""
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
-                    </div>
-                    <p className="fw-semibold ml-3">Fast & seamless process</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <MainCard/>
       <Ournature />
       <Capital />
       <Financial />
       {/* <Whychooseus /> */}
       <Clarification />
       <Testimonal />
+      <Accordion/>
       <Footer />
     </>
   );

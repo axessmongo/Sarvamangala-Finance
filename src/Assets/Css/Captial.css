@@ -16,5 +16,12 @@
 }
 
 .industries-card:hover {
-    box-shadow: 0px 0px 20px 4px #006557, 0px 0px 20px 4px #22f5ff73;
+    box-shadow: 0px 0px 20px 4px #b53a16, 0px 0px 20px 4px #22f5ff73;
+}
+.business1-bg{
+    background-image: url(../img/Business-loan-bg.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
