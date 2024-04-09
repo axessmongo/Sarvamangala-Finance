@@ -14,9 +14,6 @@ export default function Clarification() {
             </div>
          </div>
         </div>
-
-
-        <iframe src="https://giphy.com/embed/CuDX4rsy5OwPN50M0U" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/DiceDreams-roll-dicedreams-dice-dreams-CuDX4rsy5OwPN50M0U"></a></p>
    </section>
 
   )
