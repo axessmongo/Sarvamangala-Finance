@@ -97,7 +97,7 @@ function Nav() {
       <Ournature />
       <Capital />
       <Financial />
-      <Whychooseus />
+      {/* <Whychooseus /> */}
       <Clarification />
       <Testimonal />
       <Footer />
