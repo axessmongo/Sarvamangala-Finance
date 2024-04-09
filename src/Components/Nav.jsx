@@ -59,6 +59,13 @@ function Nav() {
           </div>
         </nav>
       </section>
+
+      <div className="bg-form"></div>
+            <div className="star-field">
+                <div className="layer"></div>
+                <div className="layer"></div>
+                <div className="layer"></div>
+            </div>
       <section className=" overflow-x-hidden">
         {/* Hero */}
         <div className="hero">
