@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ournature1 from "../Assets/img/nature1.jpg";
 import ournature2 from "../Assets/img/nature2.jpg";
 import capital from "../Assets/img/capital.jpg";
@@ -23,10 +23,41 @@ import img6 from "../Assets/img/image6.png";
 import img7 from "../Assets/img/image7.png";
 import logo from "../Assets/img/logo1.png";
 import contact from "../Assets/img/conatct.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Scroll from './Scroll'
+import planning from '../Assets/img/Planing.gif'
 
 export default function Home() {
+  const [active, setActive] = useState(false)
+  AOS.init({
+    // Add your AOS options here
+  });
+
+  const [isZoomed, setIsZoomed] = useState(false);
+  let gotoTop = (secID) => {
+    const element = document.getElementById(secID);
+    const navbarElement = document.querySelector('.navbar>.container-fluid');
+
+    if (navbarElement) {
+      var navHeight = navbarElement.clientHeight;
+      // Use navHeight as needed
+    }
+    console.log(element)
+    if (element) {
+      const topPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: topPosition - navHeight, behavior: 'smooth' });
+
+    }
+
+  }
+  const handleZoom = () => {
+    setIsZoomed(!isZoomed);
+  };
+
+  gotoTop();
   return (
-    <div>
+    <div className="overflow-hidden">
       <section className="nav-banner nav-bg ">
         <nav
           className="navbar navbar-expand-lg m-auto align-items-center d-flex justify-content-lg-center justify-content-between px-3 px-lg-0"
@@ -35,17 +66,8 @@ export default function Home() {
           <div className="text-center px-lg-5">
             <img src={logo} className="logo px-3" alt="Logo" />
           </div>
-
-          <button
-            class="navbar-toggler px-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="bi bi-list text-white display-5"></i>
+          <button className="navbar-toggler shadow-none" onClick={() => setActive(!active)} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i className={`bi ${active ? "bi-x" : "bi-list"}`}></i>
           </button>
 
           <div
@@ -61,34 +83,34 @@ export default function Home() {
                         class="nav-link active text-white"
                         aria-current="page"
                         id="name-nav"
-                        href="home"
+                        onClick={() => gotoTop('home1')}
                       >
                         Home
                       </a>
                     </li>
 
                     <li class="nav-item">
-                      <Link className="nav-link" to="goals">
+                      <a class="nav-link" onClick={() => gotoTop('goals')} id="home-nav">
                         Goals
-                      </Link>
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="chooseus">
+                      <a class="nav-link" onClick={() => gotoTop('chooseus')} id="home-nav">
                         ChooseUs
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="services">
+                      <a class="nav-link" onClick={() => gotoTop('bussiness')} id="home-nav">
                         Services
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="plans">
+                      <a class="nav-link" onClick={() => gotoTop('plans')} id="home-nav">
                         Plans
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="contact">
+                      <a class="nav-link" onClick={() => gotoTop('contact')} id="home-nav">
                         Contact
                       </a>
                     </li>
@@ -109,7 +131,7 @@ export default function Home() {
       </div>
       {/* hero bennar */}
       <section className=" overflow-x-hidden mt-5 mt-lg-0">
-        <div className="hero">
+        <div className="hero" id='home1'>
           <div className="hero-opacity text-white"></div>
         </div>
       </section>
@@ -212,7 +234,7 @@ export default function Home() {
       </section>
 
       {/* choose us */}
-      <div className="bg-green-1 text-white p-1">
+      <div className="bg-green-1 text-white p-1" id='chooseus'>
         <div className="container">
           <div className="row align-items-center g-3 py-3 text-center ">
             <h4 className="heading4 text-white">
@@ -359,7 +381,7 @@ export default function Home() {
       </div>
 
       {/* bussinessLoan */}
-      <section className="whatwedo overflow-hidden " id="whatwedo">
+      <section className="whatwedo overflow-hidden " id="bussiness">
         <div className="container overflow-hidden overflow-lg-visible">
           <div className="position-relative">
             <h4
@@ -367,7 +389,7 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="400"
             >
-              Business <span className="heading4 business-step"> Loan</span>
+              Bussiness  <span className="heading4 business-step"> Loan</span>
             </h4>
 
             <div className="row align-items-center justify-content-center business-bg-step rounded-5 p-4">
@@ -389,7 +411,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 mb-0 business-step">
-                          Loans up to ₹5 crore and beyond
+                          Loans up to ₹100 crore and beyond
                         </p>
                       </div>
                     </div>
@@ -496,8 +518,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 business-step mb-0">
-                          Collateral-free funding up to ₹1 Cr for self-employed
-                          individuals and businesses
+                        Fast & Easy Application: Get funded quickly.
                         </p>
                       </div>
                     </div>
@@ -520,8 +541,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 business-step mb-0">
-                          Collateral-free funding up to ₹1 Cr for self-employed
-                          individuals and businesses
+                        Tailored for Businesses: Solutions that fit your needs.
                         </p>
                       </div>
                     </div>
@@ -539,7 +559,7 @@ export default function Home() {
       </section>
 
       {/* Fianncial-planning */}
-      <div className="heros ">
+      <div className="heros " id='plans'>
         <div className="cube"></div>
         <div className="cube"></div>
         <div className="cube"></div>
@@ -549,25 +569,19 @@ export default function Home() {
 
         <div className="container mt-5">
           <div className="row ">
-            <div className="col-md-6 fin-section1">
+            <div className="col-lg-5 col-xl-6 fin-section1">
               <div className="mt-4">
                 <div className="text-center text-md-center">
                   <img
-                    src={financialimg1}
+                    src={planning}
                     alt=""
                     className="img-fluid w-75 fin-img1 rounded-3"
                   />
                 </div>
-                <div className="d-none d-md-flex justify-content-end ">
-                  <img
-                    src={financialimg1}
-                    alt=""
-                    className="img-fluid w-25 fin-img2"
-                  />
-                </div>
+               
               </div>
             </div>
-            <div className="col-md-6 fin-section2">
+            <div className="col-lg-7 col-xl-6 fin-section2">
               <div>
                 <div className="">
                   <h4 className="heading4 text-white mt-4">
@@ -977,7 +991,7 @@ export default function Home() {
                           height="40px"
                         />
                       </div>
-                      <div className="heading3 text-white">
+                      <div className="heading3 acco-head">
                         {" "}
                         What kind of loans does Sarvamangala offer?
                       </div>
@@ -1014,7 +1028,7 @@ export default function Home() {
                           height="40px"
                         />
                       </div>
-                      <div className="heading3  text-white">
+                      <div className="heading3 acco-head">
                         What factors do you consider a loan application?
                       </div>
                     </button>
@@ -1051,7 +1065,7 @@ export default function Home() {
                           height="40px"
                         />
                       </div>
-                      <div className="heading3 text-white">
+                      <div className="heading3 acco-head">
                         What types of collateral are acceptable for your loans?
                       </div>
                     </button>
@@ -1088,7 +1102,7 @@ export default function Home() {
                           height="40px"
                         />
                       </div>
-                      <div className="heading3 text-white">
+                      <div className="heading3 acco-head">
                         What types of collateral are acceptable for your loans?
                       </div>
                     </button>
@@ -1131,7 +1145,7 @@ export default function Home() {
                           height="40px"
                         />
                       </div>
-                      <div className="heading3  text-white">
+                      <div className="heading3 acco-head">
                         What are the interest rates for your loans?
                       </div>
                     </button>
@@ -1168,7 +1182,7 @@ export default function Home() {
                           height="40px"
                         />
                       </div>
-                      <div className="heading3 text-white">
+                      <div className="heading3 acco-head">
                         What is the typical loan approval timeframe?
                       </div>
                     </button>
@@ -1205,7 +1219,7 @@ export default function Home() {
                           height="40px"
                         />
                       </div>
-                      <div className="head heading3 text-white">
+                      <div className="head heading3 acco-head">
                         What documents do I need to submit my
                         application?
                       </div>
@@ -1244,7 +1258,7 @@ export default function Home() {
                           hnine="40px"
                         />
                       </div>
-                      <div className="heading3 text-white">
+                      <div className="heading3 acco-head">
                         What types of collateral are acceptable for your loans?
                       </div>
                     </button>
@@ -1287,7 +1301,7 @@ export default function Home() {
                           height="40px"
                         />
                       </div>
-                      <div className="heading3 text-white">
+                      <div className="heading3 acco-head">
                         Can I apply for a loan online?
                       </div>
                     </button>
@@ -1313,7 +1327,7 @@ export default function Home() {
       </div>
 
       {/* CONTACTS US */}
-      <div>
+      <div id='contact'>
         <h4 className="heading4 text-white text-center mt-5">
           Contact{" "}
           <span className="heading4" style={{ color: "#900c3f" }}>
@@ -1486,7 +1500,7 @@ export default function Home() {
                       Emergency Cases <br />
                       <a href="#" className="contact1">
                         {" "}
-                        04426155554
+                        044-26155554
                       </a>
                     </p>
                   </div>
@@ -1499,6 +1513,7 @@ export default function Home() {
 
       {/* footer */}
       <Footer />
+      <Scroll />
     </div>
   );
 }

@@ -53,10 +53,9 @@ function Businessloan() {
 
             <section className='business mt-2'>
                 <div className='container'>
-                    <div className='business_para'>
-                        <h2 className='text-center fs-1' style={{ color: "#900c3f" }} >WHAT IS A BUSINESS LOAN?</h2>
-                        <p className='heading3'>A business loan is a financial product designed to provide companies with the capital they need for various purposes such as expansion, purchasing inventory or equipment, managing cash flow, or funding new projects. These loans are typically offered by banks, credit unions, or online lenders and can come in different forms such as term loans, lines of credit, equipment financing, or specialized loans like SBA loans. Businesses repay these loans over time with interest, helping them to access the funds necessary to grow and thrive.</p>
-                        <p className='heading3'> Business loans play a crucial role in supporting the financial health and growth of companies across industries. They enable businesses to make strategic investments, seize opportunities, and navigate challenges by providing access to much-needed capital. By securing a business loan, companies can strengthen their operations, improve competitiveness, and achieve their long-term objectives.</p>
+                    <div className='business_para mt-4'>
+                        <h2 className='text-center fs-2 heading4 ' style={{ color: "#900c3f" }} >WHAT IS A BUSINESS LOAN?</h2>
+                        <p className='heading3 fs-6 mt-4'>A business loan is a financial helping hand offered by lenders like banks or financial institutions specifically to businesses. It provides companies with the capital they need to fund various goals, such as starting a business, expanding operations, purchasing equipment, or managing everyday expense.These loans typically come with a fixed interest rate and a repayment schedule that the business needs to follow.</p>
                     </div>
 
 
