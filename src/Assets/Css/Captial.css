@@ -26,9 +26,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    border-radius: 80px;
+    
 }
-.business2-bg{
+/* .business2-bg{
     background-color: #b080065e;
-}
+} */
+.yellow-image {
+    filter: brightness(100%) hue-rotate(120deg);
+  }
 
