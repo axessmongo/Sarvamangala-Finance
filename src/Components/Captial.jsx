@@ -199,7 +199,7 @@ export default function Capital() {
                       />
                         </div>
                         <div className ="card-body px-2 py-4 pe-3">
-                          <p className ="card-title text-capitalize mb-0 business-step" >
+                          <p className ="card-title text-capitalize heading3 mb-0 business-step" >
                           Loans up to ₹5 crore and beyond
                           </p>
                         </div>
@@ -222,7 +222,7 @@ export default function Capital() {
                       />
                         </div>
                         <div className ="card-body px-2 py-4 pe-3">
-                          <p className ="card-title text-capitalize mb-0 business-step ">
+                          <p className ="card-title text-capitalize heading3 mb-0 business-step ">
                           Fuel Your Business Growth
 Access the Capital You Need
                           </p>
@@ -247,7 +247,7 @@ Access the Capital You Need
                       />
                         </div>
                         <div className ="card-body px-2 py-4 pe-3">
-                          <p className ="card-title text-capitalize business-step mb-0">
+                          <p className ="card-title text-capitalize heading3 business-step mb-0">
                           Loan up to ₹50 lacs based on your GST returns
                           </p>
                         </div>
@@ -273,7 +273,7 @@ Access the Capital You Need
                 <div className ="col-lg-4 mt-5 right-sec">
                   <div data-aos="fade-left" data-aos-duration="600">
                     <div
-                      className ="card  fw-semibold business-card-step text-white  mb-5"
+                      className ="card  fw-semibold business-card-step  text-white  mb-5"
                       // to="#strecturalfire"
                       data-bs-toggle="offcanvas"
                     >
@@ -287,7 +287,7 @@ Access the Capital You Need
                       />
                         </div>
                         <div className ="card-body px-2 py-4 pe-3">
-                          <p className ="card-title text-capitalize business-step mb-0">
+                          <p className ="card-title text-capitalize heading3 business-step mb-0">
                           Fast & seamless process
                           </p>
                         </div>
@@ -310,7 +310,7 @@ Access the Capital You Need
                       />
                         </div>
                         <div className ="card-body px-2 py-4 pe-3">
-                          <p className ="card-title text-capitalize business-step mb-0">
+                          <p className ="card-title text-capitalize heading3 business-step mb-0">
                           Collateral-free funding up to ₹1 Cr for self-employed
                       individuals and businesses
                           </p>
@@ -334,7 +334,7 @@ Access the Capital You Need
                       />
                         </div>
                         <div className ="card-body px-2 py-4 pe-3">
-                          <p className ="card-title text-capitalize business-step mb-0">
+                          <p className ="card-title text-capitalize heading3 business-step mb-0">
                           Collateral-free funding up to ₹1 Cr for self-employed
                       individuals and businesses
                           </p>
