@@ -24,60 +24,60 @@ export default function Capital() {
               <div className="row gy-3">
                 <div className="col-6 col-md-5 col-lg-3">
                   <div className="industries-card mb-3" data-aos='zoom-out'>
-                    < i class="bi bi-alarm fs-3 m-2 " style={{ "color": "#c00937" }}></i>
+                    < i class="bi bi-ticket fs-2 m-2 " style={{ "color": "#c00937" }}></i>
                     {/* <img src={fintech} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" /> */}
-                    <p className='secondary-text mb-0  text-center heading2'>Apply in few Minutes</p>
+                    <p className='secondary-text mb-0  text-center heading2'>Big Ticket Loans</p>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div className="industries-card  pt-2" data-aos='zoom-out' data-aos-duration='500'>
                     <i className="bi bi-lightning-fill fs-3 m-2" style={{ "color": "#c00937" }}></i>
                     {/* <img src={healthcare} className='mb-2' alt="https://maticz.com/assets/images/home/healthcare.webp" /> */}
-                    <p className='secondary-text mb-1  text-center  heading2'>Fast Approval</p>
+                    <p className='secondary-text mb-1  text-center  heading2'>Competitive Rates</p>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                    <i className="bi bi-clock-history fs-3 m-2" style={{ "color": "#c00937" }}></i>
+                    <i className="bi bi-credit-card fs-3 m-2" style={{ "color": "#c00937" }}></i>
                     {/* <img src={education} className='mb-2' alt="https://maticz.com/assets/images/home/graduation-cap.webp" /> */}
-                    <p className='secondary-text mb-1 text-center  heading2'>Tenure up to 15 yearsx
+                    <p className='secondary-text mb-1 text-center  heading2'>Flexible Repayment
 
                     </p>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                    <i className="bi bi-cash fs-3 m-2" style={{ "color": "#c00937" }}></i>
+                  <i class="bi bi-person-circle fs-4" style={{ "color": "#c00937" }}></i>
                     {/* <img src={insurance} className='mb-2' alt="https://maticz.com/assets/images/home/life-insurance.webp" /> */}
-                    <p className='secondary-text mb-1  text-center  heading2'>Get money in 2-4 working days</p>
+                    <p className='secondary-text mb-3 mt-2  text-center  heading2'>Expert Support</p>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                    <i className="bi bi-geo-alt-fill fs-3 m-2" style={{ "color": "#c00937" }}></i>
+                    <i className="bi bi-joystick fs-3 m-2" style={{ "color": "#c00937" }}></i>
                     {/* <img src={restaurant} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" /> */}
-                    <p className='secondary-text mb-1  text-center heading2'>No Branch Visit</p>
+                    <p className='secondary-text mb-1  text-center heading2'>Fast Approvals</p>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
                     <i className="bi bi-file-check-fill fs-3 m-2" style={{ "color": "#c00937" }}></i>
                     {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
-                    <p className='secondary-text mb-1  text-center heading2'>An ISO certified company</p>
+                    <p className='secondary-text mb-1  text-center heading2'>Collateral Options</p>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
                     <i className="bi bi-cart-plus fs-3 m-2" style={{ "color": "#c00937" }}></i>
                     {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
-                    <p className='secondary-text mb-1 text-center heading2'>Customized Solution</p>
+                    <p className='secondary-text mb-1 text-center heading2'>Business Focus</p>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                    <i className="bi bi-cart-plus fs-3 m-2" style={{ "color": "#c00937" }}></i>
+                    <i className="bi bi-hand-thumbs-up fs-3 m-2" style={{ "color": "#c00937" }}></i>
                     {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
-                    <p className='secondary-text mb-1 text-center heading2'>Client-Centric Approach</p>
+                    <p className='secondary-text mb-1 text-center heading2'>Trust &amp; Security</p>
                   </div>
                 </div>
 

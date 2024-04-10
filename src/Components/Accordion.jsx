@@ -68,7 +68,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>What factors do you consider when evaluating a loan application?</div>
+                  <div style={{color:"#900c3f"}} className='heading3'>What factors do you consider a loan application?</div>
                 </button>
               </h2>
               <div
