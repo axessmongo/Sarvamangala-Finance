@@ -1,12 +1,13 @@
 import React from 'react'
-import "../Assets/Css/Businessloan.css"
+
+
+import Footer from './Footer'
+import { Link } from 'react-router-dom'
 // import Nav from '../Components/Nav'
 // import carousel from "../Assets/img/carousel_img_2.svg"
 // import carousel1 from "../Assets/img/carousel_img_3.svg"
 // import carousel2 from "../Assets/img/carousel_img_4.svg"
 import sbi1 from "../Assets/img/sbi1.png"
-import Footer from './Footer'
-
 function Businessloan() {
     return (
 
@@ -17,21 +18,34 @@ function Businessloan() {
                     <div class="carousel-inner container">
                         <div class="carousel-item active">
                             {/* <img src={carousel} alt="" /> */}
-                            <h1 className='business_banner_text'>Business Loan Upto</h1>
+                            <h1 className='business_banner_text heading4'>Business Loan Upto</h1>
                             {/* <p className='business_banner_text2 mb-3'>Loan Upto</p> */}
-                            <p className='business_banner_text2'>100 Crore</p>
+                            <div className=' py-5 heading3 btn1'>
+                                <button >
+                                    <Link to={"/"}>Back To Home</Link>
+                                </button>
+                            </div>
+                            <p className='business_banner_text2 heading6' style={{ color: "#900c3f" }}>100 Crore</p>
                         </div>
                         <div class="carousel-item">
                             {/* <img src={carousel1} alt="" /> */}
-                            <h1 className='business_banner_text'>Money In Your Bank In</h1>
-                            {/* <p className='business_banner_text2'>Your Bank In</p> */}
-                            <p className='business_banner_text2'>48 Hours</p>
+                            <h1 className='business_banner_text heading4 '>Money In Your Bank In</h1>
+                            <div className=' py-5 heading3 btn1'>
+                                <button >
+                                    <Link to={"/"}>Back To Home</Link>
+                                </button>
+                            </div>
+                            <p className='business_banner_text2 heading6' style={{ color: "#900c3f" }}>48 Hours</p>
                         </div>
                         <div class="carousel-item">
                             {/* <img src={carousel2} alt="" /> */}
-                            <h1 className='business_banner_text'>Interest Rate As Low as</h1>
-                            {/* <p className='business_banner_text2'> As Low as</p> */}
-                            <p className='business_banner_text2'>1 Percent</p>
+                            <h1 className='business_banner_text heading4'>Interest Rate As Low as</h1>
+                            <div className=' py-5 heading3 btn1'>
+                                <button >
+                                    <Link to={"/"}>Back To Home</Link>
+                                </button>
+                            </div>
+                            <p className='business_banner_text2 heading6' style={{ color: "#900c3f" }}>1 Percent</p>
                         </div>
                     </div>
                 </div>
@@ -50,7 +64,7 @@ function Businessloan() {
                     <div className='container'>
                         <h3 className='bus_texts heading4 text-center' style={{ color: "#900c3f" }}>BUSINESS LOAN ELIGIBILITY CRITERIA</h3>
                         <div className="table-responsive mt-3">
-                            <table className="table heading3 " style={{border:"1px solid black"}}>
+                            <table className="table heading3 " style={{ border: "1px solid black" }}>
                                 <thead>
                                     <tr>
                                         <th className='table_text' scope="col" >Parameter</th>
@@ -128,7 +142,7 @@ function Businessloan() {
 
                 <div className='business_eligi_2 mt-5 container     '>
                     <h3 className='bus_texts heading4 text-center ' style={{ color: "#900c3f" }}>DOCUMENTS REQUIRED FOR A BUSINESS LOAN</h3>
-                    <table class="table mt-4 shadow heading3 " style={{border:"1px solid black"}}>
+                    <table class="table mt-4 shadow heading3 " style={{ border: "1px solid black" }}>
                         <thead>
                             <tr>
                                 <th scope="col">Parameter</th>

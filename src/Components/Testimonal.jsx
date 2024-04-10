@@ -14,23 +14,22 @@ export default function Testimonal() {
                 <div id="carouselExampleControls" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <div class="card-wrapper container-sm d-flex  justify-content-around overflow-hidden">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around overflow-hidden">
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                                     <div class="card ">
                                         <div class="face front-face">
                                             <img src={avatar1}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Priya Sharma
+                                                Rajesh
                                             </div>
-                                            <div class="designation heading3 fs-6 text-dark ">Homebuyer</div>
+                                            <div class="designation heading3 fs-6 text-dark ">Textile Factory Owner<span className='heading3 text-center d-block'>(Coimbatore)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white">
-                                                <p>Sarvamangala helped me navigate the complexities of homeownership.
-                                                    Their guidance throughout the loan process was invaluable. Now, I'm proud to call my own
-                                                    place home!</p>
+                                                <p>&quot;Sarvamangala&#39;s loan helped us expand our manufacturing unit. Now we can take on bigger
+                                                    orders and create more jobs in our town. Great support!</p>
                                             </div>
                                             <span class="fas fa-quote-right"></span>
                                         </div>
@@ -42,16 +41,15 @@ export default function Testimonal() {
                                             <img src={avatar2}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Murthy Iyer
+                                                Priya
                                             </div>
-                                            <div class="designation heading3  fs-6 text-dark">Retiree</div>
+                                            <div class="designation heading3  fs-6 text-dark">Restaurant Owner<span className='text-center d-block heading3'> (Delhi)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white">
-                                                Thanks to Sarvamangala's financial planning expertise, I feel confident
-                                                about my retirement future. They helped me create a plan that aligns with my goals and
-                                                risk tolerance.
+                                                &quot;Never thought getting a loan for my restaurant could be this easy. The team was very helpful
+                                                throughout the process. Thanks, Sarvamangala!
                                             </div>
                                             <span class="fas fa-quote-right"></span>
                                         </div>
@@ -62,15 +60,15 @@ export default function Testimonal() {
                                         <div class="face front-face">
                                             <img src={avatar3} alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Issac Maxwell
+                                                Akash &amp; Meena
                                             </div>
-                                            <div class="designation heading3  fs-6 text-dark">Finance Director</div>
+                                            <div class="designation heading3  fs-6 text-dark">Tech Startup Founders <span className='text-center heading3 d-block'>(Bangalore)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white text-white">
-                                                <p> Account keeper is the most valuable business research we have EVER purchased. Without
-                                                    electrician, we would ahave gone bankrupt by now.</p>
+                                                <p> &quot;As a young entrepreneur, access to funds was a big hurdle. Sarvamangala believed in our
+                                                    vision and provided the loan that kickstarted our business. Forever grateful!&quot;</p>
                                             </div>
                                             <span class="fas fa-quote-right"></span>
                                         </div>
@@ -86,16 +84,16 @@ export default function Testimonal() {
                                             <img src={avatar1}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Priya Sharma
+                                                Mr. &amp; Mrs.Patel,
+
                                             </div>
-                                            <div class="designation heading3 fs-6 text-dark ">Homebuyer</div>
+                                            <div class="designation heading3 fs-6 text-dark ">Dairy Farm Owners <span className='text-center heading3 d-block'>(Gujarat)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white">
-                                                <p>Sarvamangala helped me navigate the complexities of homeownership.
-                                                    Their guidance throughout the loan process was invaluable. Now, I'm proud to call my own
-                                                    place home!</p>
+                                                <p>Interest rates were a big concern, but Sarvamangala offered a very competitive deal. Now we
+                                                    can focus on growing our business without the worry of high loan repayments.</p>
                                             </div>
                                             <span class="fas fa-quote-right"></span>
                                         </div>
@@ -104,19 +102,18 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                                     <div class="card">
                                         <div class="face front-face">
-                                            <img src={avatar2}
+                                            <img src={avatar3}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Murthy Iyer
+                                                Vikram
                                             </div>
-                                            <div class="designation heading3  fs-6 text-dark">Retiree</div>
+                                            <div class="designation heading3  fs-6 text-dark">Construction Company CEO <span className='heading3 text-center d-block'>(Mumbai)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white">
-                                                Thanks to Sarvamangala's financial planning expertise, I feel confident
-                                                about my retirement future. They helped me create a plan that aligns with my goals and
-                                                risk tolerance.
+                                                Been with Sarvamangala for years now. They understand the needs of our business and have
+                                                always been there to support us during our growth journey. Reliable partner!
                                             </div>
                                             <span class="fas fa-quote-right"></span>
                                         </div>
@@ -125,17 +122,17 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-lg-block">
                                     <div class="card">
                                         <div class="face front-face">
-                                            <img src={avatar3} alt="" class="profile" />
+                                            <img src={avatar2} alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Issac Maxwell
+                                                Kavitha
                                             </div>
-                                            <div class="designation heading3  fs-6 text-dark">Finance Director</div>
+                                            <div class="designation heading3  fs-6 text-dark">Boutique Owner<span className='heading3 d-block text-center'>(Hyderabad)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white text-white">
-                                                <p> Account keeper is the most valuable business research we have EVER purchased. Without
-                                                    electrician, we would ahave gone bankrupt by now.</p>
+                                                <p> Appreciated the clear communication and transparency throughout the loan process. No
+                                                    hidden fees, which is a big relief! Thanks, Sarvamangala.</p>
                                             </div>
                                             <span class="fas fa-quote-right"></span>
                                         </div>
@@ -144,23 +141,22 @@ export default function Testimonal() {
                             </div>
                         </div>
                         <div class="carousel-item">
-                        <div class="card-wrapper container-sm d-flex  justify-content-around overflow-hidden">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around overflow-hidden">
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                                     <div class="card ">
                                         <div class="face front-face">
                                             <img src={avatar1}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Priya Sharma
+                                                Sunil &amp; Sonali,
                                             </div>
-                                            <div class="designation heading3 fs-6 text-dark ">Homebuyer</div>
+                                            <div class="designation heading3 fs-6 text-dark ">Travel Agency Owners <span className='heading3 d-block text-center'>(kolkata)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white">
-                                                <p>Sarvamangala helped me navigate the complexities of homeownership.
-                                                    Their guidance throughout the loan process was invaluable. Now, I'm proud to call my own
-                                                    place home!</p>
+                                                <p>Taking a loan can be stressful, but Sarvamangala&#39;s friendly and professional approach made it
+                                                    a smooth experience. Highly recommend!</p>
                                             </div>
                                             <span class="fas fa-quote-right"></span>
                                         </div>
@@ -172,40 +168,22 @@ export default function Testimonal() {
                                             <img src={avatar2}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Murthy Iyer
+                                                Ranjit,
                                             </div>
-                                            <div class="designation heading3  fs-6 text-dark">Retiree</div>
+                                            <div class="designation heading3  fs-6 text-dark">Printing Press Owner
+                                                <span className='heading3 d-block text-center'>(Chennai)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white">
-                                                Thanks to Sarvamangala's financial planning expertise, I feel confident
-                                                about my retirement future. They helped me create a plan that aligns with my goals and
-                                                risk tolerance.
+                                                Our business took a hit during the pandemic. Sarvamangala helped us get back on track with a
+                                                flexible repayment plan. Thank you for being a lifesaver!
                                             </div>
                                             <span class="fas fa-quote-right"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-lg-block">
-                                    <div class="card">
-                                        <div class="face front-face">
-                                            <img src={avatar3} alt="" class="profile" />
-                                            <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
-                                                Issac Maxwell
-                                            </div>
-                                            <div class="designation heading3  fs-6 text-dark">Finance Director</div>
-                                        </div>
-                                        <div class="face back-face">
-                                            <span class="fas fa-quote-left"></span>
-                                            <div class="testimonial heading3 text-white text-white">
-                                                <p> Account keeper is the most valuable business research we have EVER purchased. Without
-                                                    electrician, we would ahave gone bankrupt by now.</p>
-                                            </div>
-                                            <span class="fas fa-quote-right"></span>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

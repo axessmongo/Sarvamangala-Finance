@@ -50,7 +50,7 @@
     transform: rotate(360deg) scale(1.2);
 }
 
-.contact_block_one {
+.hovering-eff .contact_block_one {
     position: relative;
     text-align: center;
     padding: 30px;
@@ -62,7 +62,7 @@
     transition: transform 0.3s;
 }
 
-.contact_block_one:hover {
+.hovering-eff .contact_block_one:hover {
     transform: translateY(-10px);
 }
 

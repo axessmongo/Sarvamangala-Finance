@@ -16,14 +16,14 @@ export default function MainCard() {
                         <div className="normal-card d-flex flex-column rounded-0">
                         <p className='bg-no'>02</p>
                             <p className='text-white heading3 fs-5'>We finance,</p>
-                            <h1 className='text-white heading4'>India&#39;s future</h1>
+                            <h1 className=' heading4' style={{color:"#900c3f"}}>India&#39;s future</h1>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="normal-card d-flex flex-column rounded-0">
                             <p className='bg-no'>03</p>
-                            <p className='text-dark heading3 fs-5'>Competitive rates, </p>
-                            <h1 className='text-danger heading4'>flexible terms</h1>
+                            <p className='text-white heading3 fs-5'>Competitive rates, </p>
+                            <h1 className='text-white heading4 '>flexible terms</h1>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import ournature2 from '../Assets/img/nature2.jpg'
 
 function Ournature() {
     return (
-        <section className=''>
+        <section className='' id='goals'>
             <div class="area position-relative" >
                 <div className='container'>
                     <div className='row py-5 paperrocket3'>
