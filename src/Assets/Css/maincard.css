@@ -35,7 +35,7 @@ p.bg-no {
 }
 
 .main-card > div:nth-child(1) .normal-card{
-    background: url('../img/main1.png') center;
+    background: url('../img/service.png') center;
     background-size: cover;
 }
 

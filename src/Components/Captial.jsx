@@ -15,7 +15,7 @@ export default function Capital() {
       <div className="bg-green-1 text-white p-1">
         <div className="container">
           <div className="row align-items-center g-3 py-3 text-center ">
-            <h4 className='heading4 text-white'>Why Choose <span className='heading4' style={{ color: "#900c3f" }}> Capital?</span></h4>
+            <h4 className='heading4 text-white'>Why Choose <span className='heading4' style={{ color: "#900c3f" }}> Us?</span></h4>
 
             <div className="col-md-4">
               <img src={capital} alt="" className='img-fluid' />
