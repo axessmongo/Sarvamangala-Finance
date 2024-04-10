@@ -17,21 +17,21 @@ function Businessloan() {
                     <div class="carousel-inner container">
                         <div class="carousel-item active">
                             {/* <img src={carousel} alt="" /> */}
-                            <h1 className='business_banner_text'>Business Loan Upto</h1>
+                            <h1 className='business_banner_text heading4'>Business Loan Upto</h1>
                             {/* <p className='business_banner_text2 mb-3'>Loan Upto</p> */}
-                            <p className='business_banner_text2'>100 Crore</p>
+                            <p className='business_banner_text2 heading6' style={{color:"#900c3f"}}>100 Crore</p>
                         </div>
                         <div class="carousel-item">
                             {/* <img src={carousel1} alt="" /> */}
-                            <h1 className='business_banner_text'>Money In Your Bank In</h1>
+                            <h1 className='business_banner_text heading4 '>Money In Your Bank In</h1>
                             {/* <p className='business_banner_text2'>Your Bank In</p> */}
-                            <p className='business_banner_text2'>48 Hours</p>
+                            <p className='business_banner_text2 heading6'style={{color:"#900c3f"}}>48 Hours</p>
                         </div>
                         <div class="carousel-item">
                             {/* <img src={carousel2} alt="" /> */}
-                            <h1 className='business_banner_text'>Interest Rate As Low as</h1>
+                            <h1 className='business_banner_text heading4'>Interest Rate As Low as</h1>
                             {/* <p className='business_banner_text2'> As Low as</p> */}
-                            <p className='business_banner_text2'>1 Percent</p>
+                            <p className='business_banner_text2 heading6' style={{color:"#900c3f"}}>1 Percent</p>
                         </div>
                     </div>
                 </div>
