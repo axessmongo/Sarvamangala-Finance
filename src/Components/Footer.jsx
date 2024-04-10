@@ -66,10 +66,10 @@ function Footer() {
                                 </div>
                                 <ul className='heading3'>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">Goals</a></li>
                                     <li><a href="#">services</a></li>
                                     <li><a href="#">Contact</a></li>
-                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Bussiness</a></li>
 
                                 </ul>
                             </div>
