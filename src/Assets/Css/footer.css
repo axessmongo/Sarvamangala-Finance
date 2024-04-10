@@ -266,17 +266,27 @@ a:active {
 }
 
 /* Youtube Button Styling */
-.youtube {
+.instagram {
     font-size: 22px;
     padding-top: 6px;
     padding-left:2px;
-    background-color: #bb0000;
+    background:linear-gradient(#f9ce34,#ee2a7b,#6228d7);
     color: #ffffff;
-    border-color: #bb0000;
+    /* background:linear-gradient(#f9ce34,#ee2a7b,#6228d7); */
 
 }
+.instagram:hover{
+    background-color: #ffffff;
+}
 
-.youtube :hover {
-    background-color: #bb0000;
-    /* color: #bb0000; */
+.btn2 button{
+    border-radius: 10px;
+    padding: 5px 9px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
 }
