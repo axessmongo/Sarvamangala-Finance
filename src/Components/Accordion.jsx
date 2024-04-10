@@ -35,7 +35,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div className='heading3'style={{color:"#900c3f"}}> What kind of loans does Sarvamangala offer?</div>
+                  <div className='heading3 text-white'> What kind of loans does Sarvamangala offer?</div>
                 </button>
               </h2>
               <div
@@ -68,7 +68,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>What factors do you consider a loan application?</div>
+                  <div  className='heading3  text-white'>What factors do you consider a loan application?</div>
                 </button>
               </h2>
               <div
@@ -77,7 +77,7 @@ export default function Accordion() {
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p className='heading3'>
+                  <p className='heading3 '>
                   We assess a variety of factors, including your company's financial health, credit history, business plan, and the purpose of the loan.
                   </p>
                 </div>
@@ -101,7 +101,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>What types of collateral are acceptable for your loans?</div>
+                  <div className='heading3 text-white'>What types of collateral are acceptable for your loans?</div>
                 </button>
               </h2>
               <div
@@ -136,7 +136,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>What are the interest rates for your loans?</div>
+                  <div  className='heading3  text-white'>What are the interest rates for your loans?</div>
                 </button>
               </h2>
               <div
@@ -169,7 +169,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>What is the typical loan approval timeframe?</div>
+                  <div className='heading3 text-white'>What is the typical loan approval timeframe?</div>
                 </button>
               </h2>
               <div
@@ -202,7 +202,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div  className='head heading3'style={{color:"#900c3f"}}>What documents do I need to submit with my loan application?</div>
+                  <div  className='head heading3 text-white'>What documents do I need to submit with my loan application?</div>
                 </button>
               </h2>
               <div
@@ -241,7 +241,7 @@ export default function Accordion() {
                       height="40px"
                     />
                   </div>
-                  <div style={{color:"#900c3f"}} className='heading3'>Can I apply for a loan online?</div>
+                  <div className='heading3 text-white'>Can I apply for a loan online?</div>
                 </button>
               </h2>
               <div

@@ -6,7 +6,7 @@ export default function Testimonal() {
     return (
         <div>
             <div class="container testing text-center mt-4">
-                <h4 className='heading4 text-white'>Success of <span className='heading4' style={{ color: "#900c3f" }}> Stories</span></h4>
+                <h4 className='heading4 text-white'>Success <span className='heading4' style={{ color: "#900c3f" }}> Stories</span></h4>
 
 
             </div>

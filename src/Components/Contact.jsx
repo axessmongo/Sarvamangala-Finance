@@ -3,52 +3,18 @@ import img3 from '../Assets/img/img3.png'
 export default function Contact() {
     return (
         <>
-            <section className="page_breadcrumb">
+            <h4 className='heading4 text-white text-center mt-5'>Contact <span className='heading4' style={{ color: "#900c3f" }}> Us</span></h4>
+
+            {/* <section className="page_breadcrumb">
                 <div className="page_breadcrumb_shape_one float-bob-x">
                     <img src="https://html.tonatheme.com/2024/financer/assets/images/icons/shape_icon_13.png" alt="" />
                 </div>
                 <div className="page_breadcrumb_shape_two float-bob-y">
                     <img src="https://html.tonatheme.com/2024/financer/assets/images/icons/shape_icon_1.png" alt="" />
                 </div>
-                <div className="container">
-                    <div className="breadcrumb_content centred">
-                        <div className="breadcrumb_subtitle"><h6>Contact us</h6></div>
-                        <h1 className="breadcrumb_title">Contact us</h1>
-                    </div>
-                </div>
-            </section>
-            <section class="contact_info_section pt_150 pb_120">
-                <div class="container ">
-                    <div class="section_title centred m-4">
-                        {/* <h2>Contact Information</h2> */}
-                        <p className='m-4 p-3 heading3'>
-                            Our uniquely collaborative and passionate people work alongside our clients every step of the way—caring more, telling it like it is—to anticipate and overcome all the barriers to change.</p>
-                    </div>
-                    <div class="row hovering-eff">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="contact_block_one mb_30 aos-init aos-animate " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-                                <div class="contact_block_icon"><i class="bi bi-geo-alt"></i></div>
-                                <div class="contact_block_title heading5"><h4>Our Location</h4></div>
-                                <div class="contact_block_text heading3"><p>1901 Thornridge Cir. Shiloh, <br />Hawaii 81063</p></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="contact_block_one mb_30 aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="550">
-                                <div class="contact_block_icon"><i class="bi bi-envelope"></i></div>
-                                <div class="contact_block_title heading5"><h4>Email Address</h4></div>
-                                <div class="contact_block_text heading3"><p><a href="#" className='contact1'>contact@example.com</a> <br /><a href="#" className='contact1'>support@example.com</a></p></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                            <div class="contact_block_one mb_30 aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
-                                <div class="contact_block_icon"><i class="bi bi-telephone"></i></div>
-                                <div class="contact_block_title heading5"><h4>Phone Number</h4></div>
-                                <div class="contact_block_text heading3"><p>Emergency Cases <br /><a href="#" className='contact1'>+(208) 555-0112 (24/7)</a></p></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+               
+            </section> */}
+
             <section className='my-5 contacting'>
                 <div className="container image1">
                     <div className="row">
@@ -121,6 +87,35 @@ export default function Contact() {
 
 
 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact_info_section pt_150 pb_120">
+                <div class="container ">
+
+                    <div class="row hovering-eff">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="contact_block_one mb_30 aos-init aos-animate " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                                <div class="contact_block_icon"><i class="bi bi-geo-alt"></i></div>
+                                <div class="contact_block_title heading4"style={{color:"#c0093f"}}><h4>Our Location</h4></div>
+                                <div class="contact_block_text heading3 fs-6"><p>Anna Nagar, <br />Chennai-600101</p></div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="contact_block_one mb_30 aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="550">
+                                <div class="contact_block_icon"><i class="bi bi-envelope"></i></div>
+                                <div class="contact_block_title heading4 " style={{color:"#c0093f"}}><h4>Email Address</h4></div>
+                                <div class="contact_block_text heading3 "><p><a href="#" className='contact1'>  info@sarvamangalainvest.in</a> <br/><a href="#" className='contact1'>  info@sarvamangalainvest.in</a> </p></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="contact_block_one mb_30 aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
+                                <div class="contact_block_icon"><i class="bi bi-telephone"></i></div>
+                                <div class="contact_block_title heading4"style={{color:"#c0093f"}}><h4>Phone Number</h4></div>
+                                <div class="contact_block_text heading3"><p>Emergency Cases <br /><a href="#" className='contact1'>  04426155554</a></p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
