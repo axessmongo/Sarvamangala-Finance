@@ -26,7 +26,7 @@ function Businessloan() {
                 </div>
             </div>
 
-            <section className=' bg-warning-subtle business mt-2'>
+            <section className='business mt-2'>
                 <div className='container'>
                     <div className='business_para'>
                         <h2 className='text-center bus_texts heading4' style={{ color: "#900c3f" }} >WHAT IS A BUSINESS LOAN?</h2>
@@ -36,8 +36,8 @@ function Businessloan() {
 
                     <div className='container mt-5'>
             <div className='business_eligi'>
-                <h3 className='bus_texts heading4 text-center'>BUSINESS LOAN ELIGIBILITY CRITERIA</h3>
-                <div className="table-responsive mt-4 shadow  p-5">
+                <h3 className='bus_texts heading4 text-center'style={{ color: "#900c3f" }}>BUSINESS LOAN ELIGIBILITY CRITERIA</h3>
+                <div className="table-responsive mt-4  p-5">
                     <table className="table heading3 ">
                         <thead>
                             <tr>
