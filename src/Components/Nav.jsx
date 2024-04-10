@@ -8,7 +8,7 @@ import list from "../Assets/img/list.png";
 import account from "../Assets/img/account.png";
 import process from "../Assets/img/process.png";
 import calendar from "../Assets/img/calendar.png";
-
+import coin from "../Assets/img/Coin gif.gif"
 import Capital from "./Captial";
 import Ournature from "./Ournature";
 import Clarification from "./Clarification";
@@ -98,7 +98,9 @@ function Nav() {
       <section className=" overflow-x-hidden">
         {/* Hero */}
         <div className="hero">
-          <div className="hero-opacity text-white"></div>
+          <div className="hero-opacity text-white">
+            
+          </div>
         </div>
       </section>
       {/* <section class="container-fluid mt-3">
