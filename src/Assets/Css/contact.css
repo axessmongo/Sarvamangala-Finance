@@ -46,9 +46,9 @@
 }
 
 
-/* .contact_block_icon:hover {
+.contact_block_icon:hover {
     transform: rotate(360deg) scale(1.2);
-} */
+}
 
 .hovering-eff .contact_block_one {
     position: relative;

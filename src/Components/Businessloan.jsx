@@ -1,13 +1,13 @@
 import React from 'react'
-import "../Assets/Css/Businessloan.css"
+
+
+import Footer from './Footer'
+import { Link } from 'react-router-dom'
 // import Nav from '../Components/Nav'
 // import carousel from "../Assets/img/carousel_img_2.svg"
 // import carousel1 from "../Assets/img/carousel_img_3.svg"
 // import carousel2 from "../Assets/img/carousel_img_4.svg"
 import sbi1 from "../Assets/img/sbi1.png"
-import Footer from './Footer'
-import { Link } from 'react-router-dom'
-
 function Businessloan() {
     return (
 
