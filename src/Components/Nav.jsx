@@ -135,6 +135,7 @@ function Nav() {
       <Clarification />
       <Testimonal />
       <Accordion />
+      <Contact/>
       <Footer />
     </>
   );

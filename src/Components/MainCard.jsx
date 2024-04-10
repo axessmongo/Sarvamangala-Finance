@@ -9,7 +9,7 @@ export default function MainCard() {
                         <div className="normal-card d-flex flex-column rounded-0">
                             <p className='bg-no'>01</p>
                             <p className=' text-white heading3 fs-5'>Big business loans, </p>
-                            <h1 className=' text-danger heading4'>bigger possibilities</h1>
+                            <h1 className=' text-white heading4'>bigger possibilities</h1>
                         </div>
                     </div>
                     <div className="col-md-4">
