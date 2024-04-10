@@ -40,11 +40,11 @@ p.bg-no {
 }
 
 .main-card > div:nth-child(2) .normal-card{
-    background: url('https://brainbizz.wgl-demo.net/wp-content/uploads/2018/11/services2_bg-2.jpg') center;
+    background: url('../img/service2.png') center;
     background-size: cover;
 }
 
 .main-card > div:nth-child(3) .normal-card{
-    background: url('https://brainbizz.wgl-demo.net/wp-content/uploads/2018/11/services2_bg-3.jpg') center;
+    background: url('../img/service1.png') center;
     background-size: cover;
 }

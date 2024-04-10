@@ -8,6 +8,7 @@ import list from "../Assets/img/list.png";
 import account from "../Assets/img/account.png";
 import process from "../Assets/img/process.png";
 import calendar from "../Assets/img/calendar.png";
+import { Link } from "react-router-dom";
 
 import Capital from "./Captial";
 import Ournature from "./Ournature";
@@ -56,28 +57,34 @@ function Nav() {
                         class="nav-link active text-white"
                         aria-current="page"
                         id="name-nav"
-                        href="#"
+                        href="home"
                       >
                         Home
                       </a>
                     </li>
+
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="name-nav">
-                        Features
+                      <Link className="nav-link" to="goals">
+                        Goals
+                      </Link>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="chooseus">
+                        ChooseUs
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="name-nav">
-                        Why choose us
+                      <a class="nav-link" href="#" id="services">
+                         Services
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="name-nav">
-                        Our Sucess
+                      <a class="nav-link" href="#" id="plans">
+                        Plans
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="name-nav">
+                      <a class="nav-link" href="#" id="contact">
                         Contact
                       </a>
                     </li>
@@ -135,7 +142,7 @@ function Nav() {
       <Clarification />
       <Testimonal />
       <Accordion />
-      <Contact/>
+      <Contact />
       <Footer />
     </>
   );
