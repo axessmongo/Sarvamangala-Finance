@@ -67,7 +67,7 @@ export default function Home() {
             <img src={logo} className="logo px-3" alt="Logo" />
           </div>
           <button className="navbar-toggler shadow-none" onClick={() => setActive(!active)} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i className={`bi ${active ? "bi-x" : "bi-list"}`}></i>
+            <i className={`bi ${active ? "bi-x" : "bi-list"} text-white`}></i>
           </button>
 
           <div

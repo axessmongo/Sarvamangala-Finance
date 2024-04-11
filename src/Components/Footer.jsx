@@ -84,7 +84,7 @@ function Footer() {
                                 </div>
                                 <div className='heading3 btn2 text-center mt-3'>
                                     <button className='' >
-                                        <Link to={"contact"}>Contact Us</Link>
+                                        <Link to={""}>Contact Us</Link>
                                     </button>
                                 </div>
 
