@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ournature1 from "../Assets/img/nature1.jpg";
 import ournature2 from "../Assets/img/nature2.jpg";
-import capital from "../Assets/img/capital.jpg";
+import capital from "../Assets/img/choose.gif";
 import list from "../Assets/img/list.png";
 import account from "../Assets/img/account.png";
 import process from "../Assets/img/process.png";
@@ -249,7 +249,7 @@ export default function Home() {
             </h4>
 
             <div className="col-md-4">
-              <img src={capital} alt="" className="img-fluid" />
+              <img src={capital} alt="" className="img-fluid w-75 fin-img1 rounded-3" />
             </div>
             <div className="col-md-8 text-dark">
               <div className="row gy-3">
