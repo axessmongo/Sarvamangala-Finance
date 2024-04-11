@@ -23,7 +23,7 @@ export default function Testimonal() {
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Rajesh
                                             </div>
-                                            <div class="designation heading3 fs-6 text-dark ">Textile Factory Owner<span className='heading3 text-center d-block'>(Coimbatore)</span></div>
+                                                 <div class="designation heading3 fs-6 text-dark ">Textile Factory Owner<span className='heading3 text-center d-block'>(Coimbatore)</span></div>
                                         </div>
                                         <div class="face back-face">
                                             <span class="fas fa-quote-left"></span>
