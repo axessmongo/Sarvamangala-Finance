@@ -66,10 +66,10 @@ function Footer() {
                                 </div>
                                 <ul className='heading3'>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">about</a></li>
-                                    <li><a href="#">services</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#goals">Goals</a></li>
+                                    <li><a href="#bussiness">services</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#plans">Plans</a></li>
 
                                 </ul>
                             </div>
@@ -80,7 +80,7 @@ function Footer() {
                                     <h3 className='heading5'>Subscribe</h3>
                                 </div>
                                 <div className="footer-text">
-                                    <p className='heading3'>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    <p className='heading3'>Get exclusive insights & offers. Follow us on Instagram & Facebook!</p>
                                 </div>
                                 <div className='heading3 btn2 text-center mt-3'>
                                     <button className='' >

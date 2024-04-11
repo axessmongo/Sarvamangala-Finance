@@ -105,7 +105,9 @@ function Nav() {
       <section className=" overflow-x-hidden">
         {/* Hero */}
         <div className="hero">
-          <div className="hero-opacity text-white"></div>
+          <div className="hero-opacity text-white">
+            
+          </div>
         </div>
       </section>
       {/* <section class="container-fluid mt-3">
