@@ -1,11 +1,12 @@
 .hero {
     height: 90vh;
     width: 100vw;
-    background-image: url(../img/lord.jpg);
+    background-image: url(../img/perumal.png);
     background-position: center;
     background-size: cover;
     animation-name: zoomIn;
     animation-duration: 6s;
+    background-repeat: no-repeat;
     /* Adjust the duration as needed */
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;

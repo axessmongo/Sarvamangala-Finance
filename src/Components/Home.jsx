@@ -1475,7 +1475,7 @@ export default function Home() {
                                 </button>
                                   <button onClick={() => CreateGoogleSheet()}>
                                     read
-                                  </button></span> */}Submit
+                                  </button></span> */} <span className="text-white">Submit </span>
                                 <div class="liquid"></div>
                               </button>
                             </div>
