@@ -21,6 +21,8 @@ import img4 from "../Assets/img/image4.png";
 import img5 from "../Assets/img/image5.png";
 import img6 from "../Assets/img/image6.png";
 import img7 from "../Assets/img/image7.png";
+import img8 from '../Assets/img/image9.png'
+import img9 from '../Assets/img/image8.png'
 import logo from "../Assets/img/logo1.png";
 import contact from "../Assets/img/conatct.png";
 import AOS from 'aos';
@@ -729,7 +731,7 @@ export default function Home() {
             </div>
             <div className="col-md-4 py-lg-5 heading3 btn1">
               <button>
-                <Link to={"contact"}>Give us a call</Link>
+                <Link to={"tel:044-26155554"}>Give us a call</Link>
               </button>
             </div>
           </div>
@@ -1153,7 +1155,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img3}
+                          src={img4}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1196,7 +1198,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img4}
+                          src={img5}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1233,7 +1235,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img5}
+                          src={img6}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1270,7 +1272,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2 ">
                         <img
-                          src={img6}
+                          src={img7}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1309,7 +1311,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img3}
+                          src={img8}
                           class="rounded-2"
                           width="40px"
                           hnine="40px"
@@ -1352,7 +1354,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img7}
+                          src={img9}
                           class="rounded-2"
                           width="40px"
                           height="40px"
