@@ -89,7 +89,7 @@ export default function Testimonal() {
                                             </div>
                                             <div class="designation heading3 fs-6 text-dark ">Dairy Farm Owners <span className='text-center heading3 d-block'>(Gujarat)</span></div>
                                         </div>
-                                        <div class="face back-face">
+                                        <div class="face back-face">                    
                                             <span class="fas fa-quote-left"></span>
                                             <div class="testimonial heading3 text-white">
                                                 <p>Interest rates were a big concern, but Sarvamangala offered a very competitive deal. Now we
