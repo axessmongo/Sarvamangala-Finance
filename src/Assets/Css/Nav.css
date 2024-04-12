@@ -1,27 +1,28 @@
 .hero {
     height: 90vh;
     width: 100vw;
-    background-image: url(../img/lord.jpg);
+    background-image: url(../img/perumal.png);
     background-position: center;
     background-size: cover;
     animation-name: zoomIn;
     animation-duration: 6s;
+    background-repeat: no-repeat;
     /* Adjust the duration as needed */
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes zoomIn {
-    from {
-        background-size: 100%;
-        /* Start with the original size */
-    }
+/* @media (min-width: 1200px) {
+    @keyframes zoomIn {
+        from {
+            background-size: 100%;
+        }
 
-    to {
-        background-size: 107%;
-        /* Zoom in to 110% */
+        to {
+            background-size: 107%;
+        }
     }
-}
+} */
 
 .hero2 {
     height: 90vh;
@@ -218,13 +219,14 @@ hr {
     width: 100%;
 }
 
-.business1-bg{
+.business1-bg {
     background-image: url(../img/Business-loan-bg.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
+
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -237,24 +239,26 @@ hr {
     height: 40px;
     border-radius: 50px;
     transition: all 0.4s;
-  }
-  
-  .back-to-top i {
+}
+
+.back-to-top i {
     font-size: 28px;
     color: #fff;
     line-height: 0;
-  }
-  
-  .back-to-top:hover {
-    background:#900c3f;
+}
+
+.back-to-top:hover {
+    background: #900c3f;
     color: #fff;
-  }
-  
-  .back-to-top.active {
+}
+
+.back-to-top.active {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .acco-head{
-    color: papayawhip;
-  }
+}
+
+.acco-head {
+    color: #900c3f;
+    font-size: 13px;
+    font-weight: 500;
+}

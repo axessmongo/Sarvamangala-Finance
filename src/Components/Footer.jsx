@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
-        <footer className="footer-section mt-4">
+        <footer className="footer-section mt-4"  data-aos="fade-up"data-aos-duration="700">
             <div className="container">
                 <div className="footer-cta pt-5 ">
                     <div className="row">
@@ -84,7 +84,7 @@ function Footer() {
                                 </div>
                                 <div className='heading3 btn2 text-center mt-3'>
                                     <button className='' >
-                                        <Link to={"contact"}>Contact Us</Link>
+                                        <Link to={""}>Contact Us</Link>
                                     </button>
                                 </div>
 

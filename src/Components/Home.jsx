@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ournature1 from "../Assets/img/nature1.jpg";
 import ournature2 from "../Assets/img/nature2.jpg";
-import capital from "../Assets/img/capital.jpg";
+import capital from "../Assets/img/choose.gif";
 import list from "../Assets/img/list.png";
 import account from "../Assets/img/account.png";
 import process from "../Assets/img/process.png";
@@ -21,6 +21,8 @@ import img4 from "../Assets/img/image4.png";
 import img5 from "../Assets/img/image5.png";
 import img6 from "../Assets/img/image6.png";
 import img7 from "../Assets/img/image7.png";
+import img8 from '../Assets/img/image9.png'
+import img9 from '../Assets/img/image8.png'
 import logo from "../Assets/img/logo1.png";
 import contact from "../Assets/img/conatct.png";
 import AOS from 'aos';
@@ -29,6 +31,23 @@ import Scroll from './Scroll'
 import planning from '../Assets/img/Planing.gif'
 
 export default function Home() {
+  const [state, setState] = useState({})
+
+
+  const handleSubmit =(event)=>{
+    event.preventDefault();
+    console.log(state);
+    CreateGoogleSheet()
+    readGoogleSheet()
+    setState({})
+
+  }
+
+  const handleChange = (event) =>{
+    const {name , value} = event.target;
+    setState((previousValues) => ({...previousValues, [name]: value}))
+  }
+
   const [active, setActive] = useState(false)
   AOS.init({
     // Add your AOS options here
@@ -43,7 +62,6 @@ export default function Home() {
       var navHeight = navbarElement.clientHeight;
       // Use navHeight as needed
     }
-    console.log(element)
     if (element) {
       const topPosition = element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({ top: topPosition - navHeight, behavior: 'smooth' });
@@ -56,6 +74,29 @@ export default function Home() {
   };
 
   gotoTop();
+  const readGoogleSheet = () => {
+
+    fetch('https://sheetdb.io/api/v1/61xmh86aqnksc')
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+
+  }
+  const CreateGoogleSheet = () => {
+    fetch('https://sheetdb.io/api/v1/61xmh86aqnksc', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        data: [
+          state
+        ]
+      })
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  }
   return (
     <div className="overflow-hidden">
       <section className="nav-banner nav-bg ">
@@ -67,7 +108,7 @@ export default function Home() {
             <img src={logo} className="logo px-3" alt="Logo" />
           </div>
           <button className="navbar-toggler shadow-none" onClick={() => setActive(!active)} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i className={`bi ${active ? "bi-x" : "bi-list"}`}></i>
+            <i className={`bi ${active ? "bi-x" : "bi-list"} text-white`}></i>
           </button>
 
           <div
@@ -130,7 +171,7 @@ export default function Home() {
         <div className="layer"></div>
       </div>
       {/* hero bennar */}
-      <section className=" overflow-x-hidden mt-5 mt-lg-0">
+      <section className=" overflow-x-hidden mt-5 mt-lg-0" data-aos="fade-down">
         <div className="hero" id='home1'>
           <div className="hero-opacity text-white"></div>
         </div>
@@ -138,14 +179,14 @@ export default function Home() {
       {/* services card */}
       <div className="container-fluid my-3">
         <div className="row align-items-center justify-content-center gx-2 main-card g-3">
-          <div className="col-md-4">
+          <div className="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <div className="normal-card d-flex flex-column rounded-0">
               <p className="bg-no">01</p>
               <p className=" text-white heading3 fs-5">Big business loans, </p>
               <h1 className=" text-white heading4">bigger possibilities</h1>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1200">
             <div className="normal-card d-flex flex-column rounded-0">
               <p className="bg-no">02</p>
               <p className="text-white heading3 fs-5">We finance,</p>
@@ -154,7 +195,7 @@ export default function Home() {
               </h1>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4" data-aos="fade-left" data-aos-duration="1000">
             <div className="normal-card d-flex flex-column rounded-0">
               <p className="bg-no">03</p>
               <p className="text-white heading3 fs-5">Competitive rates, </p>
@@ -172,20 +213,20 @@ export default function Home() {
               <div className="col-md-5 d-flex justify-content-center align-items-center">
                 <div className="">
                   <div className="">
-                    <h4 className="heading4 text-white">
+                    <h4 className="heading4 text-white" data-aos="fade-right" data-aos-duration="1000">
                       Our{" "}
                       <span className="heading4" style={{ color: "#900c3f" }}>
                         {" "}
                         Goal
                       </span>
                     </h4>
-                    <h1 className="pt-2 fs-4 text-light nature-1 heading3 mt-3">
+                    <h1 className="pt-2 fs-4 text-light nature-1 heading3 mt-3" data-aos="fade-left" data-aos-duration="1300">
                       We Finance It. Secure Funding for Your Ambitions with
                       Sarvamangala.
                     </h1>
                     <h4
                       className="pt-4 nature-primary1 nature-1 heading1 fs-4 "
-                      style={{ color: "#900c3f" }}
+                      style={{ color: "#900c3f" }} data-aos="fade-right" data-aos-duration="1000"
                     >
                       Growth Never Stops.
                     </h4>
@@ -196,7 +237,7 @@ export default function Home() {
                 <div className="row">
                   <div className="d-flex pt-2">
                     <div className="col-5">
-                      <div className="nature-part">
+                      <div className="nature-part" data-aos="zoom-out-up" data-aos-duration="700">
                         <img
                           src={ournature1}
                           alt=""
@@ -205,13 +246,16 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="col-7">
-                      <div className="nature-part1">
-                        <img
-                          src={ournature2}
-                          alt=""
-                          className="img-fluid rounded-2"
-                        />
+                      <div data-aos="fade-left" data-aos-duration="700">
+                        <div className="nature-part1">
+                          <img
+                            src={ournature2}
+                            alt=""
+                            className="img-fluid rounded-2"
+                          />
+                        </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -237,7 +281,7 @@ export default function Home() {
       <div className="bg-green-1 text-white p-1" id='chooseus'>
         <div className="container">
           <div className="row align-items-center g-3 py-3 text-center ">
-            <h4 className="heading4 text-white">
+            <h4 className="heading4 text-white" data-aos="zoom-in" data-aos-duration="700">
               Why Choose{" "}
               <span className="heading4" style={{ color: "#900c3f" }}>
                 {" "}
@@ -246,132 +290,148 @@ export default function Home() {
             </h4>
 
             <div className="col-md-4">
-              <img src={capital} alt="" className="img-fluid" />
+              <img src={capital} alt="" className="img-fluid w-75 fin-img1 rounded-3" />
             </div>
             <div className="col-md-8 text-dark">
               <div className="row gy-3">
                 <div className="col-6 col-md-5 col-lg-3">
-                  <div className="industries-card mb-3" data-aos="zoom-out">
-                    <i
-                      class="bi bi-ticket fs-2 m-2 "
-                      style={{ color: "#c00937" }}
-                    ></i>
-                    {/* <img src={fintech} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" /> */}
-                    <p className="secondary-text mb-0  text-center heading2">
-                      Big Ticket Loans
-                    </p>
+                  <div className="mb-3" data-aos="zoom-out">
+                    <div className="industries-card ">
+                      <i
+                        class="bi bi-ticket fs-2 m-2 "
+                        style={{ color: "#c00937" }}
+                      ></i>
+                      {/* <img src={fintech} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" /> */}
+                      <p className="secondary-text mb-0  text-center heading2">
+                        Big Ticket Loans
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div
-                    className="industries-card  pt-2"
+                    className=" "
                     data-aos="zoom-out"
                     data-aos-duration="500"
                   >
-                    <i
-                      className="bi bi-lightning-fill fs-3 m-2"
-                      style={{ color: "#c00937" }}
-                    ></i>
-                    {/* <img src={healthcare} className='mb-2' alt="https://maticz.com/assets/images/home/healthcare.webp" /> */}
-                    <p className="secondary-text mb-1  text-center  heading2">
-                      Competitive Rates
-                    </p>
+                    <div className="industries-card">
+                      <i
+                        className="bi bi-lightning-fill fs-3 m-2"
+                        style={{ color: "#c00937" }}
+                      ></i>
+                      {/* <img src={healthcare} className='mb-2' alt="https://maticz.com/assets/images/home/healthcare.webp" /> */}
+                      <p className="secondary-text mb-1  text-center  heading2">
+                        Competitive Rates
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div
-                    className="industries-card"
+                    className=""
                     data-aos="zoom-out"
                     data-aos-duration="500"
                   >
-                    <i
-                      className="bi bi-credit-card fs-3 m-2"
-                      style={{ color: "#c00937" }}
-                    ></i>
-                    {/* <img src={education} className='mb-2' alt="https://maticz.com/assets/images/home/graduation-cap.webp" /> */}
-                    <p className="secondary-text mb-1 text-center  heading2">
-                      Flexible Repayment
-                    </p>
+                    <div className="industries-card">
+                      <i
+                        className="bi bi-credit-card fs-3 m-2"
+                        style={{ color: "#c00937" }}
+                      ></i>
+                      {/* <img src={education} className='mb-2' alt="https://maticz.com/assets/images/home/graduation-cap.webp" /> */}
+                      <p className="secondary-text mb-1 text-center  heading2">
+                        Flexible Repayment
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div
-                    className="industries-card"
+
                     data-aos="zoom-out"
                     data-aos-duration="500"
                   >
-                    <i
-                      class="bi bi-person-circle fs-4"
-                      style={{ color: "#c00937" }}
-                    ></i>
-                    {/* <img src={insurance} className='mb-2' alt="https://maticz.com/assets/images/home/life-insurance.webp" /> */}
-                    <p className="secondary-text mb-3 mt-2  text-center  heading2">
-                      Expert Support
-                    </p>
+                    <div className="industries-card">
+                      <i
+                        class="bi bi-person-circle fs-4"
+                        style={{ color: "#c00937" }}
+                      ></i>
+                      {/* <img src={insurance} className='mb-2' alt="https://maticz.com/assets/images/home/life-insurance.webp" /> */}
+                      <p className="secondary-text mb-3 mt-2  text-center  heading2">
+                        Expert Support
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div
-                    className="industries-card"
+
                     data-aos="zoom-out"
                     data-aos-duration="500"
                   >
-                    <i
-                      className="bi bi-joystick fs-3 m-2"
-                      style={{ color: "#c00937" }}
-                    ></i>
-                    {/* <img src={restaurant} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" /> */}
-                    <p className="secondary-text mb-1  text-center heading2">
-                      Fast Approvals
-                    </p>
+                    <div className="industries-card">
+                      <i
+                        className="bi bi-joystick fs-3 m-2"
+                        style={{ color: "#c00937" }}
+                      ></i>
+                      {/* <img src={restaurant} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" /> */}
+                      <p className="secondary-text mb-1  text-center heading2">
+                        Fast Approvals
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div
-                    className="industries-card"
+
                     data-aos="zoom-out"
                     data-aos-duration="500"
                   >
-                    <i
-                      className="bi bi-file-check-fill fs-3 m-2"
-                      style={{ color: "#c00937" }}
-                    ></i>
-                    {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
-                    <p className="secondary-text mb-1  text-center heading2">
-                      Collateral Options
-                    </p>
+                    <div className="industries-card">
+                      <i
+                        className="bi bi-file-check-fill fs-3 m-2"
+                        style={{ color: "#c00937" }}
+                      ></i>
+                      {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
+                      <p className="secondary-text mb-1  text-center heading2">
+                        Collateral Options
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div
-                    className="industries-card"
+
                     data-aos="zoom-out"
                     data-aos-duration="500"
                   >
-                    <i
-                      className="bi bi-cart-plus fs-3 m-2"
-                      style={{ color: "#c00937" }}
-                    ></i>
-                    {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
-                    <p className="secondary-text mb-1 text-center heading2">
-                      Business Focus
-                    </p>
+                    <div className="industries-card">
+                      <i
+                        className="bi bi-cart-plus fs-3 m-2"
+                        style={{ color: "#c00937" }}
+                      ></i>
+                      {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
+                      <p className="secondary-text mb-1 text-center heading2">
+                        Business Focus
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-6 col-md-5 col-lg-3">
                   <div
-                    className="industries-card"
+
                     data-aos="zoom-out"
                     data-aos-duration="500"
                   >
-                    <i
-                      className="bi bi-hand-thumbs-up fs-3 m-2"
-                      style={{ color: "#c00937" }}
-                    ></i>
-                    {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
-                    <p className="secondary-text mb-1 text-center heading2">
-                      Trust &amp; Security
-                    </p>
+                    <div className="industries-card">
+                      <i
+                        className="bi bi-hand-thumbs-up fs-3 m-2"
+                        style={{ color: "#c00937" }}
+                      ></i>
+                      {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
+                      <p className="secondary-text mb-1 text-center heading2">
+                        Trust &amp; Security
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -386,8 +446,7 @@ export default function Home() {
           <div className="position-relative">
             <h4
               className="heading4 text-white text-center mb-3"
-              data-aos="fade-up"
-              data-aos-duration="400"
+              data-aos="zoom-in" data-aos-duration="700"
             >
               Bussiness  <span className="heading4 business-step"> Loan</span>
             </h4>
@@ -518,7 +577,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 business-step mb-0">
-                        Fast & Easy Application: Get funded quickly.
+                          Fast & Easy Application: Get funded quickly.
                         </p>
                       </div>
                     </div>
@@ -541,7 +600,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 business-step mb-0">
-                        Tailored for Businesses: Solutions that fit your needs.
+                          Tailored for Businesses: Solutions that fit your needs.
                         </p>
                       </div>
                     </div>
@@ -570,28 +629,28 @@ export default function Home() {
         <div className="container mt-5">
           <div className="row ">
             <div className="col-lg-5 col-xl-6 fin-section1">
-              <div className="mt-4">
-                <div className="text-center text-md-center">
+              <div className="">
+                <div className="text-center text-md-center" data-aos="zoom-in-down" data-aos-duration="700">
                   <img
                     src={planning}
                     alt=""
                     className="img-fluid w-75 fin-img1 rounded-3"
                   />
                 </div>
-               
+
               </div>
             </div>
             <div className="col-lg-7 col-xl-6 fin-section2">
               <div>
                 <div className="">
-                  <h4 className="heading4 text-white mt-4">
+                  <h4 className="heading4 text-white mt-4" data-aos="zoom-in-down" data-aos-duration="1600">
                     Plan for Tommorrow,{" "}
                     <span className="heading4" style={{ color: "#900c3f" }}>
                       {" "}
                       Today
                     </span>
                   </h4>
-                  <p className="heading3 text-white mt-3 fs-6">
+                  <p className="heading3 text-white mt-3 fs-6" data-aos="zoom-out-left" data-aos-duration="700">
                     Building a secure financial future requires a well-rounded
                     approach. At Sarvamangala Financial Services, we offer
                     comprehensive financial planning services that encompass:
@@ -599,7 +658,7 @@ export default function Home() {
                   {/* <p className='text-light'>At Sarvamangala Financial Services, we believe that a secure financial future is a foundation upon which you can build your dreams.</p> */}
                 </div>
 
-                <div className="">
+                <div className="" data-aos="fade-left" data-aos-duration="1300">
                   <ul className="fin-ul">
                     <li className="">
                       {" "}
@@ -659,7 +718,7 @@ export default function Home() {
       </div>
 
       {/* clarifications */}
-      <section className="clarif mt-5 py-5">
+      <section className="clarif mt-5 py-5" data-aos="zoom-in" data-aos-duration="1500">
         <div className="container">
           <div className="row">
             <div className="col-md-8 mt-5">
@@ -672,7 +731,7 @@ export default function Home() {
             </div>
             <div className="col-md-4 py-lg-5 heading3 btn1">
               <button>
-                <Link to={"contact"}>Give us a call</Link>
+                <Link to={"tel:044-26155554"}>Give us a call</Link>
               </button>
             </div>
           </div>
@@ -680,9 +739,9 @@ export default function Home() {
       </section>
 
       {/* Testimonals */}
-      <div>
+      <div >
         <div class="container testing text-center mt-4">
-          <h4 className="heading4 text-white">
+          <h4 className="heading4 text-white" data-aos="zoom-in" data-aos-duration="1100">
             Success{" "}
             <span className="heading4" style={{ color: "#900c3f" }}>
               {" "}
@@ -690,7 +749,7 @@ export default function Home() {
             </span>
           </h4>
         </div>
-        <div className="contaner-fluid mt-5">
+        <div className="contaner-fluid mt-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           <div
             id="carouselExampleControls"
             class="carousel carousel-dark slide mb-5"
@@ -1096,7 +1155,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img3}
+                          src={img4}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1139,7 +1198,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img4}
+                          src={img5}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1176,7 +1235,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img5}
+                          src={img6}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1213,7 +1272,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2 ">
                         <img
-                          src={img6}
+                          src={img7}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1252,7 +1311,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img3}
+                          src={img8}
                           class="rounded-2"
                           width="40px"
                           hnine="40px"
@@ -1295,7 +1354,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img7}
+                          src={img9}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1328,7 +1387,7 @@ export default function Home() {
 
       {/* CONTACTS US */}
       <div id='contact'>
-        <h4 className="heading4 text-white text-center mt-5">
+        <h4 className="heading4 text-white text-center mt-5" data-aos="zoom-in" data-aos-duration="1000">
           Contact{" "}
           <span className="heading4" style={{ color: "#900c3f" }}>
             {" "}
@@ -1338,7 +1397,7 @@ export default function Home() {
         <section className="my-5 contacting">
           <div className="container image1">
             <div className="row">
-              <div className="col-lg-4 col-xl-5">
+              <div className="col-lg-4 col-xl-5" data-aos="fade-right" data-aos-duration="1000">
                 {/* <img src="https://img.freepik.com/free-vector/new-message-concept-landing-page_23-2148317868.jpg?w=996&t=st=1712302963~exp=1712303563~hmac=8bf9f260cce7fcca238d84db1ab62b9a688255b05abfc2fc1f27cb1615c00717" alt="" className='img-fluid mt-5   ' /> */}
                 <div style={{ borderRadius: "15px", overflow: "hidden" }}>
                   <iframe
@@ -1353,75 +1412,87 @@ export default function Home() {
                   ></iframe>
                 </div>{" "}
               </div>
-              <div className="col-lg-8 col-xl-7">
-                <div class="">
-                  <div class=" ">
-                    <div class="screen">
-                      <div class="screen-header">
-                        <div class="screen-header-left">
-                          <div class="screen-header-button close"></div>
-                          <div class="screen-header-button maximize"></div>
-                          <div class="screen-header-button minimize"></div>
+              <div className="col-lg-8 col-xl-7" data-aos="fade-left" data-aos-duration="700">
+                <form onSubmit={handleSubmit}>
+                  <div class="">
+                    <div class=" ">
+                      <div class="screen">
+                        <div class="screen-header">
+                          <div class="screen-header-left">
+                            <div class="screen-header-button close"></div>
+                            <div class="screen-header-button maximize"></div>
+                            <div class="screen-header-button minimize"></div>
+                          </div>
+                          <div class="screen-header-right">
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                          </div>
                         </div>
-                        <div class="screen-header-right">
-                          <div class="screen-header-ellipsis"></div>
-                          <div class="screen-header-ellipsis"></div>
-                          <div class="screen-header-ellipsis"></div>
+                        <div class="screen-body bg">
+                          <div class="screen-body-item left">
+                            <div class="app-title ">
+                              <img src={contact} alt="" className="img-fluid" />
+                            </div>
+                            <div class="app-contact heading3">
+                              CONTACT INFO : +62 81 314 928 595
+                            </div>
+                          </div>
+                          <div class="screen-body-item">
+                            <div class="app-form">
+                              <div class="app-form-group">
+                                <input
+                                  class="app-form-control heading5"
+                                  placeholder="NAME" value={state.name || ""}
+                                  onChange={handleChange} name="name"
+                                />
+                              </div>
+                              <div class="app-form-group">
+                                <input
+                                  class="app-form-control heading5"
+                                  placeholder="EMAIL" value={state.email || ""}
+                                  onChange={handleChange}
+                                  name="email"
+                                />
+                              </div>
+                              <div class="app-form-group">
+                                <input
+                                  class="app-form-control heading5"
+                                  placeholder="CONTACT NO" value={state.phone || ""}
+                                  onChange={handleChange}
+                                  name= "phone"
+                                />
+                              </div>
+                              <div class="app-form-group message">
+                                <input
+                                  class="app-form-control heading5"
+                                  placeholder="MESSAGE" value={state.message || ""}
+                                  onChange={handleChange}
+                                  name="message"
+                                />
+                              </div>
+                              <button type="submit" href="#" class="primary-btn text-center">
+                                {/* <span> <button onClick={() => readGoogleSheet()}>
+                                  create
+                                </button>
+                                  <button onClick={() => CreateGoogleSheet()}>
+                                    read
+                                  </button></span> */} <span className="text-white">Submit </span>
+                                <div class="liquid"></div>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="screen-body bg">
-                        <div class="screen-body-item left">
-                          <div class="app-title ">
-                            <img src={contact} alt="" className="img-fluid" />
-                          </div>
-                          <div class="app-contact heading3">
-                            CONTACT INFO : +62 81 314 928 595
-                          </div>
-                        </div>
-                        <div class="screen-body-item">
-                          <div class="app-form">
-                            <div class="app-form-group">
-                              <input
-                                class="app-form-control heading5"
-                                placeholder="NAME"
-                              />
-                            </div>
-                            <div class="app-form-group">
-                              <input
-                                class="app-form-control heading5"
-                                placeholder="EMAIL"
-                              />
-                            </div>
-                            <div class="app-form-group">
-                              <input
-                                class="app-form-control heading5"
-                                placeholder="CONTACT NO"
-                              />
-                            </div>
-                            <div class="app-form-group message">
-                              <input
-                                class="app-form-control heading5"
-                                placeholder="MESSAGE"
-                              />
-                            </div>
-                            <a href="#" class="primary-btn text-center">
-                              <span className="text-center heading3">
-                                Submit
-                              </span>
-                              <div class="liquid"></div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                      {/* <button type="submit">Submit</button> */}
                     </div>
-                    {/* <button type="submit">Submit</button> */}
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </section>
-        <section class="contact_info_section pt_150 pb_120">
+        <section class="contact_info_section pt_150 pb_120" data-aos="zoom-in" data-aos-duration="700">
           <div class="container ">
             <div class="row hovering-eff">
               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">

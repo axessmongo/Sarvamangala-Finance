@@ -22,16 +22,20 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+        
           <Route path="/business" element={<Business />} />
         </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }
 export default App;
+{/* <Route path="/contact" element={<Contact />} /> */ }
