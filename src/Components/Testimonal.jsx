@@ -104,7 +104,7 @@ export default function Testimonal() {
                                         <div class="face front-face">
                                             <img src={avatar3}
                                                 alt="" class="profile" />
-                                            <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
+                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Vikram
                                             </div>
                                             <div class="designation heading3  fs-6 text-dark">Construction Company CEO <span className='heading3 text-center d-block'>(Mumbai)</span></div>
