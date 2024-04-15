@@ -46,6 +46,7 @@ export default function Home() {
   const handleChange = (event) =>{
     const {name , value} = event.target;
     setState((previousValues) => ({...previousValues, [name]: value}))
+    
   }
 
   const [active, setActive] = useState(false)
@@ -88,11 +89,7 @@ export default function Home() {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        data: [
-          state
-        ]
-      })
+      body: JSON.stringify({state})
     })
       .then((response) => response.json())
       .then((data) => console.log(data));
@@ -1443,32 +1440,32 @@ export default function Home() {
                               <div class="app-form-group">
                                 <input
                                   class="app-form-control heading5"
-                                  placeholder="NAME" value={state.name || ""}
-                                  onChange={handleChange} name="name"
+                                  placeholder="NAME" value={state.Name || ""}
+                                  onChange={handleChange} name="Name"
                                 />
                               </div>
                               <div class="app-form-group">
                                 <input
                                   class="app-form-control heading5"
-                                  placeholder="EMAIL" value={state.email || ""}
+                                  placeholder="EMAIL" value={state.Email || ""}
                                   onChange={handleChange}
-                                  name="email"
+                                  name="Email"
                                 />
                               </div>
                               <div class="app-form-group">
                                 <input
                                   class="app-form-control heading5"
-                                  placeholder="CONTACT NO" value={state.phone || ""}
+                                  placeholder="CONTACT NO" value={state.Phone || ""}
                                   onChange={handleChange}
-                                  name= "phone"
+                                  name= "Phone"
                                 />
                               </div>
                               <div class="app-form-group message">
                                 <input
                                   class="app-form-control heading5"
-                                  placeholder="MESSAGE" value={state.message || ""}
+                                  placeholder="MESSAGE" value={state.Message || ""}
                                   onChange={handleChange}
-                                  name="message"
+                                  name="Message"
                                 />
                               </div>
                               <button type="submit" href="#" class="primary-btn text-center">
