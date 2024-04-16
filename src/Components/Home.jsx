@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ournature1 from "../Assets/img/nature1.jpg";
 import ournature2 from "../Assets/img/nature2.jpg";
-import capital from "../Assets/img/choose.gif";
+import capital from "../Assets/img/why.png";
 import list from "../Assets/img/list.png";
 import account from "../Assets/img/account.png";
 import process from "../Assets/img/process.png";
@@ -28,7 +28,7 @@ import contact from "../Assets/img/conatct.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Scroll from './Scroll'
-import planning from '../Assets/img/Planing.gif'
+import planning from '../Assets/img/plan.png'
 
 export default function Home() {
   const [state, setState] = useState({})
