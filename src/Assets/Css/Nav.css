@@ -262,3 +262,22 @@ hr {
     font-size: 13px;
     font-weight: 500;
 }
+
+.acco-head::after {
+    color: #900c3f;
+
+}
+
+.fall {
+    position: absolute;
+    top: -90px;
+
+    &.fall1 {
+        left: 0px;
+        transform: scaleX(-1);
+    }
+
+    &.fall2 {
+        right: 0px;
+    }
+}

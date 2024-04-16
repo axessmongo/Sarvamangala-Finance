@@ -26,6 +26,7 @@ import img8 from '../Assets/img/image9.png'
 import img9 from '../Assets/img/image8.png'
 import logo from "../Assets/img/logo1.png";
 import contact from "../Assets/img/conatct.png";
+import coins from "../Assets/img/coins.gif"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Scroll from './Scroll'
@@ -171,6 +172,12 @@ export default function Home() {
       </div>
       {/* hero bennar */}
       <section className=" overflow-x-hidden mt-5 mt-lg-0" data-aos="fade-down">
+        <div className="fall fall1">
+          <img src={coins} alt={coins} />
+        </div>
+        <div className="fall fall2">
+          <img src={coins} alt={coins} />
+        </div>
         <div className="hero" id='home1'>
           <div className="hero-opacity text-white"></div>
         </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
-        <footer className="footer-section mt-4"  data-aos="fade-up"data-aos-duration="700">
+        <footer className="footer-section mt-4">
             <div className="container">
                 <div className="footer-cta pt-5 ">
                     <div className="row">
@@ -65,7 +65,7 @@ function Footer() {
                                     <h3 className='heading3'>Useful Links</h3>
                                 </div>
                                 <ul className='heading3'>
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#" >Home</a></li>
                                     <li><a href="#goals">Goals</a></li>
                                     <li><a href="#bussiness">services</a></li>
                                     <li><a href="#contact">Contact</a></li>
@@ -82,11 +82,11 @@ function Footer() {
                                 <div className="footer-text">
                                     <p className='heading3'>Get exclusive insights & offers. Follow us on Instagram & Facebook!</p>
                                 </div>
-                                <div className='heading3 btn2 text-center mt-3'>
+                                {/* <div className='heading3 btn2 text-center mt-3'>
                                     <button className='' >
-                                    <Link to={"tel:044-26155554"}>Contact us</Link>
+                                        <Link to={"contact"}>Contact Us</Link>
                                     </button>
-                                </div>
+                                </div> */}
 
                             </div>
                         </div>
