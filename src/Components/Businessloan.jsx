@@ -25,7 +25,7 @@ function Businessloan() {
                                     <Link to={"/"}>Back To Home</Link>
                                 </button>
                             </div>
-                            <p className='business_banner_text2 heading6' style={{ color: "#900c3f" }}>100 Crore</p>
+                            <p className='business_banner_text2 heading6' style={{ color: "#900c3f" }}>10 Crore</p>
                         </div>
                         <div class="carousel-item">
                             {/* <img src={carousel1} alt="" /> */}
