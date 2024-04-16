@@ -1,7 +1,5 @@
 import React from 'react'
-import avatar1 from '../Assets/img/avatar1.avif'
-import avatar2 from '../Assets/img/avatar2.avif'
-import avatar3 from '../Assets/img/avatar3.avif'
+import profile1 from '../Assets/img/profile1.png';
 export default function Testimonal() {
     return (
         <div>
@@ -18,8 +16,8 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                                     <div class="card ">
                                         <div class="face front-face">
-                                            <img src={avatar1}
-                                                alt="" class="profile" />
+                                            <img src={profile1}
+                                                alt="" className="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Rajesh
                                             </div>
@@ -38,7 +36,7 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                                     <div class="card">
                                         <div class="face front-face">
-                                            <img src={avatar2}
+                                            <img src={profile1}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Priya
@@ -58,7 +56,7 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-  d-none d-lg-block">
                                     <div class="card">
                                         <div class="face front-face">
-                                            <img src={avatar3} alt="" class="profile" />
+                                            <img src={profile1} alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Akash &amp; Meena
                                             </div>
@@ -81,7 +79,7 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                                     <div class="card ">
                                         <div class="face front-face">
-                                            <img src={avatar1}
+                                            <img src={profile1}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Mr. &amp; Mrs.Patel,
@@ -102,7 +100,7 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                                     <div class="card">
                                         <div class="face front-face">
-                                            <img src={avatar3}
+                                            <img src={profile1}
                                                 alt="" class="profile" />
                                              <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Vikram
@@ -122,7 +120,7 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-lg-block">
                                     <div class="card">
                                         <div class="face front-face">
-                                            <img src={avatar2} alt="" class="profile" />
+                                            <img src={profile1} alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Kavitha
                                             </div>
@@ -145,7 +143,7 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                                     <div class="card ">
                                         <div class="face front-face">
-                                            <img src={avatar1}
+                                            <img src={profile1}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Sunil &amp; Sonali,
@@ -165,7 +163,7 @@ export default function Testimonal() {
                                 <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                                     <div class="card">
                                         <div class="face front-face">
-                                            <img src={avatar2}
+                                            <img src={profile1}
                                                 alt="" class="profile" />
                                             <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                                                 Ranjit,

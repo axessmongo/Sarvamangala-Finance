@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import profile1 from '../Assets/img/profile1.png';
 import ournature1 from "../Assets/img/nature1.jpg";
 import ournature2 from "../Assets/img/nature2.jpg";
 import capital from "../Assets/img/choose.gif";
@@ -467,7 +468,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 mb-0 business-step">
-                          Loans up to ₹100 crore and beyond
+                          Loans up to ₹10 crore and beyond
                         </p>
                       </div>
                     </div>
@@ -758,7 +759,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                     <div class="card ">
                       <div class="face front-face">
-                        <img src={avatar1} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Rajesh
                         </div>
@@ -785,7 +786,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar2} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Priya
                         </div>
@@ -811,7 +812,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-  d-none d-lg-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar3} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Akash &amp; Meena
                         </div>
@@ -844,7 +845,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                     <div class="card ">
                       <div class="face front-face">
-                        <img src={avatar1} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Mr. &amp; Mrs.Patel,
                         </div>
@@ -872,7 +873,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar3} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Vikram
                         </div>
@@ -898,7 +899,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-lg-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar2} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Kavitha
                         </div>
@@ -930,7 +931,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                     <div class="card ">
                       <div class="face front-face">
-                        <img src={avatar1} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Sunil &amp; Sonali,
                         </div>
@@ -958,7 +959,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar2} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Ranjit,
                         </div>
