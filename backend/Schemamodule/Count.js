@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
-const { Schema } = mongoose;
 
-const CountSchema = new Schema({
-    count:{
-        type:Number,
-        
+const countSchema = new mongoose.Schema({
+    count: {
+        type: Number,
+        default: 0
     }
-})
+});
 
-const Blog = mongoose.model('count', CountSchema);
+const Count = mongoose.model('Count', countSchema);
 
-module.exports = Blog
+module.exports = Count;
