@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import profile1 from '../Assets/img/profile1.png';
 import ournature1 from "../Assets/img/nature1.jpg";
 import ournature2 from "../Assets/img/nature2.jpg";
-import capital from "../Assets/img/choose.gif";
+import capital from "../Assets/img/why.png";
 import list from "../Assets/img/list.png";
 import account from "../Assets/img/account.png";
 import process from "../Assets/img/process.png";
@@ -21,12 +22,14 @@ import img4 from "../Assets/img/image4.png";
 import img5 from "../Assets/img/image5.png";
 import img6 from "../Assets/img/image6.png";
 import img7 from "../Assets/img/image7.png";
+import img8 from '../Assets/img/image9.png'
+import img9 from '../Assets/img/image8.png'
 import logo from "../Assets/img/logo1.png";
 import contact from "../Assets/img/conatct.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Scroll from './Scroll'
-import planning from '../Assets/img/Planing.gif'
+import planning from '../Assets/img/plan.png'
 
 export default function Home() {
   const [state, setState] = useState({})
@@ -44,6 +47,7 @@ export default function Home() {
   const handleChange = (event) =>{
     const {name , value} = event.target;
     setState((previousValues) => ({...previousValues, [name]: value}))
+    
   }
 
   const [active, setActive] = useState(false)
@@ -86,17 +90,14 @@ export default function Home() {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        data: [
-          state
-        ]
-      })
+      body: JSON.stringify({state})
     })
       .then((response) => response.json())
       .then((data) => console.log(data));
   }
   return (
     <div className="overflow-hidden">
+      
       <section className="nav-banner nav-bg ">
         <nav
           className="navbar navbar-expand-lg m-auto align-items-center d-flex justify-content-lg-center justify-content-between px-3 px-lg-0"
@@ -288,7 +289,7 @@ export default function Home() {
             </h4>
 
             <div className="col-md-4">
-              <img src={capital} alt="" className="img-fluid w-75 fin-img1 rounded-3" />
+              <img src={capital} alt="" className="img-fluid fin-img1 rounded-3" />
             </div>
             <div className="col-md-8 text-dark">
               <div className="row gy-3">
@@ -468,7 +469,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 mb-0 business-step">
-                          Loans up to ₹100 crore and beyond
+                          Loans up to ₹10 crore and above 
                         </p>
                       </div>
                     </div>
@@ -729,7 +730,7 @@ export default function Home() {
             </div>
             <div className="col-md-4 py-lg-5 heading3 btn1">
               <button>
-                <Link to={"contact"}>Give us a call</Link>
+                <Link to={"tel:044-26155554"}>Give us a call</Link>
               </button>
             </div>
           </div>
@@ -759,7 +760,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                     <div class="card ">
                       <div class="face front-face">
-                        <img src={avatar1} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Rajesh
                         </div>
@@ -786,7 +787,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar2} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Priya
                         </div>
@@ -812,7 +813,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-  d-none d-lg-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar3} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Akash &amp; Meena
                         </div>
@@ -845,7 +846,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                     <div class="card ">
                       <div class="face front-face">
-                        <img src={avatar1} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Mr. &amp; Mrs.Patel,
                         </div>
@@ -873,7 +874,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar3} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Vikram
                         </div>
@@ -899,7 +900,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-lg-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar2} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Kavitha
                         </div>
@@ -931,7 +932,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
                     <div class="card ">
                       <div class="face front-face">
-                        <img src={avatar1} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Sunil &amp; Sonali,
                         </div>
@@ -959,7 +960,7 @@ export default function Home() {
                   <div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center d-none d-md-block">
                     <div class="card">
                       <div class="face front-face">
-                        <img src={avatar2} alt="" class="profile" />
+                        <img src={profile1} alt="" class="profile" />
                         <div class="pt-3 text-uppercase name heading5 fs-6 test-head">
                           Ranjit,
                         </div>
@@ -1153,7 +1154,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img3}
+                          src={img4}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1196,7 +1197,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img4}
+                          src={img5}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1233,7 +1234,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img5}
+                          src={img6}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1270,7 +1271,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2 ">
                         <img
-                          src={img6}
+                          src={img7}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1309,7 +1310,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img3}
+                          src={img8}
                           class="rounded-2"
                           width="40px"
                           hnine="40px"
@@ -1352,7 +1353,7 @@ export default function Home() {
                     >
                       <div class="pe-2 col-2">
                         <img
-                          src={img7}
+                          src={img9}
                           class="rounded-2"
                           width="40px"
                           height="40px"
@@ -1441,32 +1442,32 @@ export default function Home() {
                               <div class="app-form-group">
                                 <input
                                   class="app-form-control heading5"
-                                  placeholder="NAME" value={state.name || ""}
-                                  onChange={handleChange} name="name"
+                                  placeholder="NAME" value={state.Name || ""}
+                                  onChange={handleChange} name="Name"
                                 />
                               </div>
                               <div class="app-form-group">
                                 <input
                                   class="app-form-control heading5"
-                                  placeholder="EMAIL" value={state.email || ""}
+                                  placeholder="EMAIL" value={state.Email || ""}
                                   onChange={handleChange}
-                                  name="email"
+                                  name="Email"
                                 />
                               </div>
                               <div class="app-form-group">
                                 <input
                                   class="app-form-control heading5"
-                                  placeholder="CONTACT NO" value={state.phone || ""}
+                                  placeholder="CONTACT NO" value={state.Phone || ""}
                                   onChange={handleChange}
-                                  name= "phone"
+                                  name= "Phone"
                                 />
                               </div>
                               <div class="app-form-group message">
                                 <input
                                   class="app-form-control heading5"
-                                  placeholder="MESSAGE" value={state.message || ""}
+                                  placeholder="MESSAGE" value={state.Message || ""}
                                   onChange={handleChange}
-                                  name="message"
+                                  name="Message"
                                 />
                               </div>
                               <button type="submit" href="#" class="primary-btn text-center">

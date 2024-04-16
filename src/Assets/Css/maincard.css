@@ -1,15 +1,13 @@
 .normal-card {
     padding: 25px;
     position: relative;
-    /* z-index: 33232; */
     height: 200px;
     justify-content: center;
-    transition: .3s; /* Corrected "transition" */
+    transition: .3s; 
     text-align: end;
 }
 
 .normal-card:hover p.bg-no{
-    /* align-items: center !important; */
     text-align: center;
     left: 30%;
     transform: translate(-50%, -50%);

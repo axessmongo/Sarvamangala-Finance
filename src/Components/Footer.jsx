@@ -84,7 +84,7 @@ function Footer() {
                                 </div>
                                 <div className='heading3 btn2 text-center mt-3'>
                                     <button className='' >
-                                        <Link to={""}>Contact Us</Link>
+                                    <Link to={"tel:044-26155554"}>Contact us</Link>
                                     </button>
                                 </div>
 
