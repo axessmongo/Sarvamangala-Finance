@@ -288,7 +288,7 @@ export default function Home() {
             </h4>
 
             <div className="col-md-4">
-              <img src={capital} alt="" className="img-fluid w-75 fin-img1 rounded-3" />
+              <img src={capital} alt="" className="img-fluid fin-img1 rounded-3" />
             </div>
             <div className="col-md-8 text-dark">
               <div className="row gy-3">
@@ -468,7 +468,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 mb-0 business-step">
-                          Loans up to ₹10 crore and beyond
+                          Loans up to ₹10 crore and above 
                         </p>
                       </div>
                     </div>
