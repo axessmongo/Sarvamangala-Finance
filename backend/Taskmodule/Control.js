@@ -13,7 +13,7 @@ const postmethod = async (req, res) => {
         await user.save();
 
         res.status(200).json({
-            message: "Successfully created a new count",
+            message: "Successfully updated new count",
             data: user,
         });
     } catch (error) {
