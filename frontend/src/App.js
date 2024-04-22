@@ -9,11 +9,13 @@ import "./Assets/Css/Financial.css";
 import "./Assets/Css/maincard.css";
 import "./Assets/Css/Businessloan.css"
 import "./Assets/Css/Testimonal.css";
+// import './Assets/Css/Blogs/Blog1.css'
 // import Contact from "./Components/Contact";
 // import Nav from "./Components/Nav";
 import Home from "./Components/Home"
 import Business from "./Components/Businessloan";
-import Blog from "./Components/Blog";
+// import Blog1 from './Blogs/Blog1'
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { useEffect } from 'react';
 import AOS from 'aos';
@@ -30,10 +32,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/business" element={<Business />} />
         </Routes>
       </BrowserRouter>
+      {/* <Blog1 /> */}
 
     </div>
   );
