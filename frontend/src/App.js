@@ -13,6 +13,7 @@ import "./Assets/Css/Testimonal.css";
 // import Nav from "./Components/Nav";
 import Home from "./Components/Home"
 import Business from "./Components/Businessloan";
+import Blog from "./Components/Blog";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { useEffect } from 'react';
 import AOS from 'aos';
@@ -29,11 +30,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-        
+          <Route path="/blog" element={<Blog />} />
           <Route path="/business" element={<Business />} />
         </Routes>
       </BrowserRouter>
-      
+
     </div>
   );
 }

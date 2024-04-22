@@ -1,9 +1,27 @@
 import React from 'react'
 import logo from '../Assets/img/logo1.png'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
 
 function Footer() {
+    const [socialLinks, setSocialLinks] = useState([]);
+
+    useEffect(() => {
+        const fetchSocialLinks = async () => {
+            try {
+                const response = await axios.get("api/get");
+                setSocialLinks(response.data.data[0].count);
+            } catch (error) {
+                console.error("Error fetching social links:", error);
+            }
+        };
+
+        fetchSocialLinks();
+    }, []);
+
     return (
+
         <footer className="footer-section mt-4">
             <div className="container">
                 <div className="footer-cta pt-5 ">
@@ -29,7 +47,7 @@ function Footer() {
                                         elit,Lorem ipsum dolor sit amet.</p>
                                 </div> */}
                                 <div className="footer-social-icon nature-1">
-                                    <span className='heading5'>Follow us</span>
+                                    <span className='heading5 text-white'>Follow us </span>
                                     <div class="social-icons">
 
                                         <div class="social-buttons">
@@ -80,7 +98,8 @@ function Footer() {
                                     <h3 className='heading5'>Subscribe</h3>
                                 </div>
                                 <div className="footer-text">
-                                    <p className='heading3'>Get exclusive insights & offers. Follow us on Instagram & Facebook!</p>
+                                    <p className='heading3'>Get exclusive insights & offers. Follow us on Instagram & Facebook! {socialLinks}
+                                    </p>
                                 </div>
                                 {/* <div className='heading3 btn2 text-center mt-3'>
                                     <button className='' >

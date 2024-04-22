@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import profile1 from '../Assets/img/profile1.png';
 import ournature1 from "../Assets/img/nature1.jpg";
 import ournature2 from "../Assets/img/nature2.jpg";
@@ -29,14 +29,45 @@ import contact from "../Assets/img/conatct.png";
 import coins from "../Assets/img/coins.gif"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import axios from "axios";
 import Scroll from './Scroll'
 import planning from '../Assets/img/plan.png'
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+       
+        const response = await axios.post('api/count', {
+         
+        });
+        console.log(response.data.data);
+        setIsLoading(false); 
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setIsLoading(false); // Turn off loading indicator in case of error
+      }
+    };
+
+    fetchData(); // Call the fetchData function when component mounts
+
+    const handleLoad = () => {
+      setIsLoading(false); // Turn off loading indicator when window is fully loaded
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
+
   const [state, setState] = useState({})
 
 
-  const handleSubmit =(event)=>{
+  const handleSubmit = (event) => {
     event.preventDefault();
     console.log(state);
     CreateGoogleSheet()
@@ -45,10 +76,10 @@ export default function Home() {
 
   }
 
-  const handleChange = (event) =>{
-    const {name , value} = event.target;
-    setState((previousValues) => ({...previousValues, [name]: value}))
-    
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setState((previousValues) => ({ ...previousValues, [name]: value }))
+
   }
 
   const [active, setActive] = useState(false)
@@ -91,14 +122,22 @@ export default function Home() {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({state})
+      body: JSON.stringify({ state })
     })
       .then((response) => response.json())
       .then((data) => console.log(data));
   }
   return (
+
     <div className="overflow-hidden">
-      
+      <div>
+        {isLoading && (
+          <div className="spinner-overlay">
+            <div className="spinner" id="preloader"></div>
+          </div>
+        )}
+        {/* Your other app content */}
+      </div>
       <section className="nav-banner nav-bg ">
         <nav
           className="navbar navbar-expand-lg m-auto align-items-center d-flex justify-content-lg-center justify-content-between px-3 px-lg-0"
@@ -151,6 +190,11 @@ export default function Home() {
                       </a>
                     </li>
                     <li class="nav-item">
+                      <Link class="nav-link" to="/blog" >
+                        Blog
+                      </Link>
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link" onClick={() => gotoTop('contact')} id="home-nav">
                         Contact
                       </a>
@@ -172,12 +216,12 @@ export default function Home() {
       </div>
       {/* hero bennar */}
       <section className=" overflow-x-hidden mt-5 mt-lg-0" data-aos="fade-down">
-        <div className="fall fall1">
+        {/* <div className="fall fall1">
           <img src={coins} alt={coins} />
         </div>
         <div className="fall fall2">
           <img src={coins} alt={coins} />
-        </div>
+        </div> */}
         <div className="hero" id='home1'>
           <div className="hero-opacity text-white"></div>
         </div>
@@ -476,7 +520,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 mb-0 business-step">
-                          Loans up to ₹10 crore and above 
+                          Loans up to ₹10 crore and above
                         </p>
                       </div>
                     </div>
@@ -1466,7 +1510,7 @@ export default function Home() {
                                   class="app-form-control heading5"
                                   placeholder="CONTACT NO" value={state.Phone || ""}
                                   onChange={handleChange}
-                                  name= "Phone"
+                                  name="Phone"
                                 />
                               </div>
                               <div class="app-form-group message">
