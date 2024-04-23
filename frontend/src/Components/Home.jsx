@@ -32,19 +32,40 @@ import 'aos/dist/aos.css';
 import axios from "axios";
 import Scroll from './Scroll'
 import planning from '../Assets/img/plan.png'
+import {
+  slice, concat,
+} from 'lodash';
+const LENGTH = 50;
+const DATA = [...Array(LENGTH).keys()];
+const IMAGE_SRC = ""
+const LIMIT = 10;
+
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState(null);
+  const [showMore, setShowMore] = useState(true);
+  const [list, setList] = useState(slice(DATA, 0, LIMIT))
+  const [index, setIndex] = useState(LIMIT);
+
+  const loadMore = () => {
+    const newIndex = index + LIMIT;
+    const newShowMore = newIndex < (LENGTH - 1);
+    const newList = concat(list, slice(DATA, index, newIndex));
+    setIndex(newIndex);
+    setList(newList);
+    setShowMore(newShowMore);
+  }
   useEffect(() => {
     const fetchData = async () => {
       try {
-       
+
         const response = await axios.post('api/count', {
-         
+
         });
         console.log(response.data.data);
-        setIsLoading(false); 
+        setIsLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
         setIsLoading(false); // Turn off loading indicator in case of error
@@ -190,9 +211,9 @@ export default function Home() {
                       </a>
                     </li>
                     <li class="nav-item">
-                      <Link class="nav-link" to="/blogs" >
-                        Blog
-                      </Link>
+                      <a class="nav-link" onClick={() => gotoTop('blogs')} id="home-nav">
+                        Blogs
+                      </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" onClick={() => gotoTop('contact')} id="home-nav">
@@ -491,176 +512,176 @@ export default function Home() {
       </div>
 
       {/* bussinessLoan */}
-      <section className="whatwedo overflow-hidden" id="business">
-      <div className="container overflow-hidden overflow-lg-visible">
-        <div className="position-relative">
-          <h4
-            className="heading4 text-white text-center mb-3"
-            data-aos="zoom-in"
-            data-aos-duration="700"
-          >
-            Business <span className="heading4 business-step">Loan</span>
-          </h4>
+      <section className="whatwedo overflow-hidden" id="bussiness">
+        <div className="container overflow-hidden overflow-lg-visible">
+          <div className="position-relative">
+            <h4
+              className="heading4 text-white text-center mb-3"
+              data-aos="zoom-in"
+              data-aos-duration="700"
+            >
+              Business <span className="heading4 business-step">Loan</span>
+            </h4>
 
-          <div className="row align-items-center justify-content-center business-bg-step rounded-5 p-4">
-            <div className="col-lg-4 mt-lg-5 left-sec mb-0">
-              <div data-aos="fade-right" data-aos-duration="400">
-                <div
-                  className="card border-0 business-card-step fw-semibold text-white mb-2 mb-lg-5"
-                  data-bs-toggle="offcanvas"
-                >
-                  <div className="d-flex align-items-center">
-                    <div className="card-icon p-3">
-                      <img
-                        src={list}
-                        className="bg-white"
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
+            <div className="row align-items-center justify-content-center business-bg-step rounded-5 p-4">
+              <div className="col-lg-4 mt-lg-5 left-sec mb-0">
+                <div data-aos="fade-right" data-aos-duration="400">
+                  <div
+                    className="card border-0 business-card-step fw-semibold text-white mb-2 mb-lg-5"
+                    data-bs-toggle="offcanvas"
+                  >
+                    <div className="d-flex align-items-center">
+                      <div className="card-icon p-3">
+                        <img
+                          src={list}
+                          className="bg-white"
+                          alt=""
+                          style={{ width: "30px", height: "30px" }}
+                        />
+                      </div>
+                      <div className="card-body px-2 py-4 pe-3">
+                        <p className="card-title text-capitalize heading3 mb-0 business-step">
+                          Loans up to ₹10 crore and above
+                        </p>
+                      </div>
                     </div>
-                    <div className="card-body px-2 py-4 pe-3">
-                      <p className="card-title text-capitalize heading3 mb-0 business-step">
-                        Loans up to ₹10 crore and above
-                      </p>
+                  </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="800">
+                  <div
+                    className="card left-go business-card-step fw-semibold text-white mb-2 mb-lg-5"
+                    data-bs-toggle="offcanvas"
+                  >
+                    <div className="d-flex align-items-center">
+                      <div className="card-icon p-3">
+                        <img
+                          src={account}
+                          className="bg-white"
+                          alt=""
+                          style={{ width: "30px", height: "30px" }}
+                        />
+                      </div>
+                      <div className="card-body px-2 py-4 pe-3">
+                        <p className="card-title text-capitalize heading3 mb-0 business-step">
+                          Fuel Your Business Growth Access the Capital You Need
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="900">
+                  <div
+                    className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
+                    data-bs-toggle="offcanvas"
+                  >
+                    <div className="d-flex align-items-center">
+                      <div className="card-icon p-3">
+                        <img
+                          src={calendar}
+                          className="bg-white"
+                          alt=""
+                          style={{ width: "30px", height: "30px" }}
+                        />
+                      </div>
+                      <div className="card-body px-2 py-4 pe-3">
+                        <p className="card-title text-capitalize heading3 business-step mb-0">
+                          Loan up to ₹50 lacs based on your GST returns
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div data-aos="fade-right" data-aos-duration="800">
-                <div
-                  className="card left-go business-card-step fw-semibold text-white mb-2 mb-lg-5"
-                  data-bs-toggle="offcanvas"
-                >
-                  <div className="d-flex align-items-center">
-                    <div className="card-icon p-3">
-                      <img
-                        src={account}
-                        className="bg-white"
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
-                    </div>
-                    <div className="card-body px-2 py-4 pe-3">
-                      <p className="card-title text-capitalize heading3 mb-0 business-step">
-                        Fuel Your Business Growth Access the Capital You Need
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-aos="fade-right" data-aos-duration="900">
-                <div
-                  className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
-                  data-bs-toggle="offcanvas"
-                >
-                  <div className="d-flex align-items-center">
-                    <div className="card-icon p-3">
-                      <img
-                        src={calendar}
-                        className="bg-white"
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
-                    </div>
-                    <div className="card-body px-2 py-4 pe-3">
-                      <p className="card-title text-capitalize heading3 business-step mb-0">
-                        Loan up to ₹50 lacs based on your GST returns
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div className="col-lg-4 d-none d-lg-flex d-flex justify-content-center align-items-center">
-              <div className="bgimage-holder">
-                <img
-                  src={business}
-                  data-aos="flip-left"
-                  data-aos-duration="1000"
-                  alt="steps"
-                  className="w-100 h-100"
-                />
+              <div className="col-lg-4 d-none d-lg-flex d-flex justify-content-center align-items-center">
+                <div className="bgimage-holder">
+                  <img
+                    src={business}
+                    data-aos="flip-left"
+                    data-aos-duration="1000"
+                    alt="steps"
+                    className="w-100 h-100"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div className="col-lg-4 mt-lg-5 right-sec mt-0">
-              <div data-aos="fade-left" data-aos-duration="600">
-                <div
-                  className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
-                  data-bs-toggle="offcanvas"
-                >
-                  <div className="d-flex align-items-center">
-                    <div className="card-icon p-3">
-                      <img
-                        src={process}
-                        className="bg-white"
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
+              <div className="col-lg-4 mt-lg-5 right-sec mt-0">
+                <div data-aos="fade-left" data-aos-duration="600">
+                  <div
+                    className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
+                    data-bs-toggle="offcanvas"
+                  >
+                    <div className="d-flex align-items-center">
+                      <div className="card-icon p-3">
+                        <img
+                          src={process}
+                          className="bg-white"
+                          alt=""
+                          style={{ width: "30px", height: "30px" }}
+                        />
+                      </div>
+                      <div className="card-body px-2 py-4 pe-3">
+                        <p className="card-title text-capitalize heading3 business-step mb-2 mb-0">
+                          Fast & seamless process
+                        </p>
+                      </div>
                     </div>
-                    <div className="card-body px-2 py-4 pe-3">
-                      <p className="card-title text-capitalize heading3 business-step mb-2 mb-0">
-                        Fast & seamless process
-                      </p>
+                  </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="700">
+                  <div
+                    className="card right-go business-card-step fw-semibold text-white mb-2 mb-lg-5"
+                    data-bs-toggle="offcanvas"
+                  >
+                    <div className="d-flex align-items-center">
+                      <div className="card-icon p-3">
+                        <img
+                          src={list}
+                          className="bg-white"
+                          alt=""
+                          style={{ width: "30px", height: "30px" }}
+                        />
+                      </div>
+                      <div className="card-body px-2 py-4 pe-3">
+                        <p className="card-title text-capitalize heading3 business-step mb-0">
+                          Fast & Easy Application: Get funded quickly.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="800">
+                  <div
+                    className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
+                    data-bs-toggle="offcanvas"
+                  >
+                    <div className="d-flex align-items-center">
+                      <div className="card-icon p-3">
+                        <img
+                          src={list}
+                          className="bg-white"
+                          alt=""
+                          style={{ width: "30px", height: "30px" }}
+                        />
+                      </div>
+                      <div className="card-body px-2 py-4 pe-3">
+                        <p className="card-title text-capitalize heading3 business-step mb-0">
+                          Tailored for Businesses: Solutions that fit your needs.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div data-aos="fade-left" data-aos-duration="700">
-                <div
-                  className="card right-go business-card-step fw-semibold text-white mb-2 mb-lg-5"
-                  data-bs-toggle="offcanvas"
-                >
-                  <div className="d-flex align-items-center">
-                    <div className="card-icon p-3">
-                      <img
-                        src={list}
-                        className="bg-white"
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
-                    </div>
-                    <div className="card-body px-2 py-4 pe-3">
-                      <p className="card-title text-capitalize heading3 business-step mb-0">
-                        Fast & Easy Application: Get funded quickly.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div className="py-0 py-lg-5 heading3 btn1">
+                <button>
+                  <Link to={"business"}>More Details</Link>
+                </button>
               </div>
-              <div data-aos="fade-left" data-aos-duration="800">
-                <div
-                  className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
-                  data-bs-toggle="offcanvas"
-                >
-                  <div className="d-flex align-items-center">
-                    <div className="card-icon p-3">
-                      <img
-                        src={list}
-                        className="bg-white"
-                        alt=""
-                        style={{ width: "30px", height: "30px" }}
-                      />
-                    </div>
-                    <div className="card-body px-2 py-4 pe-3">
-                      <p className="card-title text-capitalize heading3 business-step mb-0">
-                        Tailored for Businesses: Solutions that fit your needs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="py-0 py-lg-5 heading3 btn1">
-              <button>
-                <Link to={"business"}>More Details</Link>
-              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Fianncial-planning */}
       <div className="heros " id='plans'>
@@ -955,7 +976,132 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/* 
+      Our Blogs section */}
+      <section className="blogs" id="blogs">
+        <div>
+          <h4
+            className="heading4 text-white text-center mb-3 mt-4"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
+            Our  <span className="heading4 business-step">Blogs</span>
+          </h4>
+          <div class="container blog-card mt-3">
+            <div class="card-blog">
+              <div class="card__header">
+                <a href="/blogin">
+                  <img
+                    src="https://source.unsplash.com/600x400/?computer"
+                    alt="card__image"
+                    class="card__image"
+                    width="600"
+                  />
+                </a>
+              </div>
+              <div class="card__body">
+                <span class="tag tag-blue">Technology</span>
+                <h4 className="heading3">What's new in 2022 Tech</h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="user">
+                  <a href="/blogin">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      alt="user__image"
+                      class="user__image"
+                    />
+                  </a>
+                  <div class="user__info">
+                    <h5 className="heading3">Jane Doe</h5>
+                    <small>2h ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-blog">
+              <div class="card__header">
+                <a href="/blogin">
+                  <img
+                    src="https://source.unsplash.com/600x400/?food"
+                    alt="card__image"
+                    class="card__image"
+                    width="600"
+                  />
+                </a>
+              </div>
+              <div class="card__body">
+                <span class="tag tag-brown">Food</span>
+                <h4 className="heading3">Delicious Food</h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="user">
+                  <a href="/blogin">
+                    <img
+                      src="https://i.pravatar.cc/40?img=2"
+                      alt="user__image"
+                      class="user__image"
+                    />
+                  </a>
+                  <div class="user__info">
+                    <h5 className="heading3">Jony Doe</h5>
+                    <small>Yesterday</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-blog">
+              <div class="card__header">
+                <a href="/blogin">
+                  <img
+                    src="https://source.unsplash.com/600x400/?car,automobile"
+                    alt="card__image"
+                    class="card__image"
+                    width="600"
+                  />
+                </a>
+              </div>
+              <div class="card__body">
+                <span class="tag tag-red">Automobile</span>
+                <h4 className="heading3">Race to your heart </h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="user">
+                  <a href="/blogin">
+                    <img
+                      src="https://i.pravatar.cc/40?img=3"
+                      alt="user__image"
+                      class="user__image"
+                    />
+                  </a>
+                  <div class="user__info">
+                    <h5 className="heading3">John Doe</h5>
+                    <small>2d ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div className="py-0 py-lg-5 heading3 btn1">
+                <button>
+                  <Link to={"blogs"}>More Details</Link>
+                </button>
+              </div>
+      </section>
       {/* Testimonals */}
       <div >
         <div class="container testing text-center mt-4">

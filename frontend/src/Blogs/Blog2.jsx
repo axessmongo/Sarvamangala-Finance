@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/img/logo1.png";
 import Footer from "../Components/Footer";
 import Scroll from '../Components/Scroll'
+import {
+  slice, concat,
+} from 'lodash';
+const LENGTH = 50;
+const DATA = [...Array(LENGTH).keys()];
+const IMAGE_SRC = "https://source.unsplash.com/600x400/?car,automobile"
+const LIMIT = 3;
+
 function Blog2() {
+
+  const [showMore, setShowMore] = useState(true);
+  const [list, setList] = useState(slice(DATA, 0, LIMIT));
+  const [index, setIndex] = useState(LIMIT);
+
+  // Function to load more items
+  const loadMore = () => {
+    const newIndex = index + LIMIT;
+    const newShowMore = newIndex < (LENGTH - 1);
+    const newList = concat(list, slice(DATA, index, newIndex));
+    setIndex(newIndex);
+    setList(newList);
+    setShowMore(newShowMore);
+  }
+
+
   return (
     <div>
       <section className="nav-banner nav-bg ">
@@ -57,7 +81,7 @@ function Blog2() {
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#" id="services">
-                         Services
+                        Services
                       </a>
                     </li>
                     <li class="nav-item">
@@ -94,336 +118,50 @@ function Blog2() {
         </div>
       </section>
       <div>
-        <h3 className="text-center display-4 fw-semibold text-danger">
-          Oru Blogs
-        </h3>
+        <h4
+          className="heading4 text-dark text-center mb-3 mt-4"
+          data-aos="zoom-in"
+          data-aos-duration="700"
+        >
+          Our  <span className="heading4 business-step">Blogs</span>
+        </h4>
       </div>
       <section className="bg-body-secondary p-5">
         <div className="container">
-          <div class=" blog-card">
-            <div class="card-blog">
-              <div class="card__header">
-                <Link to={"/blogin"}>
-                  {" "}
-                  <img
-                    src="https://source.unsplash.com/600x400/?computer"
-                    alt="card__image"
-                    class="card__image"
-                    width="600"
-                  />
-                </Link>
+          <div className="blog-card">
+            {list.map((item, index) => (
+              <div className="card-blog" key={index}>
+                <div className="card__header">
+                  <Link to={"/blogin"}>
+                    <img
+                      src={IMAGE_SRC}
+                      alt="card__image"
+                      className="card__image"
+                      width="600"
+                    />
+                  </Link>
+                </div>
+                <div className="card__body">
+                  <span className="tag tag-blue">Business Loan</span>
+                  <h4 className="heading3">
+                    Sample Blog Title
+                  </h4>
+                  <p className="heading3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                    perferendis molestiae non nemo doloribus.
+                  </p>
+                </div>
               </div>
-              <div class="card__body">
-                <span class="tag tag-blue">Business Loan</span>
-                <h4 className="heading3">
-                  Debt Capital: Definition, Advantage & Disadvantage
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}<img
-                  src="https://source.unsplash.com/600x400/?food"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-brown">Business Loan</span>
-                <h4 className="heading3">
-                  GST on MRP - Meaning, Rules & Calculation
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-red">Business Loan</span>
-                <h4 className="heading3">
-                  Venture Capital: What Is VC and How Does It Work?{" "}
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class=" blog-card">
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-blue">Business Loan</span>
-                <h4 className="heading3">
-                  GST on MRP - Meaning, Rules & Calculation
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-brown">Business Loan</span>
-                <h4 className="heading3">
-                  Debt Capital: Definition, Advantage & Disadvantage
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-red">Business Loan</span>
-                <h4 className="heading3">
-                  Venture Capital: What Is VC and How Does It Work?{" "}
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class=" blog-card">
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-blue">Business Loan</span>
-                <h4 className="heading3">
-                  GST on MRP - Meaning, Rules & Calculation
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-brown">Business Loan</span>
-                <h4 className="heading3">
-                  Venture Capital: What Is VC and How Does It Work?
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-red">Business Loan</span>
-                <h4 className="heading3">
-                  Venture Capital: What Is VC and How Does It Work?{" "}
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class=" blog-card">
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-blue">Business Loan</span>
-                <h4 className="heading3">
-                  GST on MRP - Meaning, Rules & Calculation
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-brown">Business Loan</span>
-                <h4 className="heading3">
-                  GST on MRP - Meaning, Rules & Calculation
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-red">Business Loan</span>
-                <h4 className="heading3">
-                  Venture Capital: What Is VC and How Does It Work?{" "}
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class=" blog-card">
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-blue">Business Loan</span>
-                <h4 className="heading3">
-                  GST on MRP - Meaning, Rules & Calculation
-                </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-brown">Business Loan</span>
-                <h4 className="heading3">Delicious Food</h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-              <Link to={"/blogin"}>
-                  {" "}  <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                /></Link>
-              </div>
-              <div class="card__body">
-                <span class="tag tag-red">Business Loan</span>
-                <h4 className="heading3">Race to your heart </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
+        {/* Load more button */}
+        <div className="py-0 py-lg-5 heading3 btn1">
+         
+            {showMore && <button onClick={loadMore}> Load More </button>}
+        
+        </div>
+
       </section>
       <Footer />
       <Scroll />
