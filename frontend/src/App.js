@@ -25,6 +25,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Blog2 from "./Blogs/Blog2";
+import BlogIn from "./Blogs/BlogIn";
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,8 @@ function App() {
           {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/business" element={<Business />} />
           <Route path="/blogs" element={<Blog2 />} />
+          <Route path="/blogin" element={<BlogIn />} />
+
 
         </Routes>
       </BrowserRouter>
