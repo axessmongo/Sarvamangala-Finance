@@ -190,7 +190,7 @@ export default function Home() {
                       </a>
                     </li>
                     <li class="nav-item">
-                      <Link class="nav-link" to="/blog" >
+                      <Link class="nav-link" to="/blogs" >
                         Blog
                       </Link>
                     </li>
@@ -491,181 +491,176 @@ export default function Home() {
       </div>
 
       {/* bussinessLoan */}
-      <section className="whatwedo overflow-hidden " id="bussiness">
-        <div className="container overflow-hidden overflow-lg-visible">
-          <div className="position-relative">
-            <h4
-              className="heading4 text-white text-center mb-3"
-              data-aos="zoom-in" data-aos-duration="700"
-            >
-              Bussiness  <span className="heading4 business-step"> Loan</span>
-            </h4>
+      <section className="whatwedo overflow-hidden" id="business">
+      <div className="container overflow-hidden overflow-lg-visible">
+        <div className="position-relative">
+          <h4
+            className="heading4 text-white text-center mb-3"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
+            Business <span className="heading4 business-step">Loan</span>
+          </h4>
 
-            <div className="row align-items-center justify-content-center business-bg-step rounded-5 p-4">
-              <div className="col-lg-4 mt-lg-5 left-sec mb-0">
-                <div data-aos="fade-right" data-aos-duration="400">
-                  <div
-                    className="card border-0 business-card-step fw-semibold  text-white mb-2 mb-lg-5"
-                    // to="#smokemodelling"
-                    data-bs-toggle="offcanvas"
-                  >
-                    <div className="d-flex  align-items-center">
-                      <div className="card-icon p-3">
-                        <img
-                          src={list}
-                          className="bg-white"
-                          alt=""
-                          style={{ width: "30px", height: "30px" }}
-                        />
-                      </div>
-                      <div className="card-body px-2 py-4 pe-3">
-                        <p className="card-title text-capitalize heading3 mb-0 business-step">
-                          Loans up to ₹10 crore and above
-                        </p>
-                      </div>
+          <div className="row align-items-center justify-content-center business-bg-step rounded-5 p-4">
+            <div className="col-lg-4 mt-lg-5 left-sec mb-0">
+              <div data-aos="fade-right" data-aos-duration="400">
+                <div
+                  className="card border-0 business-card-step fw-semibold text-white mb-2 mb-lg-5"
+                  data-bs-toggle="offcanvas"
+                >
+                  <div className="d-flex align-items-center">
+                    <div className="card-icon p-3">
+                      <img
+                        src={list}
+                        className="bg-white"
+                        alt=""
+                        style={{ width: "30px", height: "30px" }}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="800">
-                  <div
-                    className="card left-go business-card-step fw-semibold  text-white mb-2 mb-lg-5"
-                    // to="#firestategies"
-                    data-bs-toggle="offcanvas"
-                  >
-                    <div className="d-flex align-items-center">
-                      <div className="card-icon p-3">
-                        <img
-                          src={account}
-                          className="bg-white"
-                          alt=""
-                          style={{ width: "30px", height: "30px" }}
-                        />
-                      </div>
-                      <div className="card-body px-2 py-4 pe-3">
-                        <p className="card-title text-capitalize heading3 mb-0 business-step ">
-                          Fuel Your Business Growth Access the Capital You Need
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="900">
-                  <div
-                    className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
-                    // to="#smokemodelling"
-                    data-bs-toggle="offcanvas"
-                  >
-                    <div className="d-flex align-items-center">
-                      <div className="card-icon p-3">
-                        <img
-                          src={calendar}
-                          className="bg-white"
-                          alt=""
-                          style={{ width: "30px", height: "30px" }}
-                        />
-                      </div>
-                      <div className="card-body px-2 py-4 pe-3">
-                        <p className="card-title text-capitalize heading3 business-step mb-0">
-                          Loan up to ₹50 lacs based on your GST returns
-                        </p>
-                      </div>
+                    <div className="card-body px-2 py-4 pe-3">
+                      <p className="card-title text-capitalize heading3 mb-0 business-step">
+                        Loans up to ₹10 crore and above
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
+              <div data-aos="fade-right" data-aos-duration="800">
+                <div
+                  className="card left-go business-card-step fw-semibold text-white mb-2 mb-lg-5"
+                  data-bs-toggle="offcanvas"
+                >
+                  <div className="d-flex align-items-center">
+                    <div className="card-icon p-3">
+                      <img
+                        src={account}
+                        className="bg-white"
+                        alt=""
+                        style={{ width: "30px", height: "30px" }}
+                      />
+                    </div>
+                    <div className="card-body px-2 py-4 pe-3">
+                      <p className="card-title text-capitalize heading3 mb-0 business-step">
+                        Fuel Your Business Growth Access the Capital You Need
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-aos="fade-right" data-aos-duration="900">
+                <div
+                  className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
+                  data-bs-toggle="offcanvas"
+                >
+                  <div className="d-flex align-items-center">
+                    <div className="card-icon p-3">
+                      <img
+                        src={calendar}
+                        className="bg-white"
+                        alt=""
+                        style={{ width: "30px", height: "30px" }}
+                      />
+                    </div>
+                    <div className="card-body px-2 py-4 pe-3">
+                      <p className="card-title text-capitalize heading3 business-step mb-0">
+                        Loan up to ₹50 lacs based on your GST returns
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-              <div className="col-lg-4 d-none d-lg-flex d-flex justify-content-center align-items-center">
-                <div className="bgimage-holder">
-                  <img
-                    src={business}
-                    data-aos="flip-left"
-                    data-aos-duration="1000"
-                    alt="steps"
-                    className="w-100  h-100"
-                  />
-                </div>
+            <div className="col-lg-4 d-none d-lg-flex d-flex justify-content-center align-items-center">
+              <div className="bgimage-holder">
+                <img
+                  src={business}
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                  alt="steps"
+                  className="w-100 h-100"
+                />
               </div>
+            </div>
 
-              <div className="col-lg-4 mt-lg-5 right-sec mt-0">
-                <div data-aos="fade-left" data-aos-duration="600">
-                  <div
-                    className="card  fw-semibold business-card-step  text-white  mb-2 mb-lg-5"
-                    // to="#strecturalfire"
-                    data-bs-toggle="offcanvas"
-                  >
-                    <div className="d-flex align-items-center">
-                      <div className="card-icon p-3">
-                        <img
-                          src={process}
-                          className=" bg-white"
-                          alt=""
-                          style={{ width: "30px", height: "30px" }}
-                        />
-                      </div>
-                      <div className="card-body px-2 py-4 pe-3">
-                        <p className="card-title text-capitalize heading3 business-step mb-2 mb-0">
-                          Fast & seamless process
-                        </p>
-                      </div>
+            <div className="col-lg-4 mt-lg-5 right-sec mt-0">
+              <div data-aos="fade-left" data-aos-duration="600">
+                <div
+                  className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
+                  data-bs-toggle="offcanvas"
+                >
+                  <div className="d-flex align-items-center">
+                    <div className="card-icon p-3">
+                      <img
+                        src={process}
+                        className="bg-white"
+                        alt=""
+                        style={{ width: "30px", height: "30px" }}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="700">
-                  <div
-                    className="card right-go business-card-step  fw-semibold  text-white mb-2  mb-lg-5"
-                    // to="#firesuppression"
-                    data-bs-toggle="offcanvas"
-                  >
-                    <div className="d-flex align-items-center">
-                      <div className="card-icon p-3">
-                        <img
-                          src={list}
-                          className=" bg-white"
-                          alt=""
-                          style={{ width: "30px", height: "30px" }}
-                        />
-                      </div>
-                      <div className="card-body px-2 py-4 pe-3">
-                        <p className="card-title text-capitalize heading3 business-step mb-0">
-                          Fast & Easy Application: Get funded quickly.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="00">
-                  <div
-                    className="card  fw-semibold business-card-step  text-white  mb-2 mb-lg-5"
-                    // to="#sprinklersystem"
-                    data-bs-toggle="offcanvas"
-                  >
-                    <div className="d-flex align-items-center">
-                      <div className="card-icon p-3">
-                        <img
-                          src={list}
-                          className=" bg-white"
-                          alt=""
-                          style={{ width: "30px", height: "30px" }}
-                        />
-                      </div>
-                      <div className="card-body px-2 py-4 pe-3">
-                        <p className="card-title text-capitalize heading3 business-step mb-0">
-                          Tailored for Businesses: Solutions that fit your needs.
-                        </p>
-                      </div>
+                    <div className="card-body px-2 py-4 pe-3">
+                      <p className="card-title text-capitalize heading3 business-step mb-2 mb-0">
+                        Fast & seamless process
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="py-0 py-lg-5 heading3 btn1">
-                <button>
-                  <Link to={"business"}>More Details</Link>
-                </button>
+              <div data-aos="fade-left" data-aos-duration="700">
+                <div
+                  className="card right-go business-card-step fw-semibold text-white mb-2 mb-lg-5"
+                  data-bs-toggle="offcanvas"
+                >
+                  <div className="d-flex align-items-center">
+                    <div className="card-icon p-3">
+                      <img
+                        src={list}
+                        className="bg-white"
+                        alt=""
+                        style={{ width: "30px", height: "30px" }}
+                      />
+                    </div>
+                    <div className="card-body px-2 py-4 pe-3">
+                      <p className="card-title text-capitalize heading3 business-step mb-0">
+                        Fast & Easy Application: Get funded quickly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div data-aos="fade-left" data-aos-duration="800">
+                <div
+                  className="card fw-semibold business-card-step text-white mb-2 mb-lg-5"
+                  data-bs-toggle="offcanvas"
+                >
+                  <div className="d-flex align-items-center">
+                    <div className="card-icon p-3">
+                      <img
+                        src={list}
+                        className="bg-white"
+                        alt=""
+                        style={{ width: "30px", height: "30px" }}
+                      />
+                    </div>
+                    <div className="card-body px-2 py-4 pe-3">
+                      <p className="card-title text-capitalize heading3 business-step mb-0">
+                        Tailored for Businesses: Solutions that fit your needs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="py-0 py-lg-5 heading3 btn1">
+              <button>
+                <Link to={"business"}>More Details</Link>
+              </button>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Fianncial-planning */}
       <div className="heros " id='plans'>
@@ -766,6 +761,179 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Our Blogs */}
+      {/* <section className="bg-body-secondary p-5">
+        <div>
+          <div class="container blog-card">
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?computer"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-blue">Technology</span>
+                <h4 className="heading3">What's new in 2022 Tech</h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?food"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-brown">Food</span>
+                <h4 className="heading3">Delicious Food</h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?car,automobile"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-red">Automobile</span>
+                <h4 className="heading3">Race to your heart </h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container blog-card">
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?computer"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-blue">Technology</span>
+                <h4 className="heading3">What's new in 2022 Tech</h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?food"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-brown">Food</span>
+                <h4 className="heading3">Delicious Food</h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?car,automobile"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-red">Automobile</span>
+                <h4 className="heading3">Race to your heart </h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container blog-card">
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?computer"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-blue">Technology</span>
+                <h4 className="heading3">What's new in 2022 Tech</h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?food"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-brown">Food</span>
+                <h4 className="heading3">Delicious Food</h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+            <div class="card-blog">
+              <div class="card__header">
+                <img
+                  src="https://source.unsplash.com/600x400/?car,automobile"
+                  alt="card__image"
+                  class="card__image"
+                  width="600"
+                />
+              </div>
+              <div class="card__body">
+                <span class="tag tag-red">Automobile</span>
+                <h4 className="heading3">Race to your heart </h4>
+                <p className="heading3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  perferendis molestiae non nemo doloribus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       {/* clarifications */}
       <section className="clarif mt-5 py-5" data-aos="zoom-in" data-aos-duration="1500">

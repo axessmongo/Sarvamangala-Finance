@@ -1,4 +1,4 @@
-
+/* 
   
   .blog-card {
     display: flex;
@@ -139,12 +139,12 @@
   .disclaimer__link {
     color: #755D87;
     text-decoration: none;
-  }
+  } */
   
 
   /* Second blogs starts */
 
-/* 
+
 .blog-card {
     display: flex;
     flex-wrap: wrap;
@@ -233,4 +233,4 @@ img {
 
 .user__info>small {
     color: #666;
-} */
+} 
