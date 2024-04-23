@@ -223,7 +223,7 @@ export default function Home() {
           <img src={coins} alt={coins} />
         </div> */}
         <div className="hero" id='home1'>
-          <div className="hero-opacity text-white"></div>
+          <div className=" text-white"></div>
         </div>
       </section>
       {/* services card */}

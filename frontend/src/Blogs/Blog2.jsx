@@ -85,11 +85,11 @@ function Blog2() {
           <img src={coins} alt={coins} />
         </div> */}
         <div className="hero" id="home1">
-          <div className=" py-5 heading3 btn1">
+          {/* <div className=" py-5 heading3 btn1">
             <button>
               <Link to={"/"}>Back To Home</Link>
             </button>
-          </div>
+          </div> */}
           {/* <div className="hero-opacity text-white"></div> */}
         </div>
       </section>
