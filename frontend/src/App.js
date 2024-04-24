@@ -46,8 +46,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-     {/* <Blog1 />  */}
-     {/* <Blog2 />  */}
+   \
 
 
     </div>

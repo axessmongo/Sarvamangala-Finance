@@ -211,7 +211,7 @@ export default function Home() {
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" onClick={() => gotoTop('blogs')} id="home-nav">
+                      <a class="nav-link" href="/blogs">
                         Blogs
                       </a>
                     </li>
@@ -782,181 +782,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* Our Blogs */}
-      {/* <section className="bg-body-secondary p-5">
-        <div>
-          <div class="container blog-card">
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?computer"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-blue">Technology</span>
-                <h4 className="heading3">What's new in 2022 Tech</h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?food"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-brown">Food</span>
-                <h4 className="heading3">Delicious Food</h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-red">Automobile</span>
-                <h4 className="heading3">Race to your heart </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container blog-card">
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?computer"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-blue">Technology</span>
-                <h4 className="heading3">What's new in 2022 Tech</h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?food"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-brown">Food</span>
-                <h4 className="heading3">Delicious Food</h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-red">Automobile</span>
-                <h4 className="heading3">Race to your heart </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container blog-card">
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?computer"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-blue">Technology</span>
-                <h4 className="heading3">What's new in 2022 Tech</h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?food"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-brown">Food</span>
-                <h4 className="heading3">Delicious Food</h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-            <div class="card-blog">
-              <div class="card__header">
-                <img
-                  src="https://source.unsplash.com/600x400/?car,automobile"
-                  alt="card__image"
-                  class="card__image"
-                  width="600"
-                />
-              </div>
-              <div class="card__body">
-                <span class="tag tag-red">Automobile</span>
-                <h4 className="heading3">Race to your heart </h4>
-                <p className="heading3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  perferendis molestiae non nemo doloribus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* clarifications */}
+   {/* clarifications */}
       <section className="clarif mt-5 py-5" data-aos="zoom-in" data-aos-duration="1500">
         <div className="container">
           <div className="row">
@@ -978,7 +804,7 @@ export default function Home() {
       </section>
       {/* 
       Our Blogs section */}
-      <section className="blogs" id="blogs">
+      {/* <section className="blogs">
         <div>
           <h4
             className="heading4 text-white text-center mb-3 mt-4"
@@ -1101,7 +927,7 @@ export default function Home() {
                   <Link to={"blogs"}>More Details</Link>
                 </button>
               </div>
-      </section>
+      </section> */}
       {/* Testimonals */}
       <div >
         <div class="container testing text-center mt-4">
