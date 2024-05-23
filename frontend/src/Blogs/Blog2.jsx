@@ -10,7 +10,7 @@ import {
 const LENGTH = 50;
 const DATA = [...Array(LENGTH).keys()];
 const IMAGE_SRC = "https://source.unsplash.com/600x400/?car,automobile"
-const LIMIT = 3;
+const LIMIT = 6;
 
 function Blog2() {
 
