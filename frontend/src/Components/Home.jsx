@@ -3,7 +3,7 @@ import profile1 from '../Assets/img/profile1.png';
 import ournature1 from "../Assets/img/nature1.jpg";
 import ournature2 from "../Assets/img/nature2.jpg";
 import capital from "../Assets/img/why.png";
-import list from "../Assets/img/list.png";
+import listimg from '../Assets/img/list.png';
 import account from "../Assets/img/account.png";
 import process from "../Assets/img/process.png";
 import calendar from "../Assets/img/calendar.png";
@@ -26,6 +26,7 @@ import img8 from '../Assets/img/image9.png'
 import img9 from '../Assets/img/image8.png'
 import logo from "../Assets/img/logo1.png";
 import contact from "../Assets/img/conatct.png";
+import fast from '../Assets/img/Fast.png'
 import coins from "../Assets/img/coins.gif"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -533,7 +534,7 @@ export default function Home() {
                     <div className="d-flex align-items-center">
                       <div className="card-icon p-3">
                         <img
-                          src={list}
+                          src={listimg}
                           className="bg-white"
                           alt=""
                           style={{ width: "30px", height: "30px" }}
@@ -636,7 +637,7 @@ export default function Home() {
                     <div className="d-flex align-items-center">
                       <div className="card-icon p-3">
                         <img
-                          src={list}
+                          src={fast}
                           className="bg-white"
                           alt=""
                           style={{ width: "30px", height: "30px" }}
@@ -658,7 +659,7 @@ export default function Home() {
                     <div className="d-flex align-items-center">
                       <div className="card-icon p-3">
                         <img
-                          src={list}
+                          src={account}
                           className="bg-white"
                           alt=""
                           style={{ width: "30px", height: "30px" }}
