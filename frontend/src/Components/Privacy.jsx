@@ -1,82 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../Assets/img/logo1.png";
-import Footer from "./Footer";
 
 function Privacy() {
   return (
     <div>
-        <section className="nav-banner nav-bg ">
-        <nav
-          className="navbar navbar-expand-lg m-auto align-items-center d-flex justify-content-center  "
-          id="home"
-        >
-          <div className="text-center px-5">
-            <img src={logo} className="logo px-3" alt="Logo" />
-          </div>
-
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav heading3">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active text-white"
-                        aria-current="page"
-                        id="name-nav"
-                        href="home"
-                      >
-                        Home
-                      </a>
-                    </li>
-
-                    <li class="nav-item">
-                      <Link className="nav-link" to="goals">
-                        Goals
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="chooseus">
-                        ChooseUs
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="services">
-                         Services
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="plans">
-                        Plans
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="contact">
-                        Contact
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </nav>
-      </section>
 
       <div className="container-fluid h-100 w-100 bg-body-secondary pb-5 mt-5">
         <h1 className="display-6 text-warning fw-bold text-center pt-5">
@@ -469,7 +396,6 @@ function Privacy() {
           </div>
         </div>
       </div>
-      <Footer/>
     </div>
   );
 }
