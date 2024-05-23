@@ -260,6 +260,8 @@ function Blog2() {
                         </div>
                     </div>
                 </div>
+                <hr className='mt-2' />
+                <p className='text-center text-white text-capitalize pb-2'>Copyright © All rights reserved 2024.sarvamangalafinance <Link to={"/privacy"} className='text-primary text-text-decoration-underline'>privacy policy</Link></p>
             </div>
         </footer>
       <Scroll />
