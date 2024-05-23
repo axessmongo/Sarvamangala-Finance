@@ -109,6 +109,8 @@ function Footer() {
 
                             </div>
                         </div>
+                        <hr className='mt-2' />
+                        <p className='text-center text-white text-capitalize'>Copyright © All rights reserved 2024.sarvamangalafinance <Link to={"/privacy"} className='text-primary text-text-decoration-underline'>privacy policy</Link></p>
                     </div>
                 </div>
             </div>

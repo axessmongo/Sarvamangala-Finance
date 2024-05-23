@@ -107,7 +107,7 @@ export default function Contact() {
                             <div class="contact_block_one mb_30 aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="550">
                                 <div class="contact_block_icon"><i class="bi bi-envelope"></i></div>
                                 <div class="contact_block_title heading4 " style={{color:"#c0093f"}}><h4>Email Address</h4></div>
-                                <div class="contact_block_text heading3 "><p><a href="#" className='contact1'>  info@sarvamangalainvest.in</a> <br/><a href="#" className='contact1'>  info@sarvamangalainvest.in</a> </p></div>
+                                <div class="contact_block_text heading3 "><p><a href="#" className='contact1'>  info@sarvamangalafinance.in</a> <br/><a href="#" className='contact1'>  info@sarvamangalafinance.in</a> </p></div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
