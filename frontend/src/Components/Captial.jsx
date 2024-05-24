@@ -60,14 +60,14 @@ export default function Capital() {
                     <p className='secondary-text mb-1  text-center heading2'>Fast Approvals</p>
                   </div>
                 </div>
-                <div className="col-6 col-md-5 col-lg-3">
+                <div className="col-6 col-md-5 col-lg-3"> 
                   <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
                     <i className="bi bi-file-check-fill fs-3 m-2" style={{ "color": "#c00937" }}></i>
                     {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}
                     <p className='secondary-text mb-1  text-center heading2'>Collateral Options</p>
                   </div>
                 </div>
-                <div className="col-6 col-md-5 col-lg-3">
+                <div    me="col-6 col-md-5 col-lg-3">
                   <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
                     <i className="bi bi-cart-plus fs-3 m-2" style={{ "color": "#c00937" }}></i>
                     {/* <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" /> */}

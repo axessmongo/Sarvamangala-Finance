@@ -197,8 +197,8 @@ export default function Accordion() {
                   <div class="pe-2 col-2 ">
                     <img
                       src={img6}
-                      class="rounded-2"
-                      width="40px"
+                      class="rounded-2" 
+                      width="40px"  
                       height="40px"
                     />
                   </div>
@@ -207,7 +207,7 @@ export default function Accordion() {
               </h2>
               <div
                 id="collapseSix"
-                class="accordion-collapse collapse"
+                class="accordion-collapse collapse"  
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body ">
