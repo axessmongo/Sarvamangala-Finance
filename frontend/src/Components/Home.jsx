@@ -541,7 +541,8 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 mb-0 business-step">
-                          Loans up to ₹10 crore and above
+                         
+                          Loans starting from ₹5 crores
                         </p>
                       </div>
                     </div>
@@ -585,7 +586,7 @@ export default function Home() {
                       </div>
                       <div className="card-body px-2 py-4 pe-3">
                         <p className="card-title text-capitalize heading3 business-step mb-0">
-                          Loan up to ₹50 lacs based on your GST returns
+                          Loans upto ₹50 crores based on GST returns
                         </p>
                       </div>
                     </div>
